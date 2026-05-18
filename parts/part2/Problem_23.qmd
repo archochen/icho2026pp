@@ -20,6 +20,8 @@ Transition metal-catalyzed reactions can be versatile and unique. As such, nicke
 
 <img src="images/79f465f49a94a39ba6013473897412183fd9e06ea5a6a80f2aa8e96fac2c390d.jpg" alt="image" style="zoom: 50%;" />
 
+## Q1 — Structures of 2 and 3 from EI-MS
+
 1. The mass spectra (MS) of **2** and **3** are shown (electron impact ionization method). **Determine** the structures of **2** and **3**.
 
 MS of 2
@@ -56,6 +58,8 @@ Complex **4** can be obtained via the following reaction. OS is the oxidation st
 
 <img src="images/5879800315004dc0e96a8f94898a12901b8fe838e447e4cf6da6d5edcb9884a2.jpg" alt="image" style="zoom: 50%;" />
 
+## Q2 — Complex 4: OS, CN, VE of Ni
+
 2. **Draw** the structure of **4** and **report** the OS and CN of the metal in it.
 
 > **Solution (Q2 — Complex 4, OS/CN/VE of Ni).**
@@ -83,6 +87,8 @@ Metal complexes can participate in HAT and XAT processes. Two examples are given
 <img src="images/2360ca9a581b6ea65085a47b4c5bac164dd3f0d2957c28f1eb02294025b6d8f1.jpg" alt="image" style="zoom:50%;" />
 
 <img src="images/0e9f24e15768259354aee1c1198ac0f29106e6f1912c6f6a30a40fb842eeb9da.jpg" alt="image" style="zoom:50%;" />
+
+## Q3 — OS/CN/VE of HAT and XAT products
 
 3. **Find** the missing parameters (OS, CN, and VE) for the complexes produced in HAT and XAT processes.
 
@@ -114,6 +120,8 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 
 <img src="images/cd1fb3f1aad5c7b1eca523f5ae2a8fe3db3fe3ae803004dba5093769c78593cf.jpg" alt="image" style="zoom:50%;" />
 
+## Q4 — Ni cycle: structures 5–11 and Ni bookkeeping
+
 4. **Find** the structures of **5**–**11** in the cycle. For Ni-containing structures **5**–**7** and **10**–**11**, **find** the missing parameters (OS, CN, and VE).
 
 > **Solution (Q4 — Structures 5–11 and Ni parameters).**
@@ -144,6 +152,8 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 >
 > <img src="./assets/image-20260424165505683.png" alt="image-20260424165505683" style="zoom: 50%;" />
 
+## Q5 — Identity of the electron donor
+
 5. **Analyse** the given reaction conditions for the synthesis of compound **3** and **determine** the electron donor in the above catalytic cycle.
 
 > **Solution (Q5 — Identity of the electron donor).**
@@ -157,6 +167,8 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 A conceptually similar catalytic reaction is a desaturation of silylated alcohols such as **12**. In the example below a deuterium label was installed for mechanistic studies.
 
 <img src="images/38f5950de94c4e2e1160f32f5f4a671d4489ffd76d6e123ff1ece02b40e813b6.jpg" alt="image" style="zoom:50%;" />
+
+## Q6 — Structure of 13 from EI-MS
 
 6. The mass spectrum of **13** is presented below (electron impact ionisation method). **Determine** its structure.
 
@@ -179,6 +191,8 @@ A conceptually similar catalytic reaction is a desaturation of silylated alcohol
 The catalytic cycle for the transformation of **12** into **13** is shown below:
 
 <img src="images/2d7f99b344be3d69b84a11a48a6afbfbd1b703e87974998185e4b16f8bbe5ac5.jpg" alt="image" style="zoom:50%;" />
+
+## Q7 — Pd desaturation intermediates 15–19
 
 7. **Determine** the structures of **15**–**19**. For Pd-containing intermediates **14**, **15**, and **18**, **find** the missing parameters (OS, CN, VE).
 
@@ -203,6 +217,8 @@ The catalytic cycle for the transformation of **12** into **13** is shown below:
 
 Active species **14** is not particularly stable, thus, it is practically easier to start the reaction with a bench-stable palladium complex ${\mathrm{Pd}} ( \mathrm{OAc} )_{2}$ . The first step towards **14** is reaction with the phosphine ligand.
 
+## Q8 — Pre-catalyst 20 and reductive activation step X
+
 8. **Draw** a possible structure for **20**. **Suggest** what type of process should occur in the second step marked as **X** on the scheme. **Analyse** the given reaction conditions for the synthesis of **13** and **suggest** what reagent can participate in the step **X**.
 
 > **Solution (Q8 — Structure of 20 and identity of step X).**
@@ -221,6 +237,8 @@ Active species **14** is not particularly stable, thus, it is practically easier
 
 
 <img src="./assets/image-20260424151411951.png" alt="image-20260424151411951" style="zoom:50%;" />
+
+## Q9 — Pairwise BDE(C–H) comparison for 21–23
 
 9. Based on the information in the task, **analyse** BDE(C–H) of highlighted bonds in compounds **21**–**23**. **Compare** the values in pairwise manner using symbols $< , > \mathrm{or} =$ :
 
@@ -291,6 +309,8 @@ $$
 ![image](images/3f6aaca1d49d00a54f4755d1842a9a803f743601519452f65d2a9e5ba5deca7f.jpg)
 
 
+## 23-1 — 由质谱确定 2 和 3 的结构
+
 23-1 下面给出了2和3的电子轰击电离质谱。确定 2和 3的结构。
 
 ![image](images/168eeba6a7e4aad8e515cde9c305af4c68f17e2dc220a08ce5c6c99c20109607.jpg)
@@ -304,6 +324,8 @@ $$
 ![image](images/bc321b90d9b26bbb8c5835c84749e1195f2432c671cafe426241e29c5e0fe3f3.jpg)
 
 
+## 23-2 — 配合物 4 的结构及 Ni 的 OS、CN
+
 23-2 画出 4 的结构，并指出其中金属的 OS 和 CN。
 
 HAT 表示氢原子转移，XAT 表示卤素原子转移。如果该原子在分子内转移，则可表为 1,n-AT。下面是1,5-HAT 的示例，以及一些相关的键解离能 (BDE) 数据。
@@ -316,6 +338,8 @@ HAT 表示氢原子转移，XAT 表示卤素原子转移。如果该原子在分
 ![image](images/973baa70114416daf17a2f1f56e9d91324d73a4cb8ea51bd1a68ade09b6de5ff.jpg)
 
 
+## 23-3 — HAT 与 XAT 产物配合物的 OS、CN、VE
+
 23-3 指出 HAT 和 XAT 生成的配合物的 OS、CN、VE。
 
 下图描述了1和2转化为产物3的催化循环：
@@ -323,7 +347,11 @@ HAT 表示氢原子转移，XAT 表示卤素原子转移。如果该原子在分
 ![image](images/3619127d1133ad16af8b336bf3ffbb3673196f293f0a734dbc97106756ac83a4.jpg)
 
 
+## 23-4 — Ni 催化循环：5–11 的结构与配合物参数
+
 23-4 给出循环中 5–11 的结构。指出含 Ni 中间体 5、6、7、10、11 的 OS、CN 和 VE。
+
+## 23-5 — 确定催化循环的电子供体
 
 23-5 分析合成化合物3的反应条件，确定上述催化循环中的电子供体。
 
@@ -331,6 +359,8 @@ HAT 表示氢原子转移，XAT 表示卤素原子转移。如果该原子在分
 
 ![image](images/75ae3bc659bb11e1596d416ea827fa18e9fda2ce5b896ba1403bf0fb93b67aa8.jpg)
 
+
+## 23-6 — 由质谱确定 13 的结构
 
 23-6 下面给出了13的电子轰击电离质谱。确定其结构。
 
@@ -342,14 +372,20 @@ HAT 表示氢原子转移，XAT 表示卤素原子转移。如果该原子在分
 ![image](images/bf45c4b03b2850ef97a104ac47e4b4e6dce62f4f0fdf9e12e507fa80d1765393.jpg)
 
 
+## 23-7 — Pd 脱氢循环中间体 15–19
+
 23-7 确定 15–19 的结构。指出含 Pd 的中间体 14、15、18 的 OS、CN、VE。
 
 活性物种 14 并不特别稳定，因此实验上常用更稳定的钯盐 $\mathrm{Pd} ( \mathrm{OAc} )_{2}$ 代替，它先与膦配体反应生成 20。
+
+## 23-8 — 预催化剂 20 的结构与还原激活步骤 X
 
 23-8 画出 20 的一个可能结构。猜测图中的第二步 X 应该是什么过程。分析生成 13 的反应条件，并推测哪种试剂可以参与步骤X。
 
 <img src="./assets/image-20260424151442121.png" alt="image-20260424151442121" style="zoom:50%;" />
 
+
+## 23-9 — 化合物 21–23 的 C–H 键 BDE 两两比较
 
 23-9 根据表格中的信息，分析化合物21–23中加粗 C–H键的解离能 $\mathrm{BDE}_ {\mathrm{C-H}}$ ，填入 <、> 或 $=$ ：
 

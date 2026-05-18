@@ -1,0 +1,17 @@
+---
+title: "P1.01 — (placeholder — replace with Part 1, Problem 1 title)"
+problem-id: 1
+status: not-started
+difficulty: 0
+topics: []
+date: "2026-05-18"
+description: "Placeholder. Part 1 not yet started."
+---
+
+::: {.callout-warning appearance="simple"}
+This problem hasn't been started yet. The dashboard tracks it as **not-started**.
+:::
+
+> Solution will appear here once drafting begins.
+
+When ready, change the frontmatter `status:` to `draft`, then `revised`, then `final` as the solution matures.

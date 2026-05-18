@@ -1,0 +1,66 @@
+/*-- scss:defaults --*/
+$primary: #5b3a8a;   // deep purple — pedagogical/academic
+$link-color: $primary;
+
+/*-- scss:rules --*/
+
+// Status badges (rendered by _extensions/status-badge/status-badge.lua)
+.status-badge {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  margin-left: 0.5em;
+  border-radius: 999px;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.status-not-started { background: #f3f4f6; color: #6b7280; border-color: #e5e7eb; }
+.status-draft       { background: #fff7ed; color: #b45309; border-color: #fdba74; }
+.status-revised     { background: #eff6ff; color: #1e40af; border-color: #93c5fd; }
+.status-final       { background: #ecfdf5; color: #047857; border-color: #6ee7b7; }
+.status-tbc         { background: #fef2f2; color: #b91c1c; border-color: #fca5a5; }
+
+// Listing dashboard — status column
+.quarto-listing-default .listing-status .status-badge { margin-left: 0; }
+
+// Make blockquote-style solutions visually distinct (your inline solution format)
+blockquote {
+  border-left: 4px solid $primary;
+  background: rgba(91, 58, 138, 0.04);
+  padding: 0.8em 1em;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+
+  // \boxed{} from KaTeX renders as .boxed; nudge spacing
+  .boxed { margin: 0.25em 0; }
+}
+
+// Difficulty stars
+.difficulty {
+  color: #d97706;
+  letter-spacing: 0.05em;
+}
+
+// Discord call-out at top of every problem
+.discord-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.4em 0.9em;
+  background: #5865F2;
+  color: #fff !important;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 0.9em;
+
+  &:hover { filter: brightness(1.1); }
+}
+
+// Solution blockquote: tighten math display spacing
+blockquote .katex-display { margin: 0.5em 0; }

@@ -1,0 +1,38 @@
+---
+title: "About"
+---
+
+## What this is
+
+A growing collection of worked solutions and pedagogical analyses for the **58th IChO (Uzbekistan, 2026) Preparatory Problems**, organized into three parts. The source is plain Markdown / Quarto `.qmd`; the site is rebuilt automatically on every push.
+
+## How to read a solution
+
+Each solution follows a fixed format:
+
+> **Solution (Qn — Topic)**
+>
+> **Strategy.** One paragraph mapping the *题眼* (key clue) and reasoning chain.
+>
+> **Step-by-step derivation.** Equations are typeset with KaTeX + `mhchem` so chemical formulas, mechanism arrows, and matrix calculations render as in print.
+>
+> $$\boxed{\text{final numerical or symbolic answer}}$$
+
+After the solution there may be a **教学点评 / 解题分析** (pedagogical commentary): thesis opener → 题眼 / 推断链 / 板块 body → 经验总结 → ★ difficulty rating.
+
+## How to report an error
+
+The fastest way: hop on Discord and post in the channel for the part (`#part-1`, `#part-2`, `#part-3`). Include:
+
+- Problem number (e.g., **P2.07**)
+- Question number within the problem (e.g., **Q3.2**)
+- The specific step or equation you're commenting on, quoted
+
+Issues are also welcome on the GitHub repo if you prefer.
+
+## Workflow (for the maintainer)
+
+1. Edit `parts/partN/Problem_NN.qmd` locally.
+2. `quarto preview` to live-reload while drafting.
+3. Update the `status:` field in the frontmatter as the solution matures.
+4. `git push` → CI rebuilds and republishes.

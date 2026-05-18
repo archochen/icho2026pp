@@ -1,0 +1,18 @@
+# Quarto build output
+_site/
+.quarto/
+*.html
+!_extensions/**/*.html
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+
+# Per-problem PDF outputs (uncomment if you render PDFs locally and don't want to ship them)
+# parts/**/*.pdf
+
+/.quarto/

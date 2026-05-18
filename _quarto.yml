@@ -1,0 +1,85 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "index.qmd"
+    - "parts/**/*.qmd"
+    - "about.qmd"
+
+website:
+  title: "IChO 2026 Preparatory Problems — Solutions"
+  description: "Solutions and pedagogical analysis for the 58th IChO (Uzbekistan, 2026) preparatory problems. Solutions are dynamic; please report errors on Discord."
+  site-url: "https://archochen.github.io/icho2026pp/"
+  repo-url: "https://github.com/archochen/icho2026pp"
+  repo-actions: [edit, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Part 1"
+        href: parts/part1/
+      - text: "Part 2"
+        href: parts/part2/
+      - text: "Part 3"
+        href: parts/part3/
+      - about.qmd
+    right:
+      - icon: discord
+        href: "https://discord.gg/CHANGE-ME"
+        text: "Discord"
+        aria-label: "Discuss on Discord"
+  page-footer:
+    left: |
+      Found an error? **[Open the Discord →](https://discord.gg/CHANGE-ME)**
+    right: |
+      Solutions by Q. Chen · CC BY-NC-SA 4.0
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark:  [darkly, styles.scss]
+    css: styles.css
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    html-math-method:
+      method: katex
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body,{
+              delimiters:[
+                {left:'$$',right:'$$',display:true},
+                {left:'$',right:'$',display:false},
+                {left:'\\(',right:'\\)',display:false},
+                {left:'\\[',right:'\\]',display:true}
+              ],
+              trust:true,
+              strict:false
+            });"></script>
+    filters:
+      - status-badge
+    smooth-scroll: true
+    link-external-newwindow: true
+
+  # Per-problem PDF — uncomment when you have a LaTeX engine and want printable handouts.
+  # pdf:
+  #   documentclass: scrartcl
+  #   geometry: margin=2cm
+  #   pdf-engine: xelatex
+  #   include-in-header:
+  #     - text: |
+  #         \usepackage[version=4]{mhchem}
+  #         \usepackage{siunitx}

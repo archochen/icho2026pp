@@ -1,0 +1,155 @@
+---
+title: "P2.01 — Khoja Nasreddin is now a chemist"
+problem-id: 1
+status: final
+difficulty: 5
+topics: [inorganic, stoichiometry, ozonides, ammonium-salts, gas-laws]
+author: "Q. Chen"
+date: "2026-05-18"
+description: "Soviet-style inorganic puzzle: ozone (F), lithium ozonide (C), ammonium ozonide (A), tetraamminelithium(I) ozonide (D), with a four-stage gas-evolution and phase-transition accounting."
+---
+
+::: {.callout-tip appearance="simple" icon=false}
+**Found an issue?** Post the problem number (**P2.01**) and the **step** on Discord.
+[💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
+:::
+
+Khoja Nasreddin is a folklore character from the East, the hero of short humorous and satirical stories and anecdotes, and sometimes even everyday tales. In 2022, the tradition of retelling jokes about Khoja Nasreddin was inscribed on the Representative List of the Intangible Cultural Heritage of Humanity.
+
+<img src="images/0fd29088ff6b646b147c5311082b54c92ee017582a84a0c33af9de75e8b132ec.jpg" alt="image" style="zoom:33%;" />
+
+One day, Khoja Nasreddin decided to become a chemist. He began his journey in chemistry by studying the thermal decomposition of an unknown red salt **A**, even though such work was quite challenging for beginners.
+
+Khoja Nasreddin carefully decomposed $1.00\ \mathrm{g}$ of $\mathbf{A}$ at $-70\,°\mathrm{C}$ (**Reaction 1**) in a closed $1.00\ \mathrm{L}$ reactor initially filled with argon at a pressure of $100.0\ \mathrm{kPa}$. After the decomposition, the pressure inside the reactor increased to $106.42\ \mathrm{kPa}$, and the solid residue consisted of two compounds, one of which was identified as salt **B**.
+
+Following the first stage of decomposition, he gradually heated the reactor to $200\,°\mathrm{C}$. During heating, the solid residue first turned into a mixture of solid and liquid, then into a solely liquid phase, and finally, at $128\,°\mathrm{C}$, a solid phase reappeared. At this temperature, the pressure in the reactor was $260.63\ \mathrm{kPa}$.
+
+Upon reaching $200\,°\mathrm{C}$, **B** began to decompose (**Reaction 2**), and after complete decomposition, no solid residue remained in the reactor. The pressure at $200\,°\mathrm{C}$ was $396.82\ \mathrm{kPa}$. When he introduced a glowing splint into the reactor, it ignited vigorously.
+
+Nasreddin then attempted to synthesize salt **C**, which differs from **A** only by its cation. The mass fraction of the metal in **C** is equal to $12.63\%$. However, according to various sources, **C** is difficult to obtain. Instead, he successfully synthesized salt **D** (containing a complex cation, the same metal as in **C**, and $9.83\%$ hydrogen by mass) by treating compound **E** (mass fraction of one of the elements in **E** is $4.21\%$) with gas $\mathbf{F}$ in liquid ammonia. He noted that at very low temperatures, **F** exists as a dark blue liquid.
+
+To determine the amount of gas **F** required for the synthesis of $1.000\ \mathrm{g}$ of **D**, he passed as much **F** as necessary through $100\ \mathrm{mL}$ of potassium iodide solution (**Reaction 3**). For titration of a $10.00\ \mathrm{mL}$ aliquot of the resulting brown solution, $16.30\ \mathrm{mL}$ of sodium thiosulfate solution (**Reaction 4**) with a concentration of $0.0998\ \mathrm{M}$ was used. He also noted that when he was passing gas **F** through the iodide solution, another colorless gas was produced in the same amount as gas **F**.
+
+1. **Identify** substances **A**–**F**.
+
+> **Solution (Q1 — Identification of A–F)**
+>
+> **Strategy.** Work backwards from the most diagnostic clue (F), then use the anion–cation relation between A and C together with the two percentage-composition clues to pin down the remaining species. Verify with gas-evolution stoichiometry and the titration data.
+>
+> **Identification of F (the dark-blue liquid).**
+> A substance that (i) is a dark-blue liquid at very low temperature, (ii) liberates I₂ from KI, and (iii) releases a colourless gas in an amount equal to that of F consumed, is **ozone, O₃**:
+> $$\mathrm{O_{3}+2\,KI+H_{2}O\rightarrow I_{2}+O_{2}+2\,KOH}\qquad (\text{1 mol O}_{2}\ \text{per mol O}_{3})$$
+>
+> **Identification of C and hence the anion of A.**
+> Since C differs from A only by the cation, C shares A's anion. Testing anion = **O₃⁻** (M = 48) with a +1 metal M gives
+> $$w_{\mathrm{M}} = \frac{M}{M+48} = 0.1263 \;\Longrightarrow\; M = \frac{0.1263\cdot 48}{0.8737}=6.94\ \mathrm{g\,mol^{-1}}\ (\mathrm{Li}).$$
+> So **C = LiO₃** (lithium ozonide, notoriously difficult to prepare — consistent with the hint).
+>
+> **Identification of A.**
+> A is a red salt whose anion is O₃⁻; its cation must yield NO solid residue after complete decomposition (see below) — i.e. an ammonium salt. Hence **A = NH₄O₃** (ammonium ozonide, red-orange, thermally unstable above ≈ $-126\,°\mathrm{C}$), with $M_{A} = 66.05\ \mathrm{g\,mol^{-1}}$.
+>
+> **Identification of E from the 4.21 % clue.**
+> LiOH has $w_{\mathrm{H}} = 1.008/23.95 = 4.21\%$ ✓. So **E = LiOH**.
+>
+> **Identification of D.**
+> D has a complex cation containing Li and $w_{\mathrm{H}} = 9.83\%$. The lithium tetraammine cation [Li(NH₃)₄]⁺ is a well-known species in liquid NH₃. Assuming D = [Li(NH₃)₄]O₃:
+> $$M_{D} = 6.94 + 4(17.03) + 48.00 = 123.06\ \mathrm{g\,mol^{-1}},\quad w_{\mathrm{H}}=\frac{12(1.008)}{123.06}=9.83\% \checkmark$$
+> Cross-check with the titration: $n(\mathrm{Na_2S_2O_3})=16.30\times 0.0998 = 1.627\ \mathrm{mmol}$ in the 10 mL aliquot; $n(\mathrm{I_2})=1.627/2 = 0.814\ \mathrm{mmol}$, scaling to 100 mL gives 8.14 mmol I₂ = 8.14 mmol O₃. This O₃ was used to make 1.000 g of D, i.e. $1.000/123.06 = 8.13$ mmol D, giving a 1 : 1 stoichiometry O₃ : D ✓.
+>
+> **Identification of B (verified by the full decomposition balance).**
+> Assume B = NH₄NO₃ and test the gas accounting ($R = 8.314\ \mathrm{J\,mol^{-1}\,K^{-1}}$, $V = 1\ \mathrm{L}$).
+>
+> | Stage | T (K) | Measured n(gas from A) / mol | Predicted from stoichiometry |
+> |---|---|---|---|
+> | $-70\,°\mathrm{C}$ | 203.15 | $\dfrac{6.42\cdot 10^{3} \cdot 10^{-3}}{8.314\cdot 203.15}=0.00381$ | $\tfrac14\,n_{A} = 0.003788$ |
+> | $128\,°\mathrm{C}$ | 401.15 | $\dfrac{(260.63-197.47)\cdot 10^{3} \cdot 10^{-3}}{8.314\cdot 401.15}=0.01895$ | $\tfrac54\,n_{A} = 0.01894$ |
+> | $200\,°\mathrm{C}$ | 473.15 | $\dfrac{(396.82-232.94)\cdot 10^{3} \cdot 10^{-3}}{8.314\cdot 473.15}=0.04166$ | $\tfrac{11}{4}\,n_{A} = 0.04166$ |
+>
+> with $n_{A} = 1.00/66.05 = 0.01515\ \mathrm{mol}$. All three stages match to within 0.1 % ✓.
+>
+> **Physical interpretation of the heating sequence**: at $-70\,°\mathrm{C}$ the water formed in step 1 is ice (solid), so the "two solids" are B = NH₄NO₃ and H₂O(s). On heating, ice melts (solid + liquid), then NH₄NO₃ dissolves in water (single liquid phase), water evaporates, and at $128\,°\mathrm{C}$ anhydrous NH₄NO₃ recrystallises (solid phase reappears). At $200\,°\mathrm{C}$ NH₄NO₃ decomposes to N₂O + 2 H₂O(g), with N₂O reigniting the glowing splint.
+>
+> **Summary**
+>
+> | Species | Formula | Name |
+> |---|---|---|
+> | **A** | $\mathrm{NH_{4}O_{3}}$ | ammonium ozonide (red) |
+> | **B** | $\mathrm{NH_{4}NO_{3}}$ | ammonium nitrate |
+> | **C** | $\mathrm{LiO_{3}}$ | lithium ozonide |
+> | **D** | $\mathrm{[Li(NH_{3})_{4}]O_{3}}$ | tetraamminelithium(I) ozonide |
+> | **E** | $\mathrm{LiOH}$ | lithium hydroxide |
+> | **F** | $\mathrm{O_{3}}$ | ozone |
+>
+> $$\boxed{\mathbf{A}=\mathrm{NH_{4}O_{3}},\ \mathbf{B}=\mathrm{NH_{4}NO_{3}},\ \mathbf{C}=\mathrm{LiO_{3}},\ \mathbf{D}=\mathrm{[Li(NH_{3})_{4}]O_{3}},\ \mathbf{E}=\mathrm{LiOH},\ \mathbf{F}=\mathrm{O_{3}}}$$
+
+2. **Write** the balanced equations of **Reactions 1**–**4**.
+
+> **Solution (Q2 — Balanced equations)**
+>
+> **Reaction 1** — thermal decomposition of A at $-70\,°\mathrm{C}$ (in the closed reactor, H₂O is frozen out, so only O₂ is gaseous):
+> $$\boxed{\,4\,\mathrm{NH_{4}O_{3}}\ \xrightarrow{-70\,°\mathrm{C}}\ 2\,\mathrm{NH_{4}NO_{3}} + 4\,\mathrm{H_{2}O} + \mathrm{O_{2}}\,}$$
+> (equivalently, per mole of A: $\mathrm{NH_{4}O_{3}\rightarrow\tfrac12\,NH_{4}NO_{3}+H_{2}O+\tfrac14\,O_{2}}$).
+>
+> **Reaction 2** — thermal decomposition of B at $200\,°\mathrm{C}$ (N₂O explains the vigorous re-ignition of the glowing splint):
+> $$\boxed{\,\mathrm{NH_{4}NO_{3}}\ \xrightarrow{200\,°\mathrm{C}}\ \mathrm{N_{2}O} + 2\,\mathrm{H_{2}O}\,}$$
+>
+> **Reaction 3** — oxidation of iodide by ozone in aqueous KI (the "colourless gas produced in the same amount as F" is O₂, 1 : 1 with O₃):
+> $$\boxed{\,\mathrm{O_{3}+2\,KI+H_{2}O\rightarrow I_{2}+O_{2}+2\,KOH}\,}$$
+>
+> **Reaction 4** — standard thiosulfate titration of I₂:
+> $$\boxed{\,\mathrm{I_{2}+2\,Na_{2}S_{2}O_{3}\rightarrow 2\,NaI+Na_{2}S_{4}O_{6}}\,}$$
+
+---
+
+## 中文版 / Chinese translation
+
+# 第1题 阿凡提当起了化学家
+
+**译者注**：原文中的霍加·纳斯雷丁 (Khoja Nasreddin) 其实就是大家熟悉的纳斯雷丁·阿凡提（直译为纳斯雷丁先生）。鉴于阿凡提的形象在国内深入人心，本篇试题沿用这一习惯译名。
+
+阿凡提是东方民间传说人物，常见于短小幽默、带有讽刺意味的故事和轶事中，有时也出现在日常生活题材的传说中。2022 年，讲述阿凡提笑话的传统入选《人类非物质文化遗产代表作名录》。
+
+<img src="images/92b6f85842eaa260d3e6814056acfcb3679ad55812750ae13c39018230f624b2.jpg" alt="image" style="zoom:25%;" />
+
+有一天，阿凡提决定当一回化学家。他从一种未知红色盐 A 的热分解开始研究，开启了这场对初学者颇具挑战的化学之旅。
+
+阿凡提将 $1.00\ \mathsf{g}\ \mathsf{A}$ 置于密闭的 $1.00\ \mathrm{L}$ 反应器中，在 $-70\,°\mathrm{C}$ 下小心地分解（反应1）。该反应器初始充满 $100.0\ \mathrm{kPa}$ 氩气；分解后，压强升高到 $106.42\ \mathrm{kPa}$ ，固体残渣由两种化合物组成，其中一种确认为盐B。
+
+在第一阶段分解之后，他将反应器逐渐加热到 $200\,°\mathrm{C}$ 。加热过程中，固体残渣先变成固液混合物，随后变成纯液相，最后在 $128\,°\mathrm{C}$ 时又重新出现固相，反应器内此时压强为 $260.63\ \mathrm{kPa}$ 。
+
+温度达到 $200\,°\mathrm{C}$ 时，B开始分解（反应2）；待其在 $200\,°\mathrm{C}$ 完全分解后，反应器中不再有固体残留，此时压强为 $396.82\ \mathrm{kPa}$ 。他将一根带火星的木条伸入反应器，木条剧烈复燃。
+
+随后，阿凡提试图合成盐 C，它与 A 的区别仅在于阳离子不同。C 中金属的质量分数为 $12.63\%$ 。然而，根据文献资料，C 很难制备。不过，他在液氨中用气体 F 处理化合物 E，成功合成了盐 D。E 中某元素的质量分数为 $4.21\%$ ；D中氢的质量分数为 $9.83\%$ ，含有一种C中金属元素的配合阳离子。他还发现F在极低温下为深蓝色液体。
+
+为了确定合成 $1.000\ \mathrm{g}$ 的D所需气体F 的量，他将恰好足量的F通入 $100\ \mathrm{mL}$ 碘化钾溶液（反应3）。随后，从所得棕色溶液移取 $10.00\ \mathrm{mL}$ 滴定，消耗了 $16.30\ \mathrm{mL}\ 0.0998\ \mathrm{M}$ 硫代硫酸钠溶液（反应4）。他还注意到，将气体F通入碘化物溶液时，同时生成了另一种无色气体，其物质的量与气体F相同。
+
+1-1 确定A–F各为何种物质。
+
+1-2 写出反应1–4的配平方程式。
+
+---
+
+## 教学点评 / 解题分析
+
+这是一道难度极高的无机推断题，堪称苏联风格竞赛题的典范：题眼隐蔽、冷门物种密集、定量与定性条件交织，任何一步跳过或误判都会让后续推断全盘崩塌。
+
+**题眼。** 全题的突破口无疑是气体 **F**——能在极低温下液化为**深蓝色液体**、又能氧化 KI 放出等物质的量的无色气体。三条线索同时满足者唯有 **臭氧 $\mathrm{O}_{3}$**。一旦 F 被锁定，整条推断链才得以展开。
+
+**推断链。** 接下来需要借助扎实的无机化学直觉进行猜测——盐 A、C、D 三者共享的阴离子应为 $\mathrm{O}_{3}^{-}$（臭氧化物）：
+
+- **C 的阳离子**由"金属质量分数 $12.63\%$"直接定量反推，得 $M = 6.94\ \mathrm{g\,mol^{-1}}$，锁定为 $\mathrm{Li}^{+}$，故 $\mathrm{C} = \mathrm{LiO}_{3}$；
+- **A 的阳离子**需结合"分解产物全部为气态"这一隐藏约束，排除所有会留下金属残渣的阳离子，唯有 $\mathrm{NH}_{4}^{+}$ 能给出全气相的最终分解产物，故 $\mathrm{A} = \mathrm{NH}_{4}\mathrm{O}_{3}$；
+- **E = LiOH** 由 $4.21\%$ 的氢质量分数一眼可见；
+- 最棘手的是 **D 的配合阳离子 $[\mathrm{Li}(\mathrm{NH}_{3})_{4}]^{+}$**（四氨合锂阳离子）——这种"碱金属溶于液氨"所形成的溶剂化物种，对高水平选手也属冷门知识，很难靠纯直觉推出；
+- 让带火星的木条**剧烈复燃**的气体是 $\mathrm{N}_{2}\mathrm{O}$（笑气）。该结论"在情理之中"（$\mathrm{N}_{2}\mathrm{O}$ 确实支持燃烧），却"在意料之外"——因为多数人一想到助燃气体先条件反射为 $\mathrm{O}_{2}$，需要主动排除才能锁定 $\mathrm{N}_{2}\mathrm{O}$。
+
+**收尾。** 最后还需要解释 $\mathrm{NH}_{4}\mathrm{O}_{3}$ 在低温下先分解为 $\mathrm{NH}_{4}\mathrm{NO}_{3} + \mathrm{H}_{2}\mathrm{O} + \tfrac{1}{4}\mathrm{O}_{2}$，并说明随温度升高依次出现"冰熔化 → $\mathrm{NH}_{4}\mathrm{NO}_{3}$ 溶于液态水 → 水蒸发 → $\mathrm{NH}_{4}\mathrm{NO}_{3}$ 重新析出 → $200\,°\mathrm{C}$ 分解为 $\mathrm{N}_{2}\mathrm{O}$"的相变序列。该序列需要与三个温度点下的压强读数（$106.42$、$260.63$、$396.82\ \mathrm{kPa}$）逐一对齐核验，既考察配平的精度，也考察对铵盐热分解物理化学行为的把握。
+
+**经验总结。** 此类题目的标准打法是：
+
+1. **先画反应关系图**，把 A–F 各物种与"加热—溶液—气体"三条主线串起来，把每一条可定量的质量分数或压强数据标注在对应物种旁；
+2. **锁死题眼**（此题即 F = $\mathrm{O}_{3}$），然后从题眼向两端延伸；
+3. **合理猜想 + 定量验证交替推进**——每走一步就用下一条未用过的定量条件交叉核对，而不是等到最后再统一核算；
+4. **一步都不能跳**——误把 A 的阳离子当成碱金属、想不到 $\mathrm{N}_{2}\mathrm{O}$、或漏算任何一个相变阶段，都会连锁断送整题节奏与最终答案。
+
+**难度评级：★★★★★**——典型的苏联风格无机推断，题眼深藏、冷门物种密集、定量线索多点交叉，放在 IChO 预备题中亦属第一梯队。

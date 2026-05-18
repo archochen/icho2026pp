@@ -1,0 +1,15 @@
+---
+title: "P2.02 — Avicenna (placeholder)"
+problem-id: 2
+status: draft
+difficulty: 4
+topics: [organic]
+date: "2026-05-18"
+description: "Placeholder. Replace with the real Problem 02 (Avicenna) content from PART2_split."
+---
+
+::: {.callout-note appearance="simple"}
+**Status: Draft.** Internally cross-checked, not yet peer-reviewed. Errors likely.
+:::
+
+> Body to be migrated from `PART2_split/Problem_02_Avicenna - with Key and Analysis.md`.

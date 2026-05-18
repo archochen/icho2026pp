@@ -1,0 +1,89 @@
+---
+title: "IChO 2026 Preparatory Problems — Solutions"
+subtitle: "58th International Chemistry Olympiad · Uzbekistan · 2026"
+date: today
+listing:
+  id: problem-listing
+  contents: "parts/**/*.qmd"
+  type: table
+  fields: [problem-id, title, part, status, difficulty, topics, date]
+  field-display-names:
+    problem-id: "#"
+    title: "Title"
+    part: "Part"
+    status: "Status"
+    difficulty: "Diff."
+    topics: "Topics"
+    date: "Updated"
+  field-types:
+    problem-id: number
+    part: number
+    difficulty: number
+    date: date
+  date-format: "YYYY-MM-DD"
+  sort: ["part asc", "problem-id asc"]
+  sort-ui: [problem-id, title, part, status, difficulty, date]
+  filter-ui: [title, part, status, topics]
+  categories: numbered
+  page-size: 100
+  table-striped: true
+  table-hover: true
+---
+
+::: {.callout-note appearance="simple" icon=false}
+These solutions are **work in progress and unofficial**. They have no affiliation with the IChO organizing committee. If you find an error, a sharper derivation, or a missing edge case, please post on Discord with the **problem number** and the **step** you're commenting on.
+
+[💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
+:::
+
+## Status legend
+
+<span class="status-badge status-not-started">Not started</span> &nbsp;
+<span class="status-badge status-draft">Draft</span> &nbsp;
+<span class="status-badge status-revised">Revised</span> &nbsp;
+<span class="status-badge status-final">Final</span> &nbsp;
+<span class="status-badge status-tbc">TBC</span>
+
+- **Draft** — first pass complete, internally cross-checked, *not* yet peer-reviewed.
+- **Revised** — incorporates at least one round of student or external feedback.
+- **Final** — answer key and pedagogical analysis stabilized; no expected changes.
+- **TBC** *(to be confirmed)* — known open issue or contested step flagged in the page.
+
+## All problems
+
+::: {#problem-listing}
+:::
+
+```{=html}
+<script>
+// Decorate the listing's "Status" cells with colored badge spans.
+// We do this post-render rather than via the Lua filter because the Lua filter
+// only runs per-page, while the listing table is built by scanning raw YAML.
+(function () {
+  const LABELS = {
+    "not-started": "Not started",
+    "draft": "Draft",
+    "revised": "Revised",
+    "final": "Final",
+    "tbc": "TBC",
+  };
+  function decorate() {
+    document.querySelectorAll('.listing-status').forEach(el => {
+      const raw = (el.textContent || '').trim().toLowerCase();
+      if (!raw) return;
+      if (el.dataset.decorated) return;
+      const cls = "status-" + raw;
+      const label = LABELS[raw] || raw;
+      el.innerHTML = '<span class="status-badge ' + cls + '">' + label + '</span>';
+      el.dataset.decorated = "1";
+    });
+  }
+  decorate();
+  // Re-decorate after List.js (Quarto's listing) re-renders on sort/filter
+  document.addEventListener('quarto-listing-loaded', decorate);
+  const obs = new MutationObserver(decorate);
+  const table = document.querySelector('#problem-listing');
+  if (table) obs.observe(table, { childList: true, subtree: true });
+})();
+</script>
+```

@@ -1,0 +1,15 @@
+---
+title: "P2.03 — Unusual inorganic synthesis (placeholder)"
+problem-id: 3
+status: tbc
+difficulty: 5
+topics: [inorganic, synthesis]
+date: "2026-05-18"
+description: "Placeholder. Original has a TBC flag — a step needs to be confirmed."
+---
+
+::: {.callout-important appearance="simple"}
+**Status: TBC** — a derivation step is contested and waiting for verification. See the marked step inline once migrated.
+:::
+
+> Body to be migrated from `PART2_split/Problem_03_Unusual_inorganic_synthesis - with Key and Analysis - TBC.md`.

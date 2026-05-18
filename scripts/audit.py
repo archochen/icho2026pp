@@ -41,6 +41,11 @@ CN_MARKERS = ("中文版", "Chinese translation", "教学点评", "解题分析"
 IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*(?P<url>[^)\s]+)\s*[^)]*\)")
 IMG_HTML = re.compile(r"<img[^>]+\bsrc=[\"'](?P<url>[^\"']+)[\"']", re.IGNORECASE)
 
+
+def normalize_local_path(url: str) -> str:
+    """Strip leading './' so 'assets/foo.png' and './assets/foo.png' match."""
+    return url.lstrip("./") if not url.startswith(("http://", "https://", "data:")) else url
+
 # Solution blockquote opener: > **Solution (Qn — topic).** (allow optional period, etc.)
 SOLUTION_LABEL = re.compile(r"^>\s*\*\*Solution\s*\(\s*(?P<label>[^)]+?)\s*\)\s*\.?\s*\*\*", re.MULTILINE)
 
@@ -67,8 +72,10 @@ def strip_cn_sections(text: str) -> str:
 
 
 def extract_image_refs(text: str) -> set[str]:
-    return {m.group("url") for m in IMG_MD.finditer(text)} | {
-        m.group("url") for m in IMG_HTML.finditer(text)
+    return {
+        normalize_local_path(m.group("url")) for m in IMG_MD.finditer(text)
+    } | {
+        normalize_local_path(m.group("url")) for m in IMG_HTML.finditer(text)
     }
 
 

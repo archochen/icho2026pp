@@ -40,7 +40,7 @@ H1_CN_TITLE = re.compile(r"^\s*#\s+(第\s*\d+\s*题.*)$", re.MULTILINE)
 H1_CN_TABLE = re.compile(r"^\s*#\s+(相对丰度表.*)$", re.MULTILINE)
 DIFFICULTY = re.compile(r"难度评级[：:]\s*([★☆]+)")
 
-LOCAL_IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*((?:images|assets)/[^)\s]+)\s*\)")
+LOCAL_IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*((?:\./)?(?:images|assets)/[^)\s]+)\s*\)")
 LOCAL_IMG_HTML = re.compile(r'<img[^>]+\bsrc=["\']((?:\./)?(?:images|assets)/[^"\']+)["\']')
 
 

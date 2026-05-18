@@ -64,3 +64,24 @@ blockquote {
 
 // Solution blockquote: tighten math display spacing
 blockquote .katex-display { margin: 0.5em 0; }
+
+// Center all figure images in problem content (HTML output).
+// All <img> tags in solution pages are block-level chemistry figures —
+// scheme diagrams, mass-spec plots, structural drawings — never inline icons.
+main img,
+.quarto-document-content img,
+article img,
+blockquote img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+// Center the wrapping <p> of an image-only paragraph too (Quarto wraps
+// stand-alone images in <p>, which keeps text-align local to that paragraph).
+main p:has(> img:only-child),
+article p:has(> img:only-child) {
+  text-align: center;
+}

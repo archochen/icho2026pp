@@ -71,6 +71,8 @@ format:
             });"></script>
     filters:
       - status-badge
+      - q-headings
+      - hide-cn-sections
     smooth-scroll: true
     link-external-newwindow: true
 

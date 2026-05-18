@@ -20,8 +20,6 @@ Transition metal-catalyzed reactions can be versatile and unique. As such, nicke
 
 <img src="images/79f465f49a94a39ba6013473897412183fd9e06ea5a6a80f2aa8e96fac2c390d.jpg" alt="image" style="zoom: 50%;" />
 
-## Q1 — Structures of 2 and 3 from EI-MS
-
 1. The mass spectra (MS) of **2** and **3** are shown (electron impact ionization method). **Determine** the structures of **2** and **3**.
 
 MS of 2
@@ -58,8 +56,6 @@ Complex **4** can be obtained via the following reaction. OS is the oxidation st
 
 <img src="images/5879800315004dc0e96a8f94898a12901b8fe838e447e4cf6da6d5edcb9884a2.jpg" alt="image" style="zoom: 50%;" />
 
-## Q2 — Complex 4: OS, CN, VE of Ni
-
 2. **Draw** the structure of **4** and **report** the OS and CN of the metal in it.
 
 > **Solution (Q2 — Complex 4, OS/CN/VE of Ni).**
@@ -87,8 +83,6 @@ Metal complexes can participate in HAT and XAT processes. Two examples are given
 <img src="images/2360ca9a581b6ea65085a47b4c5bac164dd3f0d2957c28f1eb02294025b6d8f1.jpg" alt="image" style="zoom:50%;" />
 
 <img src="images/0e9f24e15768259354aee1c1198ac0f29106e6f1912c6f6a30a40fb842eeb9da.jpg" alt="image" style="zoom:50%;" />
-
-## Q3 — OS/CN/VE of HAT and XAT products
 
 3. **Find** the missing parameters (OS, CN, and VE) for the complexes produced in HAT and XAT processes.
 
@@ -120,8 +114,6 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 
 <img src="images/cd1fb3f1aad5c7b1eca523f5ae2a8fe3db3fe3ae803004dba5093769c78593cf.jpg" alt="image" style="zoom:50%;" />
 
-## Q4 — Ni cycle: structures 5–11 and Ni bookkeeping
-
 4. **Find** the structures of **5**–**11** in the cycle. For Ni-containing structures **5**–**7** and **10**–**11**, **find** the missing parameters (OS, CN, and VE).
 
 > **Solution (Q4 — Structures 5–11 and Ni parameters).**
@@ -152,8 +144,6 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 >
 > <img src="./assets/image-20260424165505683.png" alt="image-20260424165505683" style="zoom: 50%;" />
 
-## Q5 — Identity of the electron donor
-
 5. **Analyse** the given reaction conditions for the synthesis of compound **3** and **determine** the electron donor in the above catalytic cycle.
 
 > **Solution (Q5 — Identity of the electron donor).**
@@ -167,8 +157,6 @@ The catalytic cycle for the transformation of **1** and **2** to product **3** i
 A conceptually similar catalytic reaction is a desaturation of silylated alcohols such as **12**. In the example below a deuterium label was installed for mechanistic studies.
 
 <img src="images/38f5950de94c4e2e1160f32f5f4a671d4489ffd76d6e123ff1ece02b40e813b6.jpg" alt="image" style="zoom:50%;" />
-
-## Q6 — Structure of 13 from EI-MS
 
 6. The mass spectrum of **13** is presented below (electron impact ionisation method). **Determine** its structure.
 
@@ -191,8 +179,6 @@ A conceptually similar catalytic reaction is a desaturation of silylated alcohol
 The catalytic cycle for the transformation of **12** into **13** is shown below:
 
 <img src="images/2d7f99b344be3d69b84a11a48a6afbfbd1b703e87974998185e4b16f8bbe5ac5.jpg" alt="image" style="zoom:50%;" />
-
-## Q7 — Pd desaturation intermediates 15–19
 
 7. **Determine** the structures of **15**–**19**. For Pd-containing intermediates **14**, **15**, and **18**, **find** the missing parameters (OS, CN, VE).
 
@@ -217,8 +203,6 @@ The catalytic cycle for the transformation of **12** into **13** is shown below:
 
 Active species **14** is not particularly stable, thus, it is practically easier to start the reaction with a bench-stable palladium complex ${\mathrm{Pd}} ( \mathrm{OAc} )_{2}$ . The first step towards **14** is reaction with the phosphine ligand.
 
-## Q8 — Pre-catalyst 20 and reductive activation step X
-
 8. **Draw** a possible structure for **20**. **Suggest** what type of process should occur in the second step marked as **X** on the scheme. **Analyse** the given reaction conditions for the synthesis of **13** and **suggest** what reagent can participate in the step **X**.
 
 > **Solution (Q8 — Structure of 20 and identity of step X).**
@@ -237,8 +221,6 @@ Active species **14** is not particularly stable, thus, it is practically easier
 
 
 <img src="./assets/image-20260424151411951.png" alt="image-20260424151411951" style="zoom:50%;" />
-
-## Q9 — Pairwise BDE(C–H) comparison for 21–23
 
 9. Based on the information in the task, **analyse** BDE(C–H) of highlighted bonds in compounds **21**–**23**. **Compare** the values in pairwise manner using symbols $< , > \mathrm{or} =$ :
 
@@ -297,8 +279,6 @@ $$
 | ¹²⁷I | 100 |
 
 ---
-
-::: {.content-hidden when-format="html"}
 
 ## 中文版 / Chinese translation
 
@@ -492,5 +472,3 @@ $$\mathrm{Pd(OAc)_2 + 2L\;\longrightarrow\;[L_2Pd(OAc)_2]\;\xrightarrow{X}\;LPd(
 7. **多板块题的取胜钥匙是"先标识、再切换、不死磕"**——拿到题先把 9 个小问标注成 6 个板块（MS / 配合物 / 机理 / 电子源 / 同位素 / BDE），每板块只调用对应工具库；遇到一时卡住的小问果断跳过（如 Q3 的 HAT 方向若拿不准），先把后面送分题（Q5 选 Zn、Q9 排 BDE、Q8 选膦还原）做完再回头啃硬骨头。这是 IChO 主考卷 4 小时时限下的标准节奏。
 
 **难度评级：★★★★☆**——单板块都不顶尖（MS 解谱、配合物 bookkeeping、BDE 排序都是常规题套），但 9 个小问跨 6 个板块，且 Q3（HAT 方向反直觉）、Q4（Ni 循环 + 透明 OS/CN/VE 表格）、Q6（D 转位反直觉）、Q9（β 位"假 α"陷阱）四处藏陷阱，对**读图细致度**和**机理直觉**双重考验。若学生熟悉 2018–2023 年 metallaphotoredox + Engle 组硅醚导向脱氢两批文献，本题可降到 ★★★☆☆；从零开始（仅靠通识有机+无机）则会被 Q3、Q6 卡住相当时间，难度顶到 ★★★★★。**典型的"现代综合应用"题，与第 4 题 Nanozymes 形成完整一对**——前者是"无机/纳米/酶动力学"交叉，本题是"有机/光氧化还原/原子转移"交叉，可作为训练学生**多板块切换 + 文献阅读延伸**的姊妹标杆题。
-
-:::

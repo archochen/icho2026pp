@@ -45,6 +45,8 @@ There are two possibilities for a complex to bind DNA: intrastrand and interstra
 > ```
 >
 > a) cisplatin → $\boxed{\text{1,2-intrastrand (d(GpG)) crosslink}}$; b) transplatin → $\boxed{\text{interstrand crosslink}}$.
+>
+> ![img](https://www.open.edu/openlearn/pluginfile.php/1321450/mod_oucontent/oucontent/68051/ddcde69b/265b9c1b/s315_openlearn_sc02_f09.eps.jpg)
 
 ![image](images/8a245a971c7c09a05d4dc97fcaa5f9d59e6ac55d5117434eceb9fabed04df307.jpg)
 
@@ -80,6 +82,10 @@ Dicycloplatin, a third-generation platinum-based anticancer drug, was developed 
 >
 > This is the classical **Dhara synthesis**: $\mathrm{K_2[PtCl_4]}\xrightarrow{\text{KI (xs)}}\mathrm{K_2[PtI_4]}\xrightarrow{2\,\mathrm{NH_3}}\textit{cis}\text{-}[\mathrm{PtI_2(NH_3)_2}]\xrightarrow{2\,\mathrm{Hg_2(NO_3)_2/H_2O}}\textit{cis}\text{-}[\mathrm{Pt(NH_3)_2(H_2O)_2}]^{2+}\xrightarrow{\mathrm{CBDCA^{2-}}}\textit{cis}\text{-}[\mathrm{Pt(NH_3)_2(CBDCA)}]$.
 > Iodide is used because I⁻ has a much stronger ***trans*-effect** than Cl⁻, so upon addition of the *first* NH₃ the two iodides left on Pt are *trans* to NH₃ (weak trans-effect) and are therefore preserved, while the second NH₃ enters *cis* with high selectivity — exactly what makes Dhara's route deliver *cis*-diammine isomer cleanly. The chelating CBDCA²⁻ then replaces the two aqua ligands.
+>
+> Structures (square-planar Pt(II), *cis* throughout) from Pt-2 to carboplatin:
+>
+> <img src="https://patentimages.storage.googleapis.com/8c/96/d6/a2eefedb0d4201/A200910094049D00043.png" alt="Dhara synthesis intermediates Pt-2 → carboplatin" />
 
 4. **Draw** the structural formula of dicycloplatin showing the hydrogen bonds.
 
@@ -89,7 +95,13 @@ Dicycloplatin, a third-generation platinum-based anticancer drug, was developed 
 > - **2 × O–H···O** : each –COOH of the free H₂CBDCA donates its proton to one coordinated carboxylate O of carboplatin;
 > - **2 × N–H···O** : each *cis*-NH₃ of carboplatin donates one N–H proton to a C=O oxygen of the free H₂CBDCA.
 >
+> Schematic (dotted lines = H-bonds):
+>
+> ![Dicycloplatin H-bond co-crystal schematic](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Dicycloplatin02.png/250px-Dicycloplatin02.png)
+>
 > More compactly, one structural unit is one carboplatin molecule plus one H₂CBDCA molecule, linked by the four H-bonds shown above — that is the "dicycloplatin" of Yang et al.
+>
+> <img src="https://pubs.rsc.org/image/article/2015/AN/c4an02274b/c4an02274b-f1_hi-res.gif" alt="Dicycloplatin crystal-structure overview (Analyst 2015)" />
 
 **Pt-4** (carboplatin) was introduced into clinical use in the late 1980s and has been widely used in cancer treatment. One practical challenge with platinum-based drugs is that, in aqueous solution, they can undergo hydrolysis, which may affect their stability and reactivity.
 
@@ -101,6 +113,8 @@ Dicycloplatin, a third-generation platinum-based anticancer drug, was developed 
 > In **dicycloplatin** both coordinated carboxylate oxygens are locked into strong O–H···O hydrogen bonds with the free H₂CBDCA partner, and both *cis*-NH₃ ligands are tied down by N–H···O=C hydrogen bonds. Water attack on Pt must first disrupt this 4-H-bond supramolecular cage, which adds a significant enthalpic barrier (≈ 4 × 15–25 kJ mol⁻¹). In addition, ring-opening would require simultaneous loss of the H-bond partner — entropically unfavourable.
 >
 > Consequently, **dicycloplatin is more resistant to hydrolysis than Pt-4 (carboplatin)**. This translates to longer aqueous shelf-life and slower activation kinetics, which is precisely why dicycloplatin was developed as a third-generation analogue with reduced systemic toxicity.
+>
+> <img src="https://ar.iiarjournals.org/content/anticanres/39/8/4455/F1.large.jpg" alt="Dicycloplatin vs. cisplatin/carboplatin adverse-effects profile" />
 
 ## Part 2 — Camptothecin and its derivatives
 

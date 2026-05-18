@@ -86,13 +86,15 @@ blockquote img {
   zoom: 1 !important;             // override inline zoom:50% / 33% / 25%
 }
 
-// Bring small chemistry figures up to a comfortable reading width — they
-// stay centred and never exceed the column. Very wide schemes hit the
-// max-width cap and shrink to fit, so this doesn't blow up large images.
+// Cap stand-alone figure images so wide MinerU-converted schemes shrink to
+// a reading-friendly width, while small structural diagrams keep their
+// natural pixel size (avoids 4–6× blurry up-scaling of 120–250 px sources).
 main p > img:only-child,
 article p > img:only-child,
 blockquote p > img:only-child {
-  width: min(720px, 100%);
+  max-width: min(720px, 100%);
+  width: auto;
+  height: auto;
 }
 
 // Center the wrapping <p> of an image-only paragraph too (Quarto wraps

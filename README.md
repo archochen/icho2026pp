@@ -54,13 +54,52 @@ The status field drives:
 
 ## Migrating an existing solution from `PART2_split/`
 
-For each `.md` in the iCloud source tree:
+Use the migration script — it does all of the steps below atomically and
+copies every referenced local image, so no content can be silently lost:
 
-1. Copy the file body into `parts/part2/Problem_NN.qmd`.
-2. Strip the leading `# Problem N. …` H1 (Quarto uses the YAML `title:`).
-3. Add the frontmatter block.
-4. Copy referenced images into `parts/part2/images/` so the existing `<img src="images/…">` references keep working.
-5. `quarto preview` to verify.
+```bash
+python3 scripts/migrate.py 2 23          # migrate P2.23 from PART2_split/
+python3 scripts/migrate.py 2 23 --force  # overwrite an existing qmd
+python3 scripts/migrate.py 2 --all       # migrate every Part-2 source
+```
+
+What the script does:
+
+1. Reads the source `.md` from `PART{N}_split/`.
+2. Strips the leading `# Problem N. Title` H1 and demotes `# **Part N. …**`
+   sub-h1s to `## Part N — …`.
+3. Detects `status` from the filename suffix (`TBC` → `tbc`,
+   `with Key/with Analysis` → `final`, otherwise `not-started`).
+4. Detects `difficulty` from the `难度评级：★★★★☆` line (counts black stars).
+5. Prepends YAML frontmatter and the Discord call-out callout box.
+6. Copies every referenced local image from the source `images/` and
+   `assets/` folders into the per-problem subfolder under `parts/partN/`.
+7. Writes the result to `parts/partN/Problem_NN.qmd`.
+
+After migration, polish the frontmatter (`topics`, `description`) and run:
+
+```bash
+python3 scripts/audit.py 2 23   # confirm nothing was lost
+quarto preview                  # live-render to verify
+```
+
+## Auditing migrated problems
+
+`scripts/audit.py` compares each `parts/partN/Problem_NN.qmd` against its
+source `PART{N}_split/Problem_NN_*.md` and reports any image refs, solution
+blockquotes, or local-file references that are present in source but
+missing from the qmd. It also checks that every local image referenced by
+the qmd actually exists on disk.
+
+```bash
+python3 scripts/audit.py                 # audit every Problem_NN.qmd
+python3 scripts/audit.py 2 23            # audit just P2.23
+python3 scripts/audit.py --strict        # exit 1 on any discrepancy
+```
+
+Run this **before every commit** that touches a problem file. The audit
+catches the specific failure mode that motivated it: external-URL `<img>`
+tags inside solution blockquotes silently dropped during transcription.
 
 ## Publishing to GitHub Pages
 

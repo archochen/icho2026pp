@@ -5,7 +5,9 @@ status: final
 difficulty: 5
 foad: []
 topics: [inorganic, stoichiometry, ozonides, ammonium-salts, gas-laws]
-author: "Q. Chen"
+author:
+  - name: "Dr. Chen"
+    url: "https://dcho.us"
 date: "2026-05-18"
 description: "Soviet-style inorganic puzzle: ozone (F), lithium ozonide (C), ammonium ozonide (A), tetraamminelithium(I) ozonide (D), with a four-stage gas-evolution and phase-transition accounting."
 ---

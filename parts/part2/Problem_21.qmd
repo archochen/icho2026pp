@@ -21,7 +21,7 @@ Note: A threefold symmetry axis is an imaginary line through an object around wh
 
 1. **Identify** the formulae of **A**–**C** and **M**, if each coefficient in the synthesis reaction is lower than 5.
 
-> **Solution (QN — identification of the Wilkinson precursors).**
+> **Solution (Q1 — identification of the Wilkinson precursors).**
 > A is a trihydrate $\mathrm{MX}_n\cdot 3\mathrm{H}_2\mathrm{O}$ of a 5-th period metal with $w(M)=39.09\%$. Testing $\mathrm{MCl}_3\cdot 3\mathrm{H}_2\mathrm{O}$:
 > $$\frac{A_r(M)}{A_r(M)+3\cdot 35.45+3\cdot 18.02}=0.3909 \Rightarrow A_r(M)\approx 103.$$
 > This matches **Rh** ($A_r = 102.91$); check: $102.91/(102.91+106.35+54.05)=39.08\%$. Hence $\boxed{\mathbf{M}=\mathrm{Rh}}$ and $\boxed{\mathbf{A}=\mathrm{RhCl}_3\cdot 3\mathrm{H}_2\mathrm{O}}$ ($M_A=263.31$ g mol$^{-1}$).

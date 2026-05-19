@@ -3,8 +3,8 @@ title: "P2.04 — Nanozymes"
 problem-id: 4
 status: tbc
 difficulty: 3
-foad: []
-topics: []
+foad: [kinetics]
+topics: [nanozyme, peroxidase, oxide-nanoparticles, co-precipitation, michaelis-menten, enzymatic-kinetics, inorganic]
 date: "2026-05-19"
 description: ""
 ---

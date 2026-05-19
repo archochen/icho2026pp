@@ -1,7 +1,7 @@
 ---
 title: "P2.24 — Anticancer complexes"
 problem-id: 24
-status: tbc
+status: draft
 difficulty: 4
 foad: []
 topics: [inorganic, platinum-anticancer, cisplatin, carboplatin, dna-crosslink, dhara-synthesis, total-synthesis, knorr-quinolone, pd-heck, camptothecin, sn-38]

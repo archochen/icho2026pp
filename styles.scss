@@ -61,6 +61,93 @@ $link-color: $primary;
   }
 }
 
+// =====================================================================
+// Mobile / narrow-viewport optimizations
+// ---------------------------------------------------------------------
+// Targets the <=768 px viewports (Bootstrap "md" and below). The site's
+// content (problem solutions with dense tables, long display math, and
+// multi-line boxed answers) was designed for a desktop reading width;
+// without these rules tables/math overflow horizontally and break the
+// page layout.
+// =====================================================================
+
+@media (max-width: 768px) {
+
+  // (1) Wide tables: scroll horizontally inside the page column rather
+  // than overflowing. `display: block` is the trick that turns a table
+  // into a horizontally scrollable container without breaking the
+  // cell-layout rendering. Applies to all problem-body tables and the
+  // Syllabus reference tables.
+  main table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+
+  // (2) Long display math (boxed answers, reaction equations): same
+  // horizontal scroll. Without this, lines like `\boxed{A=…, B=…}`
+  // produce a forced page-wide horizontal scroll.
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25em;
+  }
+
+  // (3) Tighter blockquote padding so solution bodies recover ~20 px of
+  // content width on phones.
+  blockquote {
+    padding: 0.5em 0.75em;
+    margin: 0.75em 0;
+  }
+
+  // (4) Dashboard listing: hide the three secondary columns
+  // (Diff, Topics, Updated). Title, FoAD, and Status are the three
+  // pieces of information a student actually scans when picking a
+  // problem to study.
+  #problem-listing thead th:nth-child(5),
+  #problem-listing thead th:nth-child(6),
+  #problem-listing thead th:nth-child(7),
+  #problem-listing tbody td:nth-child(5),
+  #problem-listing tbody td:nth-child(6),
+  #problem-listing tbody td:nth-child(7) {
+    display: none;
+  }
+
+  // (5) FoAD badges in dashboard cells: wrap cleanly with a small
+  // bottom margin so multi-FoAD problems (P2.21, P2.23) stay legible
+  // in a narrow cell.
+  .listing-foad .foad-badge {
+    display: inline-block;
+    margin-bottom: 0.2em;
+  }
+
+  // (6) Discord CTA buttons: bump padding to meet iOS 44 px touch
+  // target HIG.
+  .discord-cta {
+    padding: 0.55em 1em;
+    min-height: 44px;
+    line-height: 1.3;
+  }
+
+  // Status-legend pills get a small bottom margin so when they wrap
+  // line-by-line on phones they don't visually crash together.
+  .status-badge {
+    margin-bottom: 0.25em;
+  }
+}
+
+// On very narrow viewports (sub-iPhone-SE width), also hide the FoAD
+// column so the Title column has room.
+@media (max-width: 480px) {
+  #problem-listing thead th:nth-child(3),
+  #problem-listing tbody td:nth-child(3) {
+    display: none;
+  }
+}
+
 // Listing dashboard — status column
 .quarto-listing-default .listing-status .status-badge { margin-left: 0; }
 

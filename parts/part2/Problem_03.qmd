@@ -1,7 +1,7 @@
 ---
 title: "P2.03 — Unusual inorganic synthesis"
 problem-id: 3
-status: tbc
+status: draft
 difficulty: 5
 foad: []
 topics: [inorganic, nuclear, electrolysis, perbromate, szilard-chalmers, iodometric-titration]

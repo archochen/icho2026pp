@@ -20,8 +20,6 @@ Carbohydrates are an essential class of chemicals that fuel living organisms wit
 
 1. **Identify** products **I**–**V**.
 
-> **Revision note:** Revised by Codex on 2026-04-30; structure-validity check updated after the Q17.1 drawing was adjusted. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q17.1 — classical transformations of D-glucose).**
 >
 > The substrate in the figure is the open-chain form of D-glucose.
@@ -48,8 +46,6 @@ It is known that **A**, **G**, and **D** contain the same functional groups; **G
 
 2. **Draw** the structures of **A**–**G**.
 
-> **Revision note:** Revised by Codex on 2026-04-30; lower-branch O4/O6 regioassignment corrected after re-checking the scheme, and the A/D/G functional-group clue was qualified because G is a hemiacetal whereas A and D are glycosides. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q17.2 — structures A-G).**
 >
 > | Compound | Structure |
@@ -78,9 +74,9 @@ However, these transformations cannot differentiate neighbouring 2,3- and 3,4-di
 
 3. Based on the given example and considering that sterically bulky groups tend to occupy equatorial positions in chair conformations, **draw** the structures of **H1** and **H2**. For drawing **H1** you need to redraw the glucopyranose ring so that the 2,3-hydroxy groups are on the right side of the drawing. **Use** a chair conformation of the protecting group.
 
-> **Revision note:** Revised by Codex on 2026-04-30; solution-table formatting cleaned after structure review. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q17.3 — chiral THP differentiation of the two trans-diols).**
+>
+> **🟡 Structures of H1 and H2 to be added.** The text description below specifies the connectivity, regiochemistry, and chair orientation in words, but the chair-conformation **drawings** of H1 and H2 are still pending and will be added in a later revision.
 >
 > The two enantiomeric bis-dihydropyran reagents protect different adjacent trans-diols of methyl 6-$O$-TBDPS-$\alpha$-D-glucopyranoside. In both products the THP chairs must be drawn so that the phenyl substituents are equatorial; the sugar O-substituents occupy the orientations shown by the matching product in the model reaction.
 >
@@ -97,8 +93,6 @@ A very interesting example of a glucopyranose transformation led to adamantane-t
 
 4. **Draw** the structures of **I** and **J**.
 
-> **Revision note:** Revised by Codex on 2026-04-30; added/refined the justification for formation of intermediate I and added a stereochemistry note for the provided drawing. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q17.4 — acetobromoglucose and the orthoacetate).**
 >
 > | Intermediate | Structure |
@@ -120,8 +114,6 @@ Another class of reagents that can form cyclic acetal-type structures is boronic
 
 5. **Draw** the structures of **L**, **M**, and trisaccharide “**Gal-Gal-Glc**”. Do not specify the configuration of the newly formed anomeric centres.
 
-> **Revision note:** Revised by Codex on 2026-04-30; Q17.5 formatting was cleaned by replacing the wide structure table and long inline names with renderer-safe residue-by-residue entries. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q17.5 — boronate-directed synthesis of Gal-Gal-Glc).**
 >
 > The starting acceptor is the methyl 3-O-benzyl-D-glucopyranoside shown in the scheme. Arylboronic acid masks its 4,6-diol as a cyclic boronate, leaving only O2 available for the first glycosylation.

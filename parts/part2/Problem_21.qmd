@@ -175,8 +175,6 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 
 > **Solution (Q5 — isotope pattern for C$_{12}$H$_{18}$).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18 as a consistency update after Q21.4; the corrected product is $\mathrm{C_{12}H_{18}}$, not $\mathrm{C_{18}H_{20}}$.
->
 > From $A_r(\mathrm{C})=12.011 = 12\,x(^{12}\mathrm{C})+13\,x(^{13}\mathrm{C})$ with $x(^{12})+x(^{13})=1$:
 > $$x(^{13}\mathrm{C})=0.011,\quad x(^{12}\mathrm{C})=0.989.$$
 > Neglecting $^{2}$H, the M and M+1 intensities for $\mathrm{C_{12}H_{18}}$ are

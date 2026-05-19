@@ -49,8 +49,6 @@ Another 3.0 mL sample of solution **S0** was not subjected to electrolysis. Inst
 
 3. **Determine** the chemical composition of **A1**–**A4**, **B**, and **X** (with atomic mass of enriched isotope). Note: **A1**–**A4** contain the same element.
 
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q3 — identification of A1–A4, B, X).**
 >
 > **Strategy.** The historical hint ("unstable until 1968, Appelman synthesis") points to the perbromate ion $\mathrm{BrO_{4}^{-}}$. Element X must be one that, after $(n,\gamma)$ activation, $\beta^{-}$-decays to bromine **inside** an oxoanion so that the $\mathrm{^{83}Br}$ recoil atom inherits the +7 oxidation state ("hot-atom" Szilard–Chalmers synthesis). The only viable parent is $\mathrm{^{82}Se}$: $\mathrm{^{82}Se\xrightarrow{(n,\gamma)}{}^{83}Se\xrightarrow{\beta^{-},\,t_{1/2}\approx 22\,\mathrm{min}}{}^{83}Br}$. Ozone in alkaline solution oxidises dissolved selenium to **selenate** Se(VI), so that $\mathrm{B}$ is the beta-active $\mathrm{^{83}SeO_{4}^{2-}}$ ion and its daughter is formed as $\mathrm{^{83}BrO_{4}^{-}}$. The "few-minute" transformation $\mathrm{B\to A1}$ is thus the $\beta^{-}$ decay itself.
@@ -94,8 +92,6 @@ Another 3.0 mL sample of solution **S0** was not subjected to electrolysis. Inst
 > $$c(\mathrm{A2})_{S0}=\frac{8.417\cdot 10^{-3}\ \mathrm{mol}}{3.0\cdot 10^{-3}\ \mathrm{L}}=2.81\ \mathrm{M}.$$
 > $$\boxed{c(\mathrm{BrO_{3}^{-}})_{S0}\approx 2.81\ \mathrm{M}.}$$
 >
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Cross-check with the S5 titration (current-yield consistency).**
 > The two HBr steps are selective. Dilute HBr first reduces the remaining $\mathrm{BrO_{3}^{-}}$ to $\mathrm{Br_{2}}$, and this bromine is removed by Ar bubbling. Concentrated HBr then reduces the surviving $\mathrm{BrO_{4}^{-}}$ to $\mathrm{Br_{2}}$; therefore the S5 titration measures the amount of A1 formed during electrolysis:
 > $$\mathrm{BrO_{4}^{-}+7\,Br^{-}+8\,H^{+}\rightarrow 4\,Br_{2}+4\,H_{2}O}.$$
@@ -133,8 +129,6 @@ Another 3.0 mL sample of solution **S0** was not subjected to electrolysis. Inst
 
 6. **Calculate** the time (t, in min) after the start of the decomposition of **B**, which corresponds to the maximum concentration of **A1**.
 
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 > **Solution (Q6 — time of maximum $[\mathrm{A1}]$).**
 >
 > **Strategy.** For two consecutive first-order steps
@@ -245,8 +239,6 @@ $$
 
 三条线索合起来唯一指向的是 1968 年 Evan H. Appelman 发表的**高溴酸盐合成**——利用 $\mathrm{^{82}Se}$ 热中子俘获后经 $\beta^{-}$ 衰变生成 $\mathrm{^{83}Br}$、并让女核继承母体氧原子壳层的"热原子化学"（Szilard–Chalmers 效应）。若选手不知道这一背景，任何常规氧化路线都推不出 $\mathrm{BrO}_{4}^{-}$：$\mathrm{O}_{3}$、$\mathrm{F}_{2}$、$\mathrm{XeF}_{2}$ 在 1968 年前都尝试过，**均告失败**——这也是"anion A1 曾被认为不稳定"的由来。
 
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 **推断链。** 题眼一旦锁定，整条链就打开了：
 
 - **A1** 必须是 $\mathrm{BrO}_{4}^{-}$（高溴酸根，Br 为 +VII 价）；
@@ -259,16 +251,12 @@ $$
 - **E** 是 $\mathrm{XeO}_{4}$——与 $\mathrm{BrO}_{4}^{-}$ 对应的高价氙氧化物，通过 $\mathrm{^{127}I}\to\mathrm{^{128}Xe}$ 的同类热原子合成路线获得；
 - **F** 为 $\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$（钾四氟二氧代高碘酸盐二水合物），$w_{\mathrm{K}}=12.61\%$ 几近完美吻合。
 
-> **Revision note:** Revised by Codex on 2026-04-30 after re-checking the caveat analysis. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 **三处逻辑不完全吻合之处。** 此题确实有三处"**答案能出但严格逻辑需要交代**"的地方；它们不是同等强度的"陷阱"，更适合按证据强弱写成 caveat：
 
 1. **B 的质量比 1.613 对不上 $\mathrm{SeO}_{4}^{2-}$**——这是三处中最硬的一处 caveat。若 B 严格为 neutron capture 后的 $\mathrm{^{83}SeO}_{4}^{2-}$，理论比约为 $(82.92+64.00)/81.92=1.79$；实测 1.613 却更接近硒(IV)氧物种，例如 $\mathrm{SeO}_{3}^{2-}$、$\mathrm{HSeO}_{3}^{-}$ 或 $\mathrm{H}_{2}\mathrm{SeO}_{3}$ 的量级。但**热原子化学的要求**（女核须继承 +VII 氧化态）**不容妥协**——B 必须是 Se(+VI) 的 $\mathrm{SeO}_{4}^{2-}$，否则 $\beta^{-}$ 衰变后得不到 $\mathrm{BrO}_{4}^{-}$。**正确姿势**是保留化学正确的 $\mathrm{SeO}_{4}^{2-}$ 赋值，同时注明命题方给出的质量比更像是 ozonisation 未完成时的亚硒酸型中间态；
 2. **C:D = 1:2 是题设强迫出来的形式配平**——在"两种气态单质、物质的量比 1:2"这一条件下，$8\,\mathrm{BrO}_{4}^{-}\to 8\,\mathrm{BrO}_{3}^{-}+\mathrm{O}_{2}+2\,\mathrm{O}_{3}$ 可以同时满足原子守恒、电荷守恒和气体比例，让 $\mathrm{O}_{3}$ 作为**第二种氧的单质**参演。但这不应被说成高溴酸盐的常规干净分解路径；通常讨论的高溴酸盐热分解更自然地指向 $\mathrm{BrO}_{3}^{-}+\mathrm{O}_{2}$。因此此处最好写成"为满足题设而采用的形式化计量"，而不是把它当作文献中稳定、独立的特征反应；
 3. **F 的 12.62% 以质量分数优先锁定含氟氧代高碘酸盐**——$\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$ 给出 $w_{\mathrm{K}}=12.61\%$，与题设最吻合，应作为主答案。$\mathrm{KIO}_{4}\cdot 4\mathrm{H}_{2}\mathrm{O}$ 给出 $w_{\mathrm{K}}\approx 12.94\%$，只能作为较弱的备选解释：它在"直接保留 $\mathrm{IO}_{4}^{-}$ 骨架并由 $\beta^{-}$ 衰变得到 $\mathrm{XeO}_{4}$"这一点上更干净，但质量分数不如前者。换言之，答题时应以 $\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$ 为主，只在担心命题方要求纯含氧前体时补充 $\mathrm{KIO}_{4}\cdot 4\mathrm{H}_{2}\mathrm{O}$ 的 caveat，而不宜把二者写成完全等价的两个标准答案。
 
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 **Bateman 动力学收官。** Q6 是经典"两步一级串联反应 + 中间体浓度极值"题，套用 Bateman 公式
 $$t_{\max}=\frac{\ln(k_{2}/k_{1})}{k_{2}-k_{1}}$$
 代入题图中的 $k_{1}=0.031\ \mathrm{min}^{-1}$、$k_{2}=0.0048\ \mathrm{min}^{-1}$ 即得 $t_{\max}\approx 71\ \mathrm{min}$。这一步只要公式记得住就是送分题，但需留意**不要误读 $k_{2}$ 的小数点**——题图中是 $0.0048$，不是 $0.048$。

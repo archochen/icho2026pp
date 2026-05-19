@@ -159,8 +159,6 @@ $$n(\mathrm{S}) = 2 \times \frac{0.929}{233.39} = 7.96 \times 10^{-3}\ \mathrm{m
 
 $$n(\mathrm{Fe}) = 2 \times \frac{0.256}{257.18} = 1.99 \times 10^{-3}\ \mathrm{mol}$$
 
-> **Revision note:** Revised by Codex on 2026-04-30. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
->
 铜由质量平衡给出 $n(\mathrm{Cu}) \approx 9.98 \times 10^{-3}\ \mathrm{mol}$，从而得 $\mathrm{Cu}:\mathrm{Fe}:\mathrm{S} = 5:1:4$，矿物化学式 $\mathbf{Cu_{5}FeS_{4}}$。
 
 最后用气体 A（$\mathrm{NO}_{2}$）的体积做独立交叉验证：斑铜矿中可采用形式氧化态 $(\mathrm{Cu}^{I})_{5}\mathrm{Fe}^{III}(\mathrm{S}^{-II})_{4}$。浓硝酸氧化时，$5\mathrm{Cu}^{I}\!\to\!5\mathrm{Cu}^{II}$ 失去 $5$ 个电子，$\mathrm{Fe}^{III}$ 不变，$4\mathrm{S}^{-II}\!\to\!4\mathrm{S}^{VI}$ 失去 $32$ 个电子，合计每个化学式单元失去 $37$ 个电子。每个 $\mathrm{NO}_{2}$ 对应硝酸得 $1$ 个电子，故 $n(\mathrm{NO}_{2}) = 37 \times 1.99 \times 10^{-3} = 7.37 \times 10^{-2}\ \mathrm{mol}$，与 $1.65/22.414 = 7.36 \times 10^{-2}\ \mathrm{mol}$ 吻合至千分之一——判决性证据。

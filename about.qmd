@@ -13,7 +13,7 @@ The official IChO 2026 Preparatory Problems booklet is split into three parts; t
 | Part of the booklet | What it contains | Coverage on this site |
 |---|---|---|
 | **Part 1** | The syllabus — *Fields of Advanced Difficulty* (theoretical + practical), physical constants, formulae, math reference, and the IChO 2026 periodic table. No problems to solve. | **Reproduced for reference** on the [Syllabus](syllabus.qmd) page. |
-| **Part 2** | The 30 theoretical problems. | **Primary deliverable** — bilingual worked solutions + 教学点评 pedagogical analysis. Listed on the [Home](index.qmd) dashboard. |
+| **Part 2** | The 30 theoretical problems. | **Primary deliverable** — fully worked solutions for each sub-question, listed on the [Home](index.qmd) dashboard. |
 | **Part 3** | Lab practical problems. | **Out of scope.** Refer to the official IChO 2026 Preparatory Problems PDF for these. |
 
 ## How to read a solution
@@ -22,13 +22,11 @@ Each solution follows a fixed format:
 
 > **Solution (Qn — Topic)**
 >
-> **Strategy.** One paragraph mapping the *题眼* (key clue) and reasoning chain.
+> **Strategy.** One paragraph mapping the key clue and the reasoning chain.
 >
 > **Step-by-step derivation.** Equations are typeset with KaTeX + `mhchem` so chemical formulas, mechanism arrows, and matrix calculations render as in print.
 >
 > $$\boxed{\text{final numerical or symbolic answer}}$$
-
-After the solution there may be a **教学点评 / 解题分析** (pedagogical commentary): thesis opener → 题眼 / 推断链 / 板块 body → 经验总结 → ★ difficulty rating.
 
 ## How to report an error
 

@@ -1,0 +1,202 @@
+---
+title: "P2.17 — Carbohydrate chemistry"
+problem-id: 17
+status: not-started
+difficulty: 3
+topics: []
+date: "2026-05-18"
+description: ""
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Found an issue?** Post the problem number (**P2.17**) and the **step** on Discord.
+[💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
+:::
+
+Carbohydrates are an essential class of chemicals that fuel living organisms with energy. The common saccharide glucose (Glc) exists in either a linear or cyclic form. It can undergo some common chemical transformations:
+
+<img src="./assets/image-20260428151521515.png" alt="image-20260428151521515" style="zoom:50%;" />
+
+1. **Identify** products **I**–**V**.
+
+> **Revision note:** Revised by Codex on 2026-04-30; structure-validity check updated after the Q17.1 drawing was adjusted. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
+>
+> **Solution (Q17.1 — classical transformations of D-glucose).**
+>
+> The substrate in the figure is the open-chain form of D-glucose.
+>
+> | Product | Reagent(s) | Structure / name |
+> |---|---|---|
+> | **I** | $\mathrm{NaBH_4}$ | D-glucitol (sorbitol), $\mathrm{HOCH_2-(CHOH)_4-CH_2OH}$ |
+> | **II** | excess $\mathrm{NaIO_4}$ | formic acid, $\mathrm{HCO_2H}$, formed from C1-C5 |
+> | **III** | excess $\mathrm{NaIO_4}$ | formaldehyde, $\mathrm{HCHO}$, formed from C6 |
+> | **IV** | $\mathrm{Br_2/H_2O}$ | D-gluconic acid, $\mathrm{HOOC-(CHOH)_4-CH_2OH}$ |
+> | **V** | conc. $\mathrm{HNO_3}$ | D-glucaric acid (saccharic acid), $\mathrm{HOOC-(CHOH)_4-COOH}$ |
+>
+> Thus periodate cleavage gives $5\,\mathrm{HCO_2H}+1\,\mathrm{HCHO}$; the labels **II** and **III** can be interchanged if the two small products are drawn in the opposite order.
+>
+> <img src="./assets/9f0bb557-fe61-4d1c-963b-aca18a340b77.png" alt="9f0bb557-fe61-4d1c-963b-aca18a340b77" style="zoom:67%;" />
+>
+> **Structure check.** The adjusted drawings for **I**, **IV**, and **V** match D-glucitol, D-gluconic acid, and D-glucaric acid, respectively. Product **I** retains the D-glucose stereochemical pattern; with the original glucose numbering in a Fischer projection, the C2-C5 OH pattern is right-left-right-right.
+
+In its cyclic form, glucose contains five hydroxy groups. Regioselective transformation of each position represents a challenge for chemists. Some synthetic transformations of $\alpha$-glucopyranose are shown below:
+
+<img src="./assets/image-20260428151255953.png" alt="image-20260428151255953" style="zoom:50%;" />
+
+It is known that **A**, **G**, and **D** contain the same functional groups; **G** and **D** differ in formulae by $\mathrm{CH}_{2}$ ; **B** and **C** contain three six-membered rings in their structures; there are two different $\mathrm{CH}_{3}$ - groups in **E**.
+
+2. **Draw** the structures of **A**–**G**.
+
+> **Revision note:** Revised by Codex on 2026-04-30; lower-branch O4/O6 regioassignment corrected after re-checking the scheme, and the A/D/G functional-group clue was qualified because G is a hemiacetal whereas A and D are glycosides. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
+>
+> **Solution (Q17.2 — structures A-G).**
+>
+> | Compound | Structure |
+> |---|---|
+> | **A** | methyl $\alpha$-D-glucopyranoside |
+> | **B** | methyl 4,6-$O$-benzylidene-$\alpha$-D-glucopyranoside |
+> | **C** | methyl 2,3-di-$O$-methyl-4,6-$O$-benzylidene-$\alpha$-D-glucopyranoside |
+> | **D** | methyl 2,3-di-$O$-methyl-$\alpha$-D-glucopyranoside, with free 4-OH and 6-OH |
+> | **E** | methyl 2,3,6-tri-$O$-benzyl-4-$O$-ethyl-$\alpha$-D-glucopyranoside |
+> | **F** | methyl 2,3,4,6-tetra-$O$-methyl-D-glucopyranoside; the anomeric OMe may be $\alpha$ or $\beta$ under exhaustive methylation |
+> | **G** | 2,3,4,6-tetra-$O$-methyl-D-glucopyranose |
+>
+> <img src="./assets/image-20260430090726393.png" alt="image-20260430090726393" style="zoom:67%;" />
+>
+> **Checks.**
+>
+> - **Ring count.** **B** and **C** each contain the pyranose ring, the benzylidene acetal ring, and the phenyl ring, i.e. three six-membered rings.
+> - **Hydrolysis of C.** Hydrolysis of **C** removes only the 4,6-benzylidene acetal, giving **D**.
+> - **A/D/G functional-group clue.** The statement that **A**, **D**, and **G** contain the same functional groups should be read in the broad protected-sugar sense: all three are oxygen-only carbohydrate derivatives containing hydroxy-type and ether-type functionality, and none contains an ester, carbonyl, benzylidene acetal, boronate, or other additional protecting-group functionality. Strictly, **A** and **D** are methyl glycosides with an anomeric acetal, whereas **G** is a reducing sugar hemiacetal after hydrolysis of **F**.
+> - **G-D formula clue.** The formula clue is separate from the functional-group clue: **G** and **D** differ by $\mathrm{CH_2}$, which is a molecular-formula difference, not a functional group. Exhaustive methylation of glucose gives **F**, and acid hydrolysis cleaves only the anomeric methyl glycoside to give **G**. Thus **G** has two additional non-anomeric methyl ethers relative to **D** but lacks the anomeric methyl ether, giving net **G - D = $\mathrm{CH_2}$**.
+> - **Lower branch to E.** Reductive opening of the benzylidene acetal after benzylation gives the drawn methyl 2,3,6-tri-$O$-benzyl-$\alpha$-D-glucopyranoside with 4-OH free. Acetylation of 4-OH followed by excess DIBAL-H reduces the acetate ester to the 4-$O$-ethyl ether **E**, which contains the anomeric OMe and the ethoxy $\mathrm{CH_3}$ as the two different methyl groups.
+
+However, these transformations cannot differentiate neighbouring 2,3- and 3,4-diols, since in both cases the hydroxy groups are in a trans-configuration and occupy equatorial positions. A brilliant solution to this challenge was found by using the common tetrahydropyranyl protecting group in chiral form:
+
+<img src="./assets/image-20260428151342475.png" alt="image-20260428151342475" style="zoom:50%;" />
+
+3. Based on the given example and considering that sterically bulky groups tend to occupy equatorial positions in chair conformations, **draw** the structures of **H1** and **H2**. For drawing **H1** you need to redraw the glucopyranose ring so that the 2,3-hydroxy groups are on the right side of the drawing. **Use** a chair conformation of the protecting group.
+
+> **Revision note:** Revised by Codex on 2026-04-30; solution-table formatting cleaned after structure review. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
+>
+> **Solution (Q17.3 — chiral THP differentiation of the two trans-diols).**
+>
+> The two enantiomeric bis-dihydropyran reagents protect different adjacent trans-diols of methyl 6-$O$-TBDPS-$\alpha$-D-glucopyranoside. In both products the THP chairs must be drawn so that the phenyl substituents are equatorial; the sugar O-substituents occupy the orientations shown by the matching product in the model reaction.
+>
+> | Product | Structure to draw |
+> |---|---|
+> | **H1** | the **2,3-di-$O$-THP** protected glucoside: methyl 6-$O$-TBDPS-2,3-di-$O$-[the chiral THP reagent drawn on the left]-$\alpha$-D-glucopyranoside, with 4-OH free |
+> | **H2** | the **3,4-di-$O$-THP** protected glucoside: methyl 6-$O$-TBDPS-3,4-di-$O$-[the enantiomeric THP reagent drawn on the right]-$\alpha$-D-glucopyranoside, with 2-OH free |
+>
+> For **H1**, the glucopyranose chair is redrawn so that O2 and O3 are the pair presented to the chiral protecting group. For **H2**, the original orientation already presents the O3/O4 pair. The selectivity follows from the same matched-chair rule as in the example: the accepted product keeps the bulky phenyl groups equatorial, while the alternative regioisomer would force an unfavorable axial bulky substituent in one THP chair.
+
+A very interesting example of a glucopyranose transformation led to adamantane-type cyclic compound **K** stepwise blocking three hydroxyl groups with only one protecting group:
+
+<img src="./assets/image-20260428151415749.png" alt="image-20260428151415749" style="zoom:50%;" />
+
+4. **Draw** the structures of **I** and **J**.
+
+> **Revision note:** Revised by Codex on 2026-04-30; added/refined the justification for formation of intermediate I and added a stereochemistry note for the provided drawing. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
+>
+> **Solution (Q17.4 — acetobromoglucose and the orthoacetate).**
+>
+> | Intermediate | Structure |
+> |---|---|
+> | **I** | 2,3,4,6-tetra-$O$-acetyl-$\alpha$-D-glucopyranosyl bromide (acetobromoglucose) |
+> | **J** | 3,4,6-tri-$O$-acetyl-1,2-$O$-(1-ethoxyethylidene)-$\alpha$-D-glucopyranose, i.e. the ethyl 1,2-orthoacetate |
+>
+> <img src="./assets/image-20260501084527631.png" alt="image-20260501084527631" style="zoom: 67%;" />
+>
+> **Structure check.** The provided drawings for **I** and **J** match the assigned connectivity. For **I**, the drawing uses a wavy anomeric C-Br bond; if a single stereoisomer is required, draw the glycosyl bromide as the $\alpha$ anomer, as stated in the table.
+>
+> Formation of **I** is the standard acetobromination of glucose. The anomeric OH is not intrinsically protected from acetylation: under acetylating conditions it can first form the peracetate, including an anomeric acetate. In the HBr/AcOH medium, however, the anomeric acetate (or protonated anomeric OH) is the most labile leaving group; it is converted through an oxocarbenium/acetoxonium-type intermediate and trapped by bromide. The ordinary 2,3,4,6-$O$-acetates remain as protecting groups. Neighboring participation by the 2-$O$-acetyl group then favors the $\alpha$-glycosyl bromide, so the isolated product is 2,3,4,6-tetra-$O$-acetyl-$\alpha$-D-glucopyranosyl bromide rather than the pentaacetate.
+>
+> The next key step is neighboring-group participation by the 2-$O$-acetyl group of **I**. Ethanol traps the acyloxonium intermediate to give the 1,2-orthoacetate **J**, whose formula is $\mathrm{C_{16}H_{24}O_{10}}$. DBU/water removes the three ordinary acetyl groups, and heating with acid/base in the presence of molecular sieves converts the 1,2-orthoacetate into the adamantane-like 1,2,3-$O$-orthoacetate **K**, in which O1, O2, and O3 are all bound to the same $\mathrm{C(CH_3)}$ orthoester carbon.
+
+Another class of reagents that can form cyclic acetal-type structures is boronic acids. Their chemistry was successfully used to synthesise the trisaccharide “**Gal-Gal-Glc**” derivative:
+
+<img src="./assets/image-20260428151455247.png" alt="image-20260428151455247" style="zoom:50%;" />
+
+5. **Draw** the structures of **L**, **M**, and trisaccharide “**Gal-Gal-Glc**”. Do not specify the configuration of the newly formed anomeric centres.
+
+> **Revision note:** Revised by Codex on 2026-04-30; Q17.5 formatting was cleaned by replacing the wide structure table and long inline names with renderer-safe residue-by-residue entries. Tracked in `CODEX_REVISION_LOG_2026-04-30.md`; pre-Codex PDF baseline archived in `codex_revision_baselines/2026-04-30/`.
+>
+> **Solution (Q17.5 — boronate-directed synthesis of Gal-Gal-Glc).**
+>
+> The starting acceptor is the methyl 3-O-benzyl-D-glucopyranoside shown in the scheme. Arylboronic acid masks its 4,6-diol as a cyclic boronate, leaving only O2 available for the first glycosylation.
+>
+> **Structures to draw.**
+>
+> **L**
+>
+> Methyl 3-O-benzyl-4,6-O-(RB)-D-glucopyranoside. O2 remains free.
+>
+> **M**
+>
+> Gal-(1->2)-Glc disaccharide.
+>
+> - Gal unit: 6-OAc, 2,3-di-OBn, 4-OH.
+> - Glc unit: methyl 3-O-benzyl-4,6-O-(RB)-D-glucopyranoside.
+>
+> **Gal-Gal-Glc**
+>
+> Gal-(1->4)-Gal-(1->2)-Glc trisaccharide.
+>
+> - Nonreducing Gal unit: 2-OBz, 3,4,6-tri-OBn.
+> - Middle Gal unit: 6-OAc, 2,3-di-OBn.
+> - Glc unit: methyl 3-O-benzyl-D-glucopyranoside with free 4-OH and 6-OH after boronate hydrolysis.
+>
+> <img src="./assets/image-20260501151626537.png" alt="image-20260501151626537" style="zoom:67%;" />
+>
+> In **M**, Et3N removes the Fmoc group from O4 of the first galactose residue, exposing the acceptor OH for the second NIS/TMSOTf glycosylation. The formula check for **M** is consistent: two sugar units plus one methyl glycoside, three benzyl groups, one acetyl group, and one cyclic boronate give C36H42BO12R.
+>
+> **Structure check.**
+>
+> - The adjusted drawings for **L**, **M**, and **Gal-Gal-Glc** match the written assignments.
+> - In the final **Gal-Gal-Glc** drawing, the Glc 4,6-boronate has been hydrolysed to free 4-OH and 6-OH, consistent with the stated H2O/heating workup and with the assignment above.
+> - The two newly formed anomeric configurations in the Gal-(1->4)-Gal and Gal-(1->2)-Glc linkages are intentionally left unspecified, as requested.
+
+---
+
+## 中文版 / Chinese translation
+## 第17题 糖化学
+
+糖类是生命体供能所需的重要化合物。常见的葡萄糖 (Glc) 能以链状或环状形式存在。葡萄糖能发生一些常见的化学转化：
+
+![image](images/2652d7520099b6f52e2afb77f71c32f7bd7cbee1c957dcee73b665a0735dbaa9.jpg)
+
+
+# 17-1 给出产物 I–V。
+
+环状葡萄糖分子含有五个羟基，其区域选择性转化反应颇具挑战。以下是 $\alpha$-吡喃葡萄糖的一些合成转化示例：
+
+![image](images/0fac12c01d8b3fd1884c6467986229232eff74d20ed26c1dc400672747467365.jpg)
+
+
+已知：A、G和 D 含有相同的官能团；G与 D 的分子式相差一个 $\mathrm{CH}_{2}$ ；B 和C 含有三个六元环；E 含有两个不同的甲基。
+
+# 17-2 画出 A–G 的结构式。
+
+然而，这些转化无法区分 2,3 和 3,4 这两对相邻羟基，因为它们均为平伏键上的反式构型。针对此挑战，研究人员开发出一个巧妙的策略，使用常见的四氢吡喃手性保护基：
+
+![image](images/760d64024d51fb769a9453f065e0a1641ed392ec6c56bd1af160ba186ad5b66e.jpg)
+
+
+![image](images/c58b833316ab73789ba518a5e33302340eecda83df11a5e5d34938a33040134a.jpg)
+
+
+17-3 请画出此策略中 H1 和 H2 的结构式，注意椅式构象中大位阻基团倾向处于平伏键。画 H1 时，需重新绘制吡喃葡萄糖环，使其 2,3-羟基位于结构式的右侧。保护基需绘制为椅式构象。
+
+下面是一个吡喃葡萄糖转化的有趣例子，仅用一种保护基、分步封闭三个羟基，最终得到类似金刚烷的笼状化合物K：
+
+![image](images/beff291bbdb98eb8705284af61942385d91336fa084299e5890b866c6e51a212.jpg)
+
+
+17-4 画出I和J的结构式。
+
+有机硼酸也能形成类似缩醛的环状结构。研究人员由此成功合成了三糖Gal-Gal-Glc 的衍生物：
+
+![image](images/270ec5525957093982479223c0522eeb7a8ebd190e46ed5f351ce9743e57561e.jpg)
+
+
+17-5 画出L、M及三糖Gal-Gal-Glc 的结构式。新生成的异头碳无需标明构型。

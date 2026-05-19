@@ -65,7 +65,7 @@ Tag heuristics: only assign a FoAD slug if the problem actually exercises that s
 | 03 | Unusual inorganic synthesis | `tbc` | 5 | — | **Q3 mass-ratio discrepancy** — see §4 |
 | 04 | Nanozymes | `tbc` | 3 | `kinetics` | Source had no ★ rating; difficulty default may be too low. Review TBC markers in source |
 | 17 | Carbohydrate chemistry | `tbc` | 3 | `carbohydrate-chemistry` | Status was migrated as `not-started`; manually set to `tbc`. Review for accuracy |
-| 21 | Catalyst C | `tbc` | 3 | `mass-spectrometry`, `transition-metal-catalysis` | **Q21.3 / Q21.4 substrate ambiguity** — see §4 |
+| 21 | Catalyst C | `tbc` | 3 | `mass-spectrometry`, `transition-metal-catalysis` | Q21.3 / Q21.4 / Q21.6 resolved 2026-05-19 (cumyl-cation precursor); Q21.5 / Q21.7 / Q21.8 still need independent review |
 | 23 | HAT and XAT (HalAT) | `tbc` | 4 | `mass-spectrometry`, `transition-metal-catalysis` | Multiple steps; Q3 OS/CN/VE direction is the subtlest |
 | 24 | Anticancer complexes | `tbc` | 4 | — | Q24.6 / Q24.7 synthesis steps need verification |
 
@@ -89,17 +89,19 @@ These are the inline-flagged contested points. The page-level `status: tbc` refl
 
 **Location**: `parts/part2/Problem_03.qmd` Q3 solution.
 
-### P2.21 — Q21.3 / Q21.4 (hydrogenation product structure)
+### ~~P2.21 — Q21.3 / Q21.4 / Q21.6 (hydrogenation product structure)~~  **RESOLVED 2026-05-19**
 
-**Two candidate products both fit MS + symmetry; substrate scheme is the only discriminator.**
-- (A) **1-butyl-4-ethylbenzene** — if the printed substrate alkene is unbranched (`R-CH=CH-CH₃` or `R-CH₂-CH=CH₂`).
-- (B) **1-ethyl-4-isobutylbenzene** — if the printed substrate alkene is methyl-branched (`R-CH=C(CH₃)₂`).
+Definitive answer (per maintainer): **(1,1-dimethylbutyl)benzene** = 2-methyl-2-phenylpentane = $\mathrm{Ph\text{-}C(CH_3)_2\text{-}CH_2CH_2CH_3}$ (CAS 1985-58-6).
 
-EI-MS gives identical m/z 119 base peak in both cases because the radical lost (·n-Pr vs ·iso-Pr) has the same mass 43.
+The earlier candidates (1-butyl-4-ethylbenzene, 1-ethyl-4-isobutylbenzene) both fit the m/z 119 base peak by α-cleavage but predicted a *moderate* m/z 147 from methyl-loss α-cleavage on the ethyl side — whereas the spectrum shows m/z 147 as a *trace*. The tertiary benzylic structure correctly predicts m/z 147 to be nearly absent because the cumyl-cation channel (loss of ·n-Pr) is overwhelmingly preferred (Stevenson's rule + cumyl's exceptional cation stability).
 
-**Current verdict**: (A) 1-butyl-4-ethylbenzene, based on reading the substrate scheme as unbranched. **Maintainer should cross-check against the printed PDF before locking in**.
+Sub-question updates committed:
 
-**Location**: `parts/part2/Problem_21.qmd` Q3 + Q4 solutions, both with `🟡 TBC` markers.
+- **Q21.3** — cation drawings: m/z 119 = **cumyl cation** $\mathrm{Ph\text{-}C(CH_3)_2^+}$ (was: 4-ethylbenzyl/ethyl-tropylium). m/z 91 = tropylium via secondary loss of $\mathrm{C_2H_4}$ from cumyl⁺ (ring expansion 6→7). m/z 41 = allyl from complementary $\mathrm{C_3H_7^+}$ minus $\mathrm{H_2}$. The "two different aromatic rings" clue is now beautifully precise: 91 is a 7-membered tropylium ring, 119 contains a 6-membered benzene ring with sp³ α-cation.
+- **Q21.4** — product, symmetry, MS rationalisation, substrate compatibility all rewritten.
+- **Q21.6** — minor isomerization product D re-derived: $\mathrm{Ph\text{-}C(CH_3)_2\text{-}CH=CH\text{-}CH_3}$ = 4-methyl-4-phenylpent-2-ene ($\mathrm{C_{12}H_{16}}$). The cumyl α-C is quaternary (no α-H), so the C=C halts at the internal isomer. (Previous answer was a stale "Ph₂CH–CH=C(CH₃)–CH₃" carryover from the long-retired diphenylalkene assignment.)
+
+Inline `🟡 TBC` markers on Q21.3 and Q21.4 removed. Page-level status remains `tbc` until other sub-questions (Q21.5, Q21.7, Q21.8) are independently reviewed — promote to `revised` when ready.
 
 ### P2.23 — Q3 (OS/CN/VE for HAT/XAT products)
 

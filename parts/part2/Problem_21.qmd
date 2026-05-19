@@ -81,7 +81,7 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 
 4. **Draw** the structure of the **product**.
 
-> **Solution (Q4 — hydrogenation product: two candidate structures).**
+> **Solution (Q4 — hydrogenation product).** *Two candidate structures both fit the spectroscopic clues; the substrate scheme breaks the tie.*
 >
 > **Revision note (2026-05-18).** The mass spectrum + "max one plane of symmetry" clue does **not** uniquely determine the product — two regioisomers fit *both* the spectrum and the symmetry constraint and are indistinguishable by EI-MS alone. The single experimental discriminator is the substrate scheme, which depicts an *unbranched* 3-carbon alkene and so selects candidate **(A)** as the right answer. Earlier rejected alternatives (diphenyl-alkene with M ≠ 162; 1-tert-butyl-4-ethylbenzene with base peak m/z 147 from tertiary-benzylic α-cleavage) are not analysed here.
 >

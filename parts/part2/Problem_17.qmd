@@ -4,7 +4,7 @@ problem-id: 17
 status: tbc
 difficulty: 3
 foad: [carbohydrate-chemistry]
-topics: []
+topics: [glucose, galactose, glycosylation, chair-conformation, protecting-groups, benzylidene-acetal, anomeric-centre, pyranose, trisaccharide, fischer-projection]
 date: "2026-05-18"
 description: ""
 ---

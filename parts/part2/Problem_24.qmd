@@ -3,7 +3,7 @@ title: "P2.24 — Anticancer complexes"
 problem-id: 24
 status: tbc
 difficulty: 4
-foad: [transition-metal-catalysis]
+foad: []
 topics: [inorganic, platinum-anticancer, cisplatin, carboplatin, dna-crosslink, dhara-synthesis, total-synthesis, knorr-quinolone, pd-heck, camptothecin, sn-38]
 date: "2026-05-18"
 description: "Two-part full-stack problem: Pt(II) anticancer chemistry (cis/trans DNA crosslinks, trans-effect-driven Dhara synthesis of carboplatin, dicycloplatin H-bond co-crystal) + asymmetric total synthesis of SN-38 (Curran/Comins-style east block H, Knorr quinolone west block N, intramolecular Pd-Heck pentacycle closure)."

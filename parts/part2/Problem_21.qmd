@@ -74,6 +74,12 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 > Tropylium is formed by secondary fragmentation of the cumyl cation (m/z 119, see below): the ring expands from a six-membered phenyl through a phenonium-type intermediate to a seven-membered tropylium, with loss of ethene (the two α-methyls of cumyl combine and leave as $\mathrm{CH_2{=}CH_2}$):
 > $$\mathrm{Ph\text{-}C(CH_3)_2^+}\xrightarrow{\text{ring expansion,}\ -\mathrm{C_2H_4}} \mathrm{C_7H_7^+}\;(91).$$
 >
+> The full potential-energy profile for this isomerization–elimination has been mapped at the MNDO/AM1 level by Weniger, Kleimann and Grützmacher (1997):
+>
+> ![Figure 1 of Weniger et al. 1997: potential energy profile (kJ mol⁻¹) for isomerization of the α,α-dimethylbenzyl ("cumyl") cation **3a** to **u** = benzyl cation + ethene. The reaction proceeds via a sequence of H- and methyl-migrations through phenonium-bridged intermediates (j, k, l, n, …) and benzyl-cation-like species (g, h, m, r, s, t), with **u** lying 184 kJ mol⁻¹ above **3a** but accessible under EI conditions. Ph = phenyl.](assets/cumyl-ethene-loss-pes-weniger-1997.png)
+>
+> **Source:** K. Weniger, J. Kleimann and H.-Fr. Grützmacher, "Mass spectrometry of *tert*-butylnaphthalenes — a comparison with the unimolecular fragmentation of *tert*-butylbenzene", *Eur. Mass Spectrom.* **3**, 271–280 (1997), Figure 1. The same potential surface governs cumyl-cation fragmentation regardless of how the cumyl cation is generated (here from $\mathrm{C_{12}H_{18}}$ in the printed spectrum; in Weniger et al. from *tert*-butylbenzene under EI).
+>
 > $$m/z=119:\quad [\mathrm{C_9H_{11}}]^+,$$
 > the **cumyl cation** (α,α-dimethylbenzyl cation), $\mathrm{Ph\text{-}C(CH_3)_2^+}$ — one of the most thermodynamically stable carbocations in all of organic chemistry (textbook example). Stability comes from three reinforcing factors: full π-delocalization of the positive charge into the phenyl ring, hyperconjugation from each of the two α-methyls, and the absence of any α-H to lose by deprotonation.
 >

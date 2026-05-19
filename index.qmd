@@ -6,29 +6,33 @@ listing:
   id: problem-listing
   contents: "parts/**/*.qmd"
   type: table
-  fields: [problem-id, title, part, status, difficulty, topics, date]
+  fields: [problem-id, title, status, difficulty, topics, date]
   field-display-names:
     problem-id: "#"
     title: "Title"
-    part: "Part"
     status: "Status"
     difficulty: "Diff."
     topics: "Topics"
     date: "Updated"
   field-types:
     problem-id: number
-    part: number
     difficulty: number
     date: date
   date-format: "YYYY-MM-DD"
-  sort: ["part asc", "problem-id asc"]
-  sort-ui: [problem-id, title, part, status, difficulty, date]
-  filter-ui: [title, part, status, topics]
+  sort: ["problem-id asc"]
+  sort-ui: [problem-id, title, status, difficulty, date]
+  filter-ui: [title, status, topics]
   categories: numbered
   page-size: 100
   table-striped: true
   table-hover: true
 ---
+
+## What's on this site
+
+Worked solutions to the **30 theoretical problems** of the 58th IChO Preparatory Problems — these are **Part 2** of the official booklet. The dashboard at the bottom of this page is the main entry point; each row links to a bilingual solution + pedagogical analysis.
+
+For the official syllabus and reference tables — *Fields of Advanced Difficulty*, physical constants, formulae, the IChO 2026 periodic table — see the **[Syllabus](syllabus.qmd)** page (this is Part 1 of the booklet, reproduced for reference). The **Part 3 lab practicals are not covered on this site**; if you need them, see the official PDFs.
 
 ::: {.callout-note appearance="simple" icon=false}
 These solutions are **work in progress and unofficial**. They have no affiliation with the IChO organizing committee. If you find an error, a sharper derivation, or a missing edge case, please post on Discord with the **problem number** and the **step** you're commenting on.
@@ -49,7 +53,7 @@ These solutions are **work in progress and unofficial**. They have no affiliatio
 - **Final** — answer key and pedagogical analysis stabilized; no expected changes.
 - **TBC** *(to be confirmed)* — known open issue or contested step flagged in the page.
 
-## All problems
+## Problems
 
 ::: {#problem-listing}
 :::

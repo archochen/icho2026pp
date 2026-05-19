@@ -1,0 +1,160 @@
+---
+title: "Syllabus — Fields of Advanced Difficulty"
+subtitle: "58th IChO 2026 · Preparatory Problems · Part 1"
+date: "2026-05-19"
+description: "Theoretical and practical fields of advanced difficulty, physical constants, formulae, and the IChO 2026 periodic table — reproduced from Part 1 of the official Preparatory Problems booklet for reference."
+toc: true
+toc-location: right
+toc-depth: 3
+---
+
+::: {.callout-note appearance="simple"}
+This page reproduces **Part 1** of the 58th IChO 2026 Preparatory Problems — the syllabus and reference tables. There are no problems to solve here; for the worked solutions to the 30 theoretical problems (Part 2), see the [Home page](index.qmd). The Part 3 lab practicals are out of scope on this site.
+:::
+
+## Fields of advanced difficulty
+
+### Theoretical
+
+1. **Mass Spectrometry**: molecular ions, mass-to-charge ratio, isotope distribution.
+2. **Kinetics**: steady-state and quasi-equilibrium approximations, enzymatic kinetics, interpretation of phase portraits.
+3. **Thermodynamics**: heat capacity, temperature dependence of equilibrium constant, entropy and enthalpy change.
+4. **Transition metal catalysis**: elementary steps in the catalytic cycles with transition metal complexes; single electron transfer (SET) and hydrogen atom transfer (HAT); cross-coupling reactions.
+5. **Photochemistry**: Jablonski and Förster diagrams, fluorescence and phosphorescence, quenching, lifetimes, quantum yield.
+6. **Carbohydrate chemistry**: represent chair conformations, carbohydrate reactions and protecting groups, repeating units.
+
+Students are **not** expected to be specifically trained on the topics below:
+
+- Fragmentation in mass spectrometry.
+- Advanced calculations (differentiation, iteration).
+- Graph theory.
+- 2nd and 3rd order kinetics.
+- Cycloaddition reaction mechanisms.
+- Memorising the structures of canonical amino acids.
+- Archaea metabolism.
+- Carothers equation.
+- Memorising specific values of bond lengths.
+- Memorising mechanisms of transition metal-catalysed coupling reactions.
+- Details behind the techniques of STM and AFM.
+
+### Practical
+
+1. Using micropipettes and 96-well plates.
+2. Vacuum filtration.
+3. Titration using pH meter.
+
+Students are **not** expected to be specifically trained on the topics below:
+
+- Recrystallisation.
+- Using spectrophotometer.
+
+## Physical constants, units, formulae
+
+### Constants
+
+| Quantity | Symbol | Value |
+|---|---|---|
+| Avogadro constant | $N_\mathrm{A}$ | $6.022\times10^{23}\ \mathrm{mol^{-1}}$ |
+| Universal gas constant | $R$ | $8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$ |
+| Faraday constant | $F$ | $96485\ \mathrm{C\,mol^{-1}}$ |
+| Planck constant | $h$ | $6.626\times10^{-34}\ \mathrm{J\,s}$ |
+| Speed of light in vacuum | $c$ | $2.998\times10^{8}\ \mathrm{m\,s^{-1}}$ |
+| Mass of electron | $m_e$ | $9.109\times10^{-31}\ \mathrm{kg}$ |
+| Charge of electron | $e$ | $1.602\times10^{-19}\ \mathrm{C}$ |
+| Standard pressure | $P°$ | $1\ \mathrm{bar} = 10^{5}\ \mathrm{Pa}$ |
+| Ionic product of water at 25 °C | $K_w$ | $1.00\times10^{-14}$ |
+
+### Units
+
+| Quantity | Conversion |
+|---|---|
+| Zero of the Celsius scale | $0\,°\mathrm{C} = 273.15\ \mathrm{K}$ |
+| Electronvolt | $1\ \mathrm{eV} = 1.602\times10^{-19}\ \mathrm{J}$ |
+| Watt | $1\ \mathrm{W} = 1\ \mathrm{J\,s^{-1}}$ |
+| Coulomb | $1\ \mathrm{C} = 1\ \mathrm{A\,s}$ |
+| Nanometre | $1\ \mathrm{nm} = 1\times10^{-9}\ \mathrm{m}$ |
+
+### Formulae
+
+| Name | Formula |
+|---|---|
+| Ideal gas law | $PV = nRT$ |
+| Dalton's law | $P_i = x_i P$ |
+| Faraday's law | $n(\mathrm{e^-}) = It/F$ |
+| Lambert–Beer law | $A = \log_{10}(I_0/I) = \varepsilon c l$ |
+| Energy of a photon | $E = h\nu = hc/\lambda$ |
+| Heat and temperature change | $Q = nC_m\Delta T$ |
+| Gibbs energy definition | $G = H - TS$ |
+| Gibbs energy and equilibrium constant | $\Delta_r G° = -RT \ln K$ |
+| Enthalpy change vs. temperature (at $\Delta C_p = $ const) | $\Delta_r H_{T_2} = \Delta_r H_{T_1} + \Delta_r C_p (T_2 - T_1)$ |
+| Entropy change vs. temperature (at $\Delta C_p = $ const) | $\Delta_r S_{T_2} = \Delta_r S_{T_1} + \Delta_r C_p \ln(T_2/T_1)$ |
+| Henderson–Hasselbalch equation | $\mathrm{pH} = \mathrm{p}K_a + \log_{10}\dfrac{[\mathrm{A^-}]}{[\mathrm{HA}]}$ |
+| Average reaction rate | $r = \Delta c/\Delta t$ |
+| Rate law | $r = k[\mathrm{A}]^x[\mathrm{B}]^y$ |
+| Arrhenius law | $k = A \exp(-E_a/RT)$ |
+| Integrated 1st-order rate law | $c = c_0\,e^{-kt};\ \ kt = \ln(c_0/c)$ |
+| Lifetime of a reagent in a 1st-order reaction | $\tau = 1/k$ |
+| Integrated rate law for $n$th-order reaction $(n\neq 1)$ | $kt = \dfrac{1}{n-1}\big(c^{1-n} - c_0^{1-n}\big)$ |
+| Intermediate concentration in $\mathrm{A}\xrightarrow{k_1}\mathrm{B}\xrightarrow{k_2}\mathrm{D}$ | $[\mathrm{B}] = \dfrac{k_1[\mathrm{A}]_0}{k_2 - k_1}\big(e^{-k_1 t} - e^{-k_2 t}\big)$ |
+| Product ratio in competitive reactions $\mathrm{A}\xrightarrow{k_1}\mathrm{B},\ \mathrm{A}\xrightarrow{k_2}\mathrm{C}$ | $[\mathrm{B}]/[\mathrm{C}] = k_1/k_2$ |
+| Michaelis–Menten equation | $r_0 = \dfrac{r_\mathrm{max}[\mathrm{S}]_0}{K_M + [\mathrm{S}]_0}$ |
+| Enantiomeric excess (L − D) | $\mathrm{ee} = \dfrac{[\mathrm{L}] - [\mathrm{D}]}{[\mathrm{L}] + [\mathrm{D}]}$ |
+| Specific surface area | $s = S/m$ |
+
+### Math
+
+| Quantity | Expression |
+|---|---|
+| Arithmetic progression | $a_n = a_1 + d(n - 1)$ |
+| Geometric progression | $a_n = a_1 q^{n-1}$ |
+| Sum of a geometric progression | $\displaystyle\sum_{k=0}^{n}a_{1}q^{k}=a_{1}\,\dfrac{q^{n+1}-1}{q-1}$ |
+| Degree sum for a graph ($V$ vertices, $E$ edges) | $\displaystyle\sum_{v\in V}\deg v=2|E|$ |
+| Volume of a cube (edge $a$) | $V = a^3$ |
+| Surface area of a cube (edge $a$) | $S = 6a^2$ |
+| Volume of a sphere (radius $r$) | $V = \tfrac{4}{3}\pi r^3$ |
+| Surface area of a sphere (radius $r$) | $S = 4\pi r^2$ |
+| Volume of a cone (base radius $r$, height $h$) | $V = \tfrac{1}{3}\pi r^2 h$ |
+| Volume of a rectangular wedge (base $S$, height $h$) | $V = \tfrac{1}{2}Sh$ |
+| Volume of a cylinder (base radius $r$, height $h$) | $V = \pi r^2 h$ |
+
+::: {.callout-tip appearance="simple"}
+**Working conventions for IChO problems.**
+
+- Consider all gases ideal.
+- In equilibrium-constant calculations, all concentrations are referenced to a standard of $1\ \mathrm{mol\,dm^{-3}}$.
+:::
+
+## Periodic table
+
+```{=html}
+<table class="periodic-table">
+<thead><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th></tr></thead>
+<tbody>
+<tr><td>1 H 1.008</td><td colspan="16"></td><td>2 He 4.003</td></tr>
+<tr><td>3 Li 6.94</td><td>4 Be 9.01</td><td colspan="10"></td><td>5 B 10.81</td><td>6 C 12.01</td><td>7 N 14.01</td><td>8 O 16.00</td><td>9 F 19.00</td><td>10 Ne 20.18</td></tr>
+<tr><td>11 Na 22.99</td><td>12 Mg 24.31</td><td colspan="10"></td><td>13 Al 26.98</td><td>14 Si 28.09</td><td>15 P 30.97</td><td>16 S 32.06</td><td>17 Cl 35.45</td><td>18 Ar 39.95</td></tr>
+<tr><td>19 K 39.10</td><td>20 Ca 40.08</td><td>21 Sc 44.96</td><td>22 Ti 47.87</td><td>23 V 50.94</td><td>24 Cr 52.00</td><td>25 Mn 54.94</td><td>26 Fe 55.85</td><td>27 Co 58.93</td><td>28 Ni 58.69</td><td>29 Cu 63.55</td><td>30 Zn 65.38</td><td>31 Ga 69.72</td><td>32 Ge 72.63</td><td>33 As 74.92</td><td>34 Se 78.97</td><td>35 Br 79.90</td><td>36 Kr 83.80</td></tr>
+<tr><td>37 Rb 85.47</td><td>38 Sr 87.62</td><td>39 Y 88.91</td><td>40 Zr 91.22</td><td>41 Nb 92.91</td><td>42 Mo 95.95</td><td>43 Tc —</td><td>44 Ru 101.1</td><td>45 Rh 102.9</td><td>46 Pd 106.4</td><td>47 Ag 107.9</td><td>48 Cd 112.4</td><td>49 In 114.8</td><td>50 Sn 118.7</td><td>51 Sb 121.8</td><td>52 Te 127.6</td><td>53 I 126.9</td><td>54 Xe 131.3</td></tr>
+<tr><td>55 Cs 132.9</td><td>56 Ba 137.3</td><td>57–71 *</td><td>72 Hf 178.5</td><td>73 Ta 180.9</td><td>74 W 183.8</td><td>75 Re 186.2</td><td>76 Os 190.2</td><td>77 Ir 192.2</td><td>78 Pt 195.1</td><td>79 Au 197.0</td><td>80 Hg 200.6</td><td>81 Tl 204.4</td><td>82 Pb 207.2</td><td>83 Bi 209.0</td><td>84 Po —</td><td>85 At —</td><td>86 Rn —</td></tr>
+<tr><td>87 Fr —</td><td>88 Ra —</td><td>89–103 †</td><td>104 Rf —</td><td>105 Db —</td><td>106 Sg —</td><td>107 Bh —</td><td>108 Hs —</td><td>109 Mt —</td><td>110 Ds —</td><td>111 Rg —</td><td>112 Cn —</td><td>113 Nh —</td><td>114 Fl —</td><td>115 Mc —</td><td>116 Lv —</td><td>117 Ts —</td><td>118 Og —</td></tr>
+</tbody>
+</table>
+
+<p>* Lanthanides:</p>
+<table class="periodic-table">
+<tbody>
+<tr><td>57 La 138.9</td><td>58 Ce 140.1</td><td>59 Pr 140.9</td><td>60 Nd 144.2</td><td>61 Pm —</td><td>62 Sm 150.4</td><td>63 Eu 152.0</td><td>64 Gd 157.3</td><td>65 Tb 158.9</td><td>66 Dy 162.5</td><td>67 Ho 164.9</td><td>68 Er 167.3</td><td>69 Tm 168.9</td><td>70 Yb 173.0</td><td>71 Lu 175.0</td></tr>
+</tbody>
+</table>
+
+<p>† Actinides:</p>
+<table class="periodic-table">
+<tbody>
+<tr><td>89 Ac —</td><td>90 Th 232.0</td><td>91 Pa 231.0</td><td>92 U 238.0</td><td>93 Np —</td><td>94 Pu —</td><td>95 Am —</td><td>96 Cm —</td><td>97 Bk —</td><td>98 Cf —</td><td>99 Es —</td><td>100 Fm —</td><td>101 Md —</td><td>102 No —</td><td>103 Lr —</td></tr>
+</tbody>
+</table>
+```
+
+## Provenance
+
+This page reproduces the reference content of *Preparatory Problems for the 58th International Chemistry Olympiad (Tashkent, Uzbekistan, 10–19 July 2026)*, Part 1, with the original Preface, Acknowledgements, and full Contributor list omitted for concision (see the official PDF). All technical content — Fields of Advanced Difficulty, constants, formulae, math reference, and the periodic table — is preserved verbatim.

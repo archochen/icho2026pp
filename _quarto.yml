@@ -3,6 +3,7 @@ project:
   output-dir: _site
   render:
     - "index.qmd"
+    - "syllabus.qmd"
     - "parts/**/*.qmd"
     - "about.qmd"
 
@@ -22,12 +23,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Part 1"
-        href: parts/part1/
-      - text: "Part 2"
-        href: parts/part2/
-      - text: "Part 3"
-        href: parts/part3/
+      - text: "Syllabus"
+        href: syllabus.qmd
       - about.qmd
     right:
       - icon: discord

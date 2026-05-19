@@ -56,41 +56,47 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 
 > **Solution (Q3 — MS fragment cations).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18; the former diphenylalkene assignment was incompatible with the printed mass spectrum because the proposed "m/z 119" diphenylmethyl cation would actually have m/z 167. A later tert-butylethylbenzene assignment was also rejected because its reference EI spectrum has a dominant $m/z=147$ peak, which is not present as a major feature in the question spectrum. Mechanistic justification for the $m/z=41$ side-chain ion and for the two aromatic fragment ions was added after follow-up review. The original question and spectrum were not changed.
+> **Revision note (2026-05-18).** Earlier revisions of this solution proposed (i) a diphenylalkene (m/z mismatch — the diphenylmethyl cation is 167, not 119), (ii) 1-tert-butyl-4-ethylbenzene (rejected: reference EI gives a *dominant* m/z 147 peak, which is only a trace here), and (iii) 1-ethyl-4-**isobutyl**benzene (the iBu side chain requires a *branched* alkene precursor `Ar-CH=C(CH₃)₂`, which the substrate scheme does **not** depict). The substrate scheme shows an unbranched 3-carbon alkene `R-CH=CH-CH₃` or `R-CH₂-CH=CH₂`, which reduces to an **n-propyl** side chain. The product therefore has an unbranched chain at the benzylic position, and the cations below correspond to that interpretation.
 >
-> The printed spectrum has a molecular-ion region at $m/z\approx 162$, and the diagnostic fragments match **1-ethyl-4-isobutylbenzene**. The three intense cations are:
+> The molecular-ion region is at $m/z\approx 162$; the diagnostic fragments match **1-butyl-4-ethylbenzene** (Q21.4). The three intense cations are:
 >
 > $$m/z=41:\quad [\mathrm{C_3H_5}]^+,$$
-> an allylic hydrocarbon cation, often drawn as
-> $$\mathrm{CH_2{=}CH{-}CH_2^+ \leftrightarrow CH_2^+{-}CH{=}CH_2}.$$
+> an allylic / cyclopropenium hydrocarbon cation, drawn either as
+> $$\mathrm{CH_2{=}CH{-}CH_2^+ \leftrightarrow CH_2^+{-}CH{=}CH_2}\quad\text{or}\quad c\text{-}\mathrm{C_3H_5^+}.$$
 >
-> The neutral product does not contain a pre-existing allyl group; this is an EI-MS rearrangement/dehydrogenation fragment. A reasonable pathway is complementary charge retention during cleavage of the isobutyl side chain:
-> $$[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{p\text{-}Et{-}C_6H_4CH_2^\bullet}+ \mathrm{(CH_3)_2CH^+}$$
-> followed by loss of $\mathrm{H_2}$ from the $\mathrm{C_3H_7^+}$ ion:
+> The neutral product contains no pre-existing allyl group; this ion is an EI-MS rearrangement fragment. The standard pathway is **complementary charge retention** on the side chain during $\alpha$-cleavage of the n-butyl group, followed by H$_2$ loss from the resulting n-propyl cation:
+> $$[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{p\text{-}Et{-}C_6H_4{-}CH_2^\bullet}\;+\;\mathrm{CH_3CH_2CH_2^+}$$
 > $$\mathrm{C_3H_7^+}\rightarrow \mathrm{C_3H_5^+}+\mathrm{H_2}.$$
 >
 > $$m/z=91:\quad [\mathrm{C_7H_7}]^+,$$
-> the benzyl/tropylium cation, drawn most cleanly as the aromatic cycloheptatrienyl cation.
+> the benzyl / tropylium cation, drawn most cleanly as the aromatic cycloheptatrienyl cation. It arises predominantly by secondary loss of ethene from $m/z=119$ (see below).
 >
 > $$m/z=119:\quad [\mathrm{C_9H_{11}}]^+,$$
-> an ethyl-substituted benzyl/tropylium-type cation. One acceptable drawing is the $p$-ethylbenzyl cation, $\mathrm{Et{-}C_6H_4{-}CH_2^+}$, formed by cleavage of the isobutyl side chain as loss of $\mathrm{\cdot C_3H_7}$; it can rearrange to the ethyl-tropylium form under EI-MS conditions.
->
-> This ion also explains the formation of $m/z=91$ by secondary loss of ethene:
+> the **4-ethylbenzyl cation**, $\mathrm{4\text{-}Et{-}C_6H_4{-}CH_2^+}$ (which rapidly rearranges to the corresponding ethyl-tropylium under EI conditions). It is formed by $\alpha$-cleavage at the benzylic position of the n-butyl side chain, with loss of an **n-propyl radical** (not an isopropyl radical):
+> $$[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{4\text{-}Et{-}C_6H_4{-}CH_2^+}\;+\;\mathrm{\cdot CH_2CH_2CH_3}.$$
+> Secondary loss of ethene then closes the loop to $m/z=91$:
 > $$\mathrm{C_9H_{11}^+}\rightarrow \mathrm{C_7H_7^+}+\mathrm{C_2H_4}.$$
 >
-> The two aromatic-ring fragments mentioned in the question are therefore $m/z=91$ and $m/z=119$. This does **not** mean that the neutral product contains two aromatic rings. It means the two fragment cations are different aromatic-ring ions: $\mathrm{C_7H_7^+}$ is tropylium, while $\mathrm{C_9H_{11}^+}$ is an ethylbenzyl/ethyl-tropylium-type aromatic cation.
+> The two aromatic-ring cations mentioned in the question are $m/z=91$ and $m/z=119$. The neutral product contains a single benzene ring; the two fragments are "different aromatic rings" in the sense that they are different aromatic ring **ions** — bare tropylium ($\mathrm{C_7H_7^+}$) versus 4-ethyl-substituted tropylium ($\mathrm{C_9H_{11}^+}$).
 
 4. **Draw** the structure of the **product**.
 
 > **Solution (Q4 — hydrogenation product).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18; the product was corrected to match the spectrum and the "maximum one plane of symmetry" clue. Updated again after external spectrum checking: the tert-butyl isomer would show a strong $m/z=147$ peak, so the side chain must be isobutyl rather than tert-butyl.
+> **Revision note (2026-05-18).** Earlier revisions proposed (i) a diphenyl-alkene (m/z incompatible), (ii) 1-tert-butyl-4-ethylbenzene (rejected because its EI base peak is m/z 147 from $\alpha$-cleavage at the tert-butyl benzylic position), and (iii) 1-ethyl-4-**isobutyl**benzene. Assignment (iii) gave the correct m/z 119 base peak by $\alpha$-cleavage but was **inconsistent with the substrate scheme**: an isobutyl side chain $-\mathrm{CH_2CH(CH_3)_2}$ would require hydrogenation of a *branched* alkene `Ar-CH=C(CH₃)₂`, which the printed scheme does not show. The scheme depicts an unbranched 3-carbon alkene $\mathrm{R{-}CH{=}CH{-}CH_3}$ (or the terminal isomer $\mathrm{R{-}CH_2{-}CH{=}CH_2}$), which reduces to an **n-propyl** side chain. The substrate-consistent product is therefore the *n-butyl* (not isobutyl) isomer:
 >
-> The product is:
-> $$\boxed{\mathrm{p\text{-}Et{-}C_6H_4{-}CH_2CH(CH_3)_2}}$$
-> i.e. **1-ethyl-4-isobutylbenzene**.
+> $$\boxed{\mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2CH_2CH_2CH_3}}$$
+> i.e. **1-butyl-4-ethylbenzene** (CAS 7295-04-5).
 >
-> Its formula is $\mathrm{C_{12}H_{18}}$ and $M_r\approx162.27$, matching the high-mass peak cluster near $m/z=162$ in the spectrum. The para relationship of the ethyl and isobutyl groups gives the idealized product at most one mirror plane. Under EI-MS, cleavage of the isobutyl side chain gives $\mathrm{C_9H_{11}^+}$ at $m/z=119$; further rearrangement/fragmentation gives $\mathrm{C_7H_7^+}$ at $m/z=91$, and the hydrocarbon side chain gives $\mathrm{C_3H_5^+}$ at $m/z=41$.
+> **Substrate connection.** With $\mathrm{R}=\mathrm{(4\text{-}Et\text{-}C_6H_4)CH_2{-}}$ (the 4-ethylbenzyl group), the substrate $\mathrm{R\text{-}CH=CH\text{-}CH_3}$ is 1-(4-ethylphenyl)-2-butene, and Wilkinson hydrogenation gives 4-ethyl-1-butylbenzene cleanly. The same product is obtained from $\mathrm{R\text{-}CH_2\text{-}CH=CH_2}=4\text{-}(4\text{-ethylphenyl})\text{-}1\text{-}\text{butene}$.
+>
+> **Formula and mass.** $\mathrm{C_{12}H_{18}}$, $M_r=162.27\,\mathrm{g\,mol^{-1}}$, matching the molecular-ion cluster near $m/z=162$ in the spectrum.
+>
+> **Symmetry (one mirror plane).** The benzene ring plane is **not** a symmetry plane of the whole molecule, because the H atoms on each sp$^3$ alkyl carbon lie above and below the ring plane (and a terminal methyl can position only one of its three H's in that plane, never all three). The only symmetry plane is the **vertical plane containing the C1–C4 axis and perpendicular to the ring** — this plane contains the extended n-butyl and ethyl backbones (both of which have a local mirror plane through their C–C–C… chains) and maps the molecule onto itself. The perpendicular vertical plane (through C2–C5, swapping the two substituents) is **not** a mirror because the n-butyl and ethyl groups are different. Hence exactly **one** plane of symmetry, satisfying the question's clue.
+>
+> **EI-MS rationalisation.** $\alpha$-cleavage at the benzylic position of the n-butyl side chain breaks the $\mathrm{C_\alpha\text{-}C_\beta}$ bond and gives the stable 4-ethylbenzyl cation ($\mathrm{C_9H_{11}^+}$, $m/z=119$, base peak) plus an n-propyl radical ($\mathrm{\cdot CH_2CH_2CH_3}$, $\Delta m=43$):
+> $$[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2^+}\;+\;\mathrm{\cdot C_3H_7}.$$
+> Secondary loss of ethene from $m/z=119$ delivers tropylium ($\mathrm{C_7H_7^+}$, $m/z=91$); complementary charge retention on the n-propyl side gives $\mathrm{C_3H_7^+}$ which dehydrogenates to $\mathrm{C_3H_5^+}$ ($m/z=41$). The much smaller $m/z=147$ peak in the spectrum corresponds to the rarer competing $\alpha$-cleavage at the ethyl side ($-\mathrm{CH_3}$), giving 4-butylbenzyl cation. Loss of $\mathrm{CH_3}$ is suppressed relative to loss of $\mathrm{C_3H_7}$ because the longer n-propyl radical is more stable, which is why $m/z=119$ is base and $m/z=147$ is barely visible — exactly the pattern observed.
 
 5. **Find** the intensity ratio $\begin{array} {r} {[ \mathbf{M} ]^{+} {:} [ \mathbf{M} {+} 1 ]^{+}} \end{array}$ in the mass spectrum if the relative atomic mass of carbon is 12.011 and it consists of two stable isotopes.
 

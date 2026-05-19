@@ -1,0 +1,294 @@
+---
+title: "P2.04 — Nanozymes"
+problem-id: 4
+status: tbc
+difficulty: 3
+foad: []
+topics: []
+date: "2026-05-19"
+description: ""
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Found an issue?** Post the problem number (**P2.04**) and the **step** on Discord.
+[💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
+:::
+
+Nanozymes are nanoparticles (NPs) that exhibit enzymatic activities under different physiological conditions, offering advantages such as high stability, low cost, and tunable activity compared to natural enzymes. Nanozyme $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs can be obtained by co-precipitation of salts **S1** and **S2**, both containing element **X**, in alkaline media. $2.7025 \ \mathrm{g}$ of **S1** and $\mathrm{1.3901~g}$ of **S2** were dissolved in an acidic solvent and treated with tetramethylammonium hydroxide, and $1.1578 \ \mathrm{g}$ of $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs were formed as a result as the only substance containing **X**. The electrospray ionization mass spectrometry of **S1** revealed positive ion $\mathrm {[ X H a l_{2} ( H_{2} O )_{4} ]^{+}}$ with m/z 198 and negative ion $\mathrm {[ X H a l_{4} ]^{-}}$ with m/z 196 being the most intense peaks. **S2** lost $45.36\%$ of the total of the original mass and changed color from green to white above $300\,°\mathrm{C}$ . Elemental analysis revealed a mass fraction of $20.09\%$ of element **X** in **S2**.
+
+1. **Find** element **X**, and salts **S1** and **S2**.
+
+> **Solution (Q1 — Identifying X, S1, S2).**
+>
+> **Halide from the ESI-MS mass difference.** The two ESI-MS fragments differ by
+> $$[\mathrm{XHal_2(H_2O)_4}]^+ - [\mathrm{XHal_4}]^- = 4\,\mathrm{H_2O} - 2\,\mathrm{Hal} = 198-196 = 2$$
+> $$\Rightarrow \quad 2\,M_\mathrm{Hal} = 4(18) - 2 = 70 \;\Longrightarrow\; M_\mathrm{Hal}=35\ \mathrm{g\,mol^{-1}} \;(\mathrm{Cl}).$$
+>
+> **Element X from the anion peak.** Using monoisotopic $^{35}\mathrm{Cl}$,
+> $$M_\mathrm{X} = 196 - 4(35) = 56\ \mathrm{g\,mol^{-1}} \;\Longrightarrow\; \boxed{\mathrm{X}=\mathrm{Fe}}.$$
+> Both fragments $[\mathrm{FeCl_2(H_2O)_4}]^+$ and $[\mathrm{FeCl_4}]^-$ are diagnostic of Fe(III) chloride hexahydrate (the crystal is $[\mathrm{FeCl_2(H_2O)_4}]\mathrm{Cl}\cdot 2\mathrm{H_2O}$), $M=270.30\ \mathrm{g\,mol^{-1}}$. Check: $n(\mathrm{S1}) = 2.7025/270.30 = 0.01000\ \mathrm{mol}$ ✓. So $\boxed{\mathrm{S1}=\mathrm{FeCl_3\cdot6H_2O}}$.
+>
+> **S2 from the elemental and TGA clues.** $w_\mathrm{Fe}=20.09\%$ with a green→white colour change and $\approx 45\%$ mass loss above $300\,°\mathrm{C}$ is the signature of melanterite, $\mathrm{FeSO_4\cdot7H_2O}$ ($M=278.02\ \mathrm{g\,mol^{-1}}$):
+> $$w_\mathrm{Fe}=\frac{55.85}{278.02}=20.09\%\checkmark,\qquad \frac{7(18.02)}{278.02}=45.36\%\checkmark.$$
+> $n(\mathrm{S2})=1.3901/278.02 = 0.005000\ \mathrm{mol}$. Hence $\boxed{\mathrm{S2}=\mathrm{FeSO_4\cdot7H_2O}}$.
+>
+> | Species | Formula | $M$ / g mol$^{-1}$ | mass / g | $n$ / mmol |
+> |---|---|---|---|---|
+> | S1 | $\mathrm{FeCl_3\cdot6H_2O}$ | 270.30 | 2.7025 | 10.00 |
+> | S2 | $\mathrm{FeSO_4\cdot7H_2O}$ | 278.02 | 1.3901 | 5.000 |
+>
+> The Fe(III):Fe(II) ratio supplied is $10.00:5.000 = 2:1$, exactly that of magnetite.
+
+2. **Determine** the values of $n$ and $m$ for $\mathbf{X}_{n} \mathbf{O}_{m}$ NPs.
+
+> **Solution (Q2 — Stoichiometry of the NPs).**
+>
+> Total Fe delivered: $n_\mathrm{Fe} = 0.01000 + 0.00500 = 0.01500\ \mathrm{mol}$ (all of it is incorporated into the NPs, since X is present only in the product). Let $\mathrm{X}_n\mathrm{O}_m = \mathrm{Fe}_n\mathrm{O}_m$ with $M = 55.85\,n + 16.00\,m$. From mass balance,
+> $$\frac{1.1578}{55.85\,n+16.00\,m}=\frac{0.01500}{n}\;\Longrightarrow\;\frac{m}{n}=\frac{1.1578 - 0.01500\cdot 55.85/1}{0.01500\cdot 16.00}\cdot\frac{1}{1}.$$
+> Solving: $55.85\,n + 16.00\,m = 77.19\,n \Rightarrow 16\,m = 21.34\,n \Rightarrow m/n = 1.333 = 4/3$.
+> Hence $\boxed{n=3,\ m=4}$; the nanoparticles are **magnetite, $\mathrm{Fe_3O_4}$** ($M=231.53$, $n(\mathrm{Fe_3O_4})=0.00500$ mol, mass $=1.1577$ g ✓). This is consistent with the $\mathrm{Fe^{II}Fe^{III}_2O_4}$ inverse-spinel formulation, matching the 1:2 ratio of S2:S1.
+
+3. **Write** the equation of the co-precipitation reaction of $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs in ionic form.
+
+> **Solution (Q3 — Ionic co-precipitation equation).**
+>
+> With $\mathrm{(CH_3)_4NOH}$ supplying $\mathrm{OH}^-$,
+> $$\boxed{\;\mathrm{Fe^{2+} + 2\,Fe^{3+} + 8\,OH^- \;\longrightarrow\; Fe_3O_4\!\downarrow + 4\,H_2O}\;}$$
+> (charge: $+2+6-8=0$ ✓; O: $8 = 4 + 4$ ✓; H: $8 = 8$ ✓). The tetramethylammonium cation acts as a spectator and a shape-directing agent for the NPs.
+
+Peroxidases are enzymes that catalyse the oxidation of substrates with $\mathrm{H}_{2} \mathrm{O}_{2}$ as an electron acceptor. Horseradish Peroxidase (HRP) catalyses a typical colourimetric reaction involving $\mathrm{H}_{2} \mathrm{O}_{2}$ and a chromogenic substrate $( \mathrm{H}_{2} \mathrm{TMB}_ {\mathrm{red}} )$ :
+
+$$
+\mathrm{H}_{2} \mathrm{TMB}_ {\mathrm{red}} + \mathrm{H}_{2} \mathrm{O}_{2} \xrightarrow {\mathrm{HRP}} \mathrm{TMB}_ {\mathrm{ox}} + 2 \mathrm{H}_{2} \mathrm{O}
+$$
+
+$\mathbf{X}_{n}\mathbf{O}_{m}$ NPs behave like peroxidase due to their ability to participate in the following reaction:
+
+$$
+\mathbf{X}^{(n-1)+} + \mathrm{H}_{2} \mathrm{O}_{2} \rightarrow \mathbf{X}^{n+} + \mathrm{OH}^{*} + \mathrm{OH}^{-}
+$$
+
+4. The peroxidase activity of $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs is short-lived. After a certain time, $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs are converted into another oxide NPs of element **X** and lose their catalytic activity. **Determine** the chemical formula of the latter, if the mass fraction of **X** in them is smaller than that in $\mathbf{X}_{n}\mathbf{O}_{m}$ .
+
+> **Solution (Q4 — Deactivated oxide).**
+>
+> The peroxidase cycle shown in the problem consumes the $\mathrm{Fe}^{(n-1)+}=\mathrm{Fe^{2+}}$ centres of magnetite (generating $\mathrm{OH}^\bullet$), oxidising all iron to $\mathrm{Fe^{3+}}$. Once every Fe(II) has been oxidised, the catalytic Fenton-type step can no longer occur. The resulting fully-oxidised oxide has only Fe(III) and a lower iron mass fraction:
+>
+> | Oxide | $M$ / g mol$^{-1}$ | $w_\mathrm{Fe}$ |
+> |---|---|---|
+> | $\mathrm{Fe_3O_4}$ | 231.53 | $3(55.85)/231.53 = 72.36\%$ |
+> | $\mathrm{Fe_2O_3}$ | 159.69 | $2(55.85)/159.69 = 69.94\%$ |
+>
+> $w_\mathrm{Fe}(\mathrm{Fe_2O_3}) < w_\mathrm{Fe}(\mathrm{Fe_3O_4})$ ✓. Hence the deactivated NPs are $\boxed{\mathrm{Fe_2O_3}}$ (maghemite/hematite): $\;\mathrm{2\,Fe_3O_4+H_2O_2\rightarrow3\,Fe_2O_3+H_2O}$.
+
+5. Which of the following reagents can be used to sustain the catalytic activity of $\mathbf{X}_{n}\mathbf{O}_{m}$ NPs? **Choose** the correct answer(s).
+
+a) NaIO4
+
+b) NaBH4
+
+c) Na3C6H5O7 (sodium citrate)
+
+d) Na3PO4
+
+> **Solution (Q5 — Sustaining peroxidase activity).**
+>
+> Activity is lost because $\mathrm{Fe^{2+}}$ is depleted. To regenerate it, a **reducing** agent (compatible with aqueous, near-neutral conditions) is required.
+>
+> | Reagent | Role | Suitable? |
+> |---|---|---|
+> | a) $\mathrm{NaIO_4}$ | strong oxidant ($\mathrm{I^{VII}}$) — would further oxidise Fe(II) | No |
+> | b) $\mathrm{NaBH_4}$ | strong reductant ($\mathrm{Fe^{3+}\!\rightarrow Fe^{2+}}$; widely used to re-reduce spent $\mathrm{Fe_3O_4}$ nanozymes) | **Yes** |
+> | c) $\mathrm{Na_3C_6H_5O_7}$ | mild reductant / Fe-chelator; maintains Fe(II) by stabilising it and reducing Fe(III) at physiological pH | **Yes** |
+> | d) $\mathrm{Na_3PO_4}$ | precipitates iron as $\mathrm{FePO_4}$/$\mathrm{Fe_3(PO_4)_2}$ and destroys the NPs; not redox-active | No |
+>
+> Correct answers: $\boxed{\text{b) NaBH}_4 \text{and c) Na}_3\mathrm{C_6H_5O_7}}$.
+
+In contrast, another $\mathbf{Y}_{p}$ -based nanozyme can act not only as a peroxidase or catalase (converts hydrogen peroxide into water and oxygen) but also can exhibit hydrolase and phosphomonoesterase-like activities without being consumed during the reaction. $\mathbf{Y}_{p}$ has a spherical structure, in which the **Y** atoms are linked together by covalent bonds. The covalent spherical framework $\mathbf{Y}_{p}$ has a volume of $1.128 \times 10^{-4} \mathrm {m^{3} {\cdot} m o l^{-1}}$ and a surface area of $1.324 \times 10^{6} \mathrm{m}^{2} {\cdot} \mathrm{kg}^{-1}$ .
+
+6. **Identify** element **Y** and number $p$
+
+> **Solution (Q6 — Identifying Y and p).**
+>
+> A **covalent spherical cage** of Y atoms is the signature of a fullerene. Model the cage as a thin spherical shell of radius $r$. With $N_\mathrm{A}$ cages per mole,
+> $$V_\mathrm{m} = \tfrac{4}{3}\pi r^{3}\,N_\mathrm{A},\qquad A_\mathrm{m}=\frac{4\pi r^{2}\,N_\mathrm{A}}{M}\ \bigl(\text{per kg}\bigr).$$
+>
+> **Cage radius from the molar volume.**
+> $$r^{3}=\frac{3V_\mathrm{m}}{4\pi N_\mathrm{A}}=\frac{3(1.128\times 10^{-4})}{4\pi(6.022\times 10^{23})}=4.471\times 10^{-29}\ \mathrm{m^{3}}$$
+> $$\Rightarrow\ r = 3.546\times 10^{-10}\ \mathrm{m}=3.546\ \text{Å}.$$
+> This is exactly the cage radius of **buckminsterfullerene**.
+>
+> **Molar mass from the specific surface area.**
+> $$M=\frac{4\pi r^{2} N_\mathrm{A}}{A_\mathrm{m}}=\frac{4\pi(3.546\times 10^{-10})^{2}(6.022\times 10^{23})}{1.324\times 10^{6}}=7.19\times 10^{-1}\ \mathrm{kg\,mol^{-1}}$$
+> $$\Rightarrow\ M\approx 719\ \mathrm{g\,mol^{-1}}\simeq 60\times 12.01 = 720.6\ \mathrm{g\,mol^{-1}}.$$
+>
+> Therefore $\boxed{\mathrm{Y}=\mathrm{C},\ p=60}$ — the nanozyme is $\mathbf{C_{60}}$ (buckminsterfullerene).
+>
+> | Check | Computed | Expected ($\mathrm{C_{60}}$) |
+> |---|---|---|
+> | Cage radius $r$ | $0.355\ \mathrm{nm}$ | $\approx 0.35\ \mathrm{nm}$ ✓ |
+> | Molar mass $M$ | $719\ \mathrm{g\,mol^{-1}}$ | $720.66\ \mathrm{g\,mol^{-1}}$ ✓ |
+
+The catalytic activity of $\mathbf{Y}_{p}$ -based nanozymes fits Michaelis-Menten kinetics.
+
+The effect of functionalised $\mathbf{Y}_{p}$ -nanozyme was tested with para-nitrophenyl phosphate at $\mathrm{pH} = 7.4$ and $T = 37\,°\mathrm{C}$ The analysis showed $K_{\mathrm{M}} = 1.03\ \mathrm{mM}$ and $r_{\mathrm{max}} = 3.73\ \mathrm{nM\cdot s^{-1}}$ .
+
+7. The substrate’s concentration should be high enough to saturate catalytic sites in nanozymes. If the recorded rate was $0.001\ \mu \mathrm{M} {\cdot} \mathrm{min}^{-1}$ , **calculate** the corresponding substrate concentration $( \mathrm{in}\ \mu \mathrm{M} )$ .
+
+> **Solution (Q7 — Substrate concentration from the rate).**
+>
+> Convert the measured rate to the same units as $r_\mathrm{max}$:
+> $$v = 0.001\ \mu\mathrm{M\,min^{-1}} = \frac{1\ \mathrm{nM}}{60\ \mathrm{s}} = 1.667\times 10^{-2}\ \mathrm{nM\,s^{-1}}.$$
+>
+> The Michaelis–Menten equation rearranged for $[S]$:
+> $$v = \frac{r_\mathrm{max}\,[S]}{K_\mathrm{M}+[S]}\ \Longrightarrow\ [S] = \frac{K_\mathrm{M}\,v}{r_\mathrm{max}-v}.$$
+>
+> With $r_\mathrm{max}=3.73\ \mathrm{nM\,s^{-1}}$ and $K_\mathrm{M}=1.03\ \mathrm{mM}=1030\ \mu\mathrm{M}$,
+> $$[S] = \frac{(1030\ \mu\mathrm{M})(1.667\times 10^{-2})}{3.73 - 1.667\times 10^{-2}}=\frac{17.17}{3.713}\ \mu\mathrm{M}=4.62\ \mu\mathrm{M}.$$
+>
+> $$\boxed{[S]\approx 4.62\ \mu\mathrm{M}}$$
+>
+> Note that this is $\ll K_\mathrm{M}$, so the catalytic sites are far from saturated — consistent with the tiny measured rate ($\sim 0.4\%$ of $r_\mathrm{max}$).
+
+8. If the reaction mixture contained $0.025\ \mathrm{mM}$ substrate, **calculate** the time (in min) needed to produce $0.025\ \mu \mathrm{M}$ product.
+
+> **Solution (Q8 — Time to form 0.025 μM product).**
+>
+> $[S]_0 = 0.025\ \mathrm{mM}=25\ \mu\mathrm{M}$ and the amount of product required is only $0.025\ \mu\mathrm{M}$, i.e. $0.1\%$ of $[S]_0$. Hence $[S]$ is essentially constant during the interval and the rate is constant:
+> $$v=\frac{r_\mathrm{max}[S]_0}{K_\mathrm{M}+[S]_0}=\frac{(3.73\ \mathrm{nM\,s^{-1}})(25\ \mu\mathrm{M})}{(1030+25)\ \mu\mathrm{M}}=8.84\times 10^{-2}\ \mathrm{nM\,s^{-1}}.$$
+>
+> Converting to $\mu\mathrm{M\,min^{-1}}$:
+> $$v = 8.84\times 10^{-2}\ \mathrm{nM\,s^{-1}}\times\frac{60\ \mathrm{s}}{1\ \mathrm{min}}\times\frac{10^{-3}\ \mu\mathrm{M}}{1\ \mathrm{nM}}=5.30\times 10^{-3}\ \mu\mathrm{M\,min^{-1}}.$$
+>
+> Therefore
+> $$t = \frac{\Delta[P]}{v}=\frac{0.025\ \mu\mathrm{M}}{5.30\times 10^{-3}\ \mu\mathrm{M\,min^{-1}}}=4.71\ \mathrm{min}.$$
+>
+> $$\boxed{t\approx 4.7\ \mathrm{min}}$$
+>
+> | Quantity | Value |
+> |---|---|
+> | $[S]_0$ | $25\ \mu\mathrm{M}$ |
+> | $K_\mathrm{M}$ | $1030\ \mu\mathrm{M}$ |
+> | $r_\mathrm{max}$ | $3.73\ \mathrm{nM\,s^{-1}}=0.2238\ \mu\mathrm{M\,min^{-1}}$ |
+> | Initial rate $v$ | $5.30\times 10^{-3}\ \mu\mathrm{M\,min^{-1}}$ |
+> | Time for $0.025\ \mu\mathrm{M}$ product | $\mathbf{4.71\ min}$ |
+
+---
+
+## 中文版 / Chinese translation
+## 第4题 纳米酶
+
+纳米酶是能够在不同生理条件下表现出酶样活性的纳米颗粒 (NPs)。与天然酶相比，它们具有稳定、廉价、活性可调等优点。将两种含元素 $\mathbf{X}$ 的盐 S1 和 S2 在碱性介质中共沉淀，可制得 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒。取 $2.7025\ \mathrm{g}$ S1 和 $1.3901\ \mathrm{g}$ S2 溶解于酸性溶剂中，并用四甲基铵氢氧化物处理，得到 $1.1578\ \mathrm{g}$ $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒，是产物中唯一含 $\mathbf{X}$ 的物质。S1 的电喷雾电离质谱中，正离子 $\mathrm{[XHal_{2}(H_{2}O)_{4}]^{+}}$ $(m/z=198)$ 和负离子 $\mathrm{[XHal_{4}]^{-}}$ $(m/z=196)$ 为最强峰。S2 在 $300\,°\mathrm{C}$ 以上失去 $45.36\%$ 原始质量，由绿色变为白色。元素分析显示 S2 中 $\mathbf{X}$ 的质量分数为 $20.09\%$。
+
+4-1 确定元素 $\mathbf{X}$ 及盐 S1 和 S2。
+
+4-2 确定 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒中 $n$ 和 $m$ 的数值。
+
+4-3 写出 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒共沉淀反应的离子方程式。
+
+过氧化物酶是一类以 $\mathrm{H}_{2}\mathrm{O}_{2}$ 为电子受体催化底物氧化的酶。辣根过氧化物酶 (HRP) 可催化一个典型的比色反应，涉及 $\mathrm{H}_{2}\mathrm{O}_{2}$ 和显色底物 $(\mathrm{H}_{2}\mathrm{TMB}_{\mathrm{red}})$：
+
+$$
+\mathrm{H}_{2} \mathrm{TMB}_ {\mathrm{red}} + \mathrm{H}_{2} \mathrm{O}_{2} \xrightarrow {\mathrm{HRP}} \mathrm{TMB}_ {\mathrm{ox}} + 2 \mathrm{H}_{2} \mathrm{O}
+$$
+
+之所以 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒具有过氧化物酶样活性，是因为以下反应：
+
+$$
+\mathbf{X}^{(n-1)+} + \mathrm{H}_{2} \mathrm{O}_{2} \rightarrow \mathbf{X}^{n+} + \mathrm{OH}^{*} + \mathrm{OH}^{-}
+$$
+
+4-4 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒只能短暂表现出过氧化物酶样活性，随后便会转化为另一种 $\mathbf{X}$ 元素的氧化物纳米颗粒，并失去催化活性。产物纳米颗粒中 $\mathbf{X}$ 元素的质量分数低于 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒，确定产物纳米颗粒的化学式。
+
+4-5 选出下列试剂中，可用于维持 $\mathbf{X}_{n}\mathbf{O}_{m}$ 纳米颗粒的催化活性的单个或多个选项。
+
+(a) $\mathrm{NaIO_{4}}$　(b) $\mathrm{NaBH_{4}}$　(c) $\mathrm{Na_{3}C_{6}H_{5}O_{7}}$（柠檬酸钠）　(d) $\mathrm{Na_{3}PO_{4}}$
+
+相比之下，另一种基于 $\mathbf{Y}_{p}$ 的纳米酶不仅类似过氧化物酶或过氧化氢酶（将 $\mathrm{H}_{2}\mathrm{O}_{2}$ 转化为水和氧），还可表现出水解酶和磷酸单酯酶样活性，且在反应中不被消耗。$\mathbf{Y}_{p}$ 具有球形结构，$\mathbf{Y}$ 原子通过共价键连接。这种共价球形骨架 $\mathbf{Y}_{p}$ 的摩尔体积为 $1.128\times 10^{-4}\ \mathrm{m^{3}\cdot mol^{-1}}$，比表面积为 $1.324\times 10^{6}\ \mathrm{m^{2}\cdot kg^{-1}}$。
+
+4-6 确定元素 $\mathbf{Y}$ 及 $p$ 的数值。
+
+$\mathbf{Y}_{p}$ 基纳米酶的催化活性遵循米氏动力学。在 $\mathrm{pH}=7.4$、$T=37\,°\mathrm{C}$ 条件下，以硝基苯磷酸酯为底物，测试功能化 $\mathbf{Y}_{p}$ 纳米酶的活性。分析结果显示 $K_{\mathrm{M}}=1.03\ \mathrm{mM}$，$r_{\max}=3.73\ \mathrm{nM\cdot s^{-1}}$。
+
+4-7 底物浓度应足以使纳米酶催化位点达到饱和。如果测得反应速率为 $0.001\ \mu\mathrm{M}\cdot\mathrm{min}^{-1}$，计算相应的底物浓度 $(\mu\mathrm{M})$。
+
+4-8 若反应混合物中含有 $0.025\ \mathrm{mM}$ 底物，计算生成 $0.025\ \mu\mathrm{M}$ 产物所需的时间(min)。
+
+---
+
+## 教学点评 / 解题分析
+
+本题与题 1–3 的"苏联风格纯无机推断"路线迥异，属于典型的**现代交叉型应用化学题**。整道题以 2007 年 Gao–Yan 组在 *Nature Nanotechnology* 发表的磁铁矿纳米酶开山论文为隐线，依次穿插了 1981 年 Massart 的铁氧化物共沉淀法、Fenton 机制、1985 年 Kroto 的富勒烯几何学和 1913 年 Michaelis–Menten 酶动力学——可以看作一次**"纳米酶文献速览"式的能力考察**：把水合盐热分析 + ESI-MS 碎片推断 + 反尖晶石化学计量 + 纳米酶失活/再生 + 富勒烯几何识别 + 米氏动力学**六个板块平铺串联**。任何单一板块单独拿出来都不算难题，但串在一起的考点密度极高，真正拷问的是选手在 90 分钟内**多板块平稳切换、不在局部陷入死磕**的节奏感——这也是 IChO 主考卷（相对预赛）的典型风格。
+
+**第一板块：Massart 共沉淀法（Q1–Q3）。** 此板块考的不是"推理深度"而是"信息整合密度"——三条独立证据路线必须在同一个分子上会师：
+
+- **ESI-MS 差值法**——正、负两种离子 $[\mathrm{XHal_{2}(H_{2}O)_{4}}]^{+}$ ($m/z=198$) 与 $[\mathrm{XHal_{4}}]^{-}$ ($m/z=196$) 恰好"关于 X 对称"，两式相减即消去 X：$4\mathrm{H_{2}O}-2\mathrm{Hal}=198-196=2$ → $M_{\mathrm{Hal}}=35$ → 氯。再代回任一式即得 $M_{\mathrm{X}}=56$ → Fe。此处**两峰的"对称设计"绝非巧合**——命题方故意让 X 在两式中各出现一次，从而把 X 消掉、直接显露 Hal。这是竞赛质谱题最常见的"差减显元"套路，练过即秒；
+- **ESI 负离子的深层意义**——$[\mathrm{FeCl_{4}}]^{-}$ 与 $[\mathrm{FeCl_{2}(H_{2}O)_{4}}]^{+}$ **同时**作为最强峰这一现象，本身就指向水合 $\mathrm{FeCl_{3}}$ 的实际晶体结构 $[\mathrm{FeCl_{2}(H_{2}O)_{4}}]\mathrm{Cl}\cdot 2\mathrm{H_{2}O}$——即二氯四水合铁(III) 氯化物二水合物，属于"外写 $\mathrm{FeCl_{3}\cdot 6H_{2}O}$、内部是 $[\mathrm{FeCl_{2}(H_{2}O)_{4}}]^{+}$ 配位构型"的经典配合物命名陷阱。ESI 正好同时捕捉到了阳离子和阴离子环境中的游离 $\mathrm{Cl}^{-}$（与另一个 $\mathrm{FeCl_{3}}$ 组合即 $\mathrm{FeCl_{4}}^{-}$）——这种 **MS 图谱揭示晶体内真实配位圈**的手法是配合物化学经典考点；
+- **TGA + 颜色指纹**——"绿色 → 白色、$300\,°\mathrm{C}$ 以上失重 $45.36\%$、含 X $20.09\%$"三条线索同时指向**绿矾** $\mathrm{FeSO_{4}\cdot 7H_{2}O}$（melanterite）：失水 $7\times 18/278 = 45.36\%$ ✓，$w_{\mathrm{Fe}}=55.85/278=20.09\%$ ✓，绿色七水合盐脱水后变为无色（近白）的无水 $\mathrm{FeSO_{4}}$。建议学生记忆一组"水合失重锚点"——**5 H₂O = 36%、6 H₂O = 40%、7 H₂O = 45%、10 H₂O = 56%**——见到特征数值直接对号入座；
+- **2:1 化学计量锁定 $\mathrm{Fe_{3}O_{4}}$**——$n(\mathrm{S_{1}}) : n(\mathrm{S_{2}}) = 10.00:5.000 = 2:1$，恰好对应反尖晶石 $\mathrm{Fe}^{II}\mathrm{Fe}_{2}^{III}\mathrm{O}_{4}$ 的 Fe(III):Fe(II) 比例——这正是 1981 年 Massart 法合成磁铁矿纳米颗粒的黄金配比。$10.00$ 和 $5.000$ mmol 这种"干净到反常"的数字是命题方的**设计暗号**：一旦看出比例即整数，基本可以跳过 Q2 的代数求解直接猜 $\mathrm{Fe_{3}O_{4}}$，再反过来验证 $n=3,\ m=4$；
+- **Q3 的隐藏信息——TMAOH 为何不用 NaOH？** 四甲基铵氢氧化物在文献里是标志性的"**形貌控制剂**"：$\mathrm{(CH_{3})_{4}N}^{+}$ 吸附在新生 $\mathrm{Fe_{3}O_{4}}$ 表面提供**静电位阻双重稳定**，防止 NP 团聚并限制粒径。答题时虽然只需写离子方程式，但理解这一层有助于预判 Q4–Q5 中"纳米尺度 + 表面化学"的后续考点。
+
+**第二板块：Fenton 机制驱动的失活与再生（Q4–Q5）。** 此板块考的是对**纳米酶失效化学机理**的理解：
+
+- **Q4 失活产物的机理锁定**——问题中给出的 $\mathrm{X}^{(n-1)+}+\mathrm{H_{2}O_{2}}\rightarrow\mathrm{X}^{n+}+\mathrm{OH}^{\bullet}+\mathrm{OH}^{-}$ 正是经典的 **Fenton 反应**（1894 年 H. J. H. Fenton）；$\mathrm{Fe}^{2+}$ 被 $\mathrm{H_{2}O_{2}}$ 氧化生成 $\mathrm{OH}^{\bullet}$ 自由基。该 $\mathrm{OH}^{\bullet}$ 才是真正氧化无色 $\mathrm{H_{2}TMB_{red}}$ 到蓝绿色 $\mathrm{TMB_{ox}}$ 的"显色活手"——这正是 2007 年 Gao–Yan 在 *Nat. Nanotech.* 提出"$\mathrm{Fe_{3}O_{4}}$ 纳米酶 = 非蛋白过氧化物酶"的核心论证。磁铁矿中 $\mathrm{Fe}^{2+}$ 被 $\mathrm{H_{2}O_{2}}$ 单向消耗殆尽后，剩余全为 $\mathrm{Fe}^{3+}$，产物即**全氧化铁** $\mathrm{Fe_{2}O_{3}}$（纳米尺度一般为 $\gamma$-磁赤铁矿，$w_{\mathrm{Fe}}=69.94\%$）；
+- **"更低质量分数"的判决作用**——"产物 $w_{\mathrm{X}}<72.36\%$" 这一约束是命题方为**防止学生错写水合氧化物** $\mathrm{FeOOH}$ ($w_{\mathrm{Fe}}=62.8\%$) 或 $\mathrm{Fe(OH)_{3}}$ ($w_{\mathrm{Fe}}=52.3\%$) 而埋的过滤器。另外题干明写"**oxide NPs**"——氧化物而非氢氧化物/羟基氧化物——已经把答案锁死为 $\mathrm{Fe_{2}O_{3}}$。一个原理约束 + 一个不等式约束 + 一个物种约束**三重锁定**，是命题学上的规范动作；
+- **Q5 再生试剂的多维筛选**——活性丢失源于 $\mathrm{Fe}^{2+}$ 耗尽，补回 $\mathrm{Fe}^{2+}$ 的**唯一**路径就是还原。四个选项恰好考察四个维度：
+  - (a) $\mathrm{NaIO_{4}}$：$\mathrm{I(+VII)}$ 强氧化剂 → 方向相反，直接 PASS；
+  - (b) $\mathrm{NaBH_{4}}$：氢化物强还原剂，是文献中再生 $\mathrm{Fe_{3}O_{4}}$ 纳米酶的**金标准**（Jana 组 2011）；须注意在水相中 $\mathrm{BH_{4}}^{-}$ 缓慢水解为 $\mathrm{BH(OH)_{3}}^{-}$，但速率远慢于 $\mathrm{Fe}^{3+}$ 还原，故可用；
+  - (c) 柠檬酸钠：**双功能**——既是温和还原剂（Turkevich-type），又是 $\mathrm{Fe}^{3+}$ 螯合剂，在生理 pH 下能把 $\mathrm{Fe}^{3+}$ 缓慢回还为 $\mathrm{Fe}^{2+}$ 同时防止 Fe 析出；
+  - (d) $\mathrm{Na_{3}PO_{4}}$：非氧化还原活性，但会形成 $\mathrm{FePO_{4}}$ ($K_{sp}\approx 10^{-22}$) 沉淀——不仅不能再生，反而**破坏 NP 骨架**并沉淀流失 Fe，双重杀伤；
+  
+  **正解 (b) + (c)**。本题的深层技巧是：识别"还原剂"只是第一层，还要**同时**兼顾 pH 相容、溶解度相容、无副沉淀——缺一条就错选。
+
+**第三板块：富勒烯的几何反推（Q6）。** 本题最精巧、最易让学生措手不及、也最值得细品的一步。命题方只给了两个看似"物理学而非化学"的参数：
+$$V_{m}=1.128\times 10^{-4}\ \mathrm{m^{3}\,mol^{-1}},\qquad A_{m}=1.324\times 10^{6}\ \mathrm{m^{2}\,kg^{-1}}.$$
+**关键观察**：$V_{m}$ 的单位是 m³/**mol**，$A_{m}$ 的单位是 m²/**kg**——单位里隐藏着$M$！具体来说：
+
+$$V_{m}=\underbrace{\tfrac{4}{3}\pi r^{3}}_{\text{单个笼体积}}\cdot N_{\mathrm{A}},\qquad A_{m}=\underbrace{4\pi r^{2}}_{\text{单个笼外表面}}\cdot \frac{N_{\mathrm{A}}}{M}.$$
+
+两个方程两个未知数（$r$、$M$），先从 $V_{m}$ 解出**笼半径**：
+$$r=\sqrt[3]{\frac{3V_{m}}{4\pi N_{\mathrm{A}}}}=\sqrt[3]{\frac{3\cdot 1.128\times 10^{-4}}{4\pi\cdot 6.022\times 10^{23}}}=3.55\times 10^{-10}\ \mathrm{m}=3.55\ \text{Å}.$$
+
+再把 $r$ 代入 $A_{m}$ 解出**摩尔质量**：
+$$M=\frac{4\pi r^{2}\,N_{\mathrm{A}}}{A_{m}}=\frac{4\pi(3.55\times 10^{-10})^{2}(6.022\times 10^{23})}{1.324\times 10^{6}}=7.19\times 10^{-1}\ \mathrm{kg\,mol^{-1}}=719\ \mathrm{g\,mol^{-1}}.$$
+
+$719/12.01\approx 59.9$，完美吻合 $\boxed{\mathrm{C_{60}}}$ **巴克敏斯特富勒烯**（1985 年 Kroto–Smalley–Curl，1996 年 Nobel 化学奖；笼半径 $3.55\ \text{Å}$、$M=720.66\ \mathrm{g\,mol^{-1}}$）。
+
+**三处深层陷阱值得讲清楚：**
+
+1. **"共价球形笼"四字是关键提示**——它隐含"空心单层壳"模型。若错误地把它当作**实心球**用宏观密度 $\rho$ 来反推 $V_{m}=M/\rho$，就**没有第二个方程**来同时确定 $M$ 和 $r$。所以模型必须是"$N_{\mathrm{A}}$ 个独立中空球壳"而非"固体球形堆积"；
+2. **$A_{m}$ 是"**外表面**"而非"**内外双面**"**——若按双面计算 $A=2\times 4\pi r^{2}$ 则会得到 $M\approx 1439\ \mathrm{g\,mol^{-1}}$ 从而错误推向 $\mathrm{C_{120}}$（并无稳定结构）。实际 BET 测量只能探测分子**外表面**（气体分子穿不过 $\mathrm{C_{60}}$ 笼壁），故只计一面。这与 BET 实验 $\mathrm{C_{60}}\approx 1.32\times 10^{6}\ \mathrm{m^{2}\,kg^{-1}}$ 数据完全一致，说明命题方用了真实实验值而非理想化估计；
+3. **"两物理参数 → 两化学未知数"是必记套路**——此类题的通用结构是：给出"每 mol 的一个外延量"$X_{m}$ 与"每 kg 的另一个外延量"$Y_{m}$，则
+  $$\frac{X_{m}}{Y_{m}}=\frac{X_{\text{单分子}}\cdot N_{\mathrm{A}}}{Y_{\text{单分子}}\cdot N_{\mathrm{A}}/M}=\frac{X_{\text{单分子}}}{Y_{\text{单分子}}}\cdot M.$$
+  等式两边的几何量比值只依赖于形状（此题是球），$M$ 即由单位除法直接漂出。这种模板在富勒烯、碳纳米管、石墨烯片、沸石笼、MOF 孔道等题目中反复出现，**平时练一道、用一辈子**。
+
+**第四板块：米氏动力学（Q7–Q8）。** 此板块考的是对 Michaelis–Menten 方程**两种极限**的识别与切换——看似送分，却容易在单位换算和近似层次上翻车：
+
+- **Q7 — 反解 $[S]$**：已知 $v$ 反解底物浓度，只需变形
+  $$[S]=\frac{K_{\mathrm{M}}\,v}{r_{\max}-v}.$$
+  代入 $v=0.001\ \mu\mathrm{M\,min}^{-1}=1.67\times 10^{-2}\ \mathrm{nM\,s}^{-1}$（**单位换算**是隐形陷阱：题给 $r_{\max}$ 单位是 $\mathrm{nM\,s}^{-1}$，要先把 $v$ 换到同一单位）与 $r_{\max}=3.73\ \mathrm{nM\,s}^{-1}$、$K_{\mathrm{M}}=1030\ \mu\mathrm{M}$，得 $[S]\approx 4.62\ \mu\mathrm{M}$——**约为 $K_{\mathrm{M}}$ 的 1/220**，妥妥落在一级（底物稀缺）极限。这与题干中"实测速率 = $0.4\%\,r_{\max}$"自洽：一级区域内 $v/r_{\max}\approx [S]/K_{\mathrm{M}}$；
+  
+  **一个小彩蛋**：若粗略地用 $[S]\approx K_{\mathrm{M}}v/r_{\max}$（忽略分母里的 $v$）计算，结果也是 4.62 μM——因为 $v\ll r_{\max}$，此近似在三位有效数字内与精确解等价。此即"一级近似"的数值体现；
+
+- **Q8 — 产物时间**：$[S]_{0}=25\ \mu\mathrm{M}$、$K_{\mathrm{M}}=1030\ \mu\mathrm{M}$，故 $[S]_{0}/K_{\mathrm{M}}\approx 2.4\%$（仍处一级区域）；更重要的是，所需产物仅 $0.025\ \mu\mathrm{M}$，相当于**转化率 0.1%**——在这么短的时间窗内 $[S]$ 近似不变，可直接把初速率当常数。**双重近似**：
+  
+  (i) $[S]_{0}\ll K_{\mathrm{M}}$ → $v\approx (r_{\max}/K_{\mathrm{M}})\cdot[S]_{0}$（一级）；
+  (ii) 转化率 ≪ 1 → $v$ 视为常数 → $t=\Delta[P]/v$（零级时间近似）。
+  
+  计算：$v=r_{\max}[S]_{0}/(K_{\mathrm{M}}+[S]_{0})=3.73\times 25/1055=0.0884\ \mathrm{nM\,s}^{-1}=5.30\times 10^{-3}\ \mu\mathrm{M\,min}^{-1}$，故 $t=0.025/5.30\times 10^{-3}\approx 4.71\ \mathrm{min}$；
+  
+  **若看不透"双重近似"**，学生容易去积分米氏方程的隐式解（Henri 1903 积分形式）：
+  $$t=\frac{1}{r_{\max}}\bigl[K_{\mathrm{M}}\ln\tfrac{[S]_{0}}{[S]}+([S]_{0}-[S])\bigr]$$
+  代入 $[S]=[S]_{0}-0.025=24.975\ \mu\mathrm{M}$，结果数值上当然几乎相同，但答题路径**长一倍**、错率倍增——这是 IChO 动力学小题的经典节奏陷阱。
+
+**经验总结。**
+
+1. **现代交叉型题的致胜之道是"快速板块识别 + 节奏切换"**——拿到题目先分段标注"这是无机推断"、"这是动力学"、"这是几何"、"这是机理"；每段只调用对应的思维工具库，不要让某一段的风格污染另一段。比如 Q6 是"几何题"就不要硬用"化学推断"的套路去猜元素；
+2. **经典铁化学三件套——ESI-MS 差减 / TGA 指纹 / 化学计量锁定**：ESI 两峰若"关于未知元素对称"则相减直接消元；热重失水百分比按"5 H₂O = 36%、6 H₂O = 40%、7 H₂O = 45%、10 H₂O = 56%"的锚点背熟；"反尖晶石 $\mathrm{Fe_{3}O_{4}}$ 对应 2:1 Fe(III):Fe(II)"是**必记**结构 stoichiometry，见到"两种铁盐按 2:1 共沉淀"就应立刻条件反射到磁铁矿；
+3. **配合物的"外式 vs 内式"陷阱**——$\mathrm{FeCl_{3}\cdot 6H_{2}O}$ 的真实晶体结构是 $[\mathrm{FeCl_{2}(H_{2}O)_{4}}]\mathrm{Cl}\cdot 2\mathrm{H_{2}O}$，ESI-MS 正好能揭示这种内部配位圈；类似例子还有 $\mathrm{CrCl_{3}\cdot 6H_{2}O}$ 的三种水合异构体、$\mathrm{CoCl_{2}\cdot 6H_{2}O}$ 的 $[\mathrm{Co(H_{2}O)_{6}}]^{2+}$ 构型等——竞赛题钟爱这类"外写简式、内部真式"考点；
+4. **纳米酶失活的通用规律 = 催化循环的还原态被氧化耗尽**——凡是"短暂活性 → 失活 → 全氧化态产物"的问题首先想到 Fenton/Haber–Weiss 机制；再生 = 还原剂，但筛选时须**同时**考虑：(i) 氧化还原方向、(ii) pH 兼容、(iii) 溶解度兼容（不形成沉淀）、(iv) 配位行为（螯合剂反而有利）。缺一条都可能误选；
+5. **两物理参数 → 两化学未知数"的富勒烯模板**——$V_{m}$（每 mol）+ $A_{m}$（每 kg）= $r$ + $M$ 一次联立解出。同类变形：**堆积密度 + 比表面积**（碳纳米管）、**晶胞参数 + 笼内原子数**（沸石/MOF）、**单位质量吸附量 + 单胞体积**（多孔材料）……**核心数学结构不变**，只需识别几何模型（球壳、圆柱壳、立方笼等）；
+6. **米氏方程的两种极限要会"条件反射"地切换**——$[S]\gg K_{\mathrm{M}}$ 时 $v\to r_{\max}$（零级，$v$ 与 $[S]$ 无关）；$[S]\ll K_{\mathrm{M}}$ 时 $v\to (r_{\max}/K_{\mathrm{M}})[S]$（一级）；再叠加"**转化率 ≪ 1** → $[S]$ 近似不变 → $v$ 视为常数 → $t=\Delta[P]/v$"的零级时间近似。大多数动力学小题可在三行内解决，避免不必要的积分；
+7. **单位换算是酶动力学题的隐形杀手**——$\mathrm{mM}\leftrightarrow\mu\mathrm{M}\leftrightarrow\mathrm{nM}$、$\mathrm{s}^{-1}\leftrightarrow\mathrm{min}^{-1}\leftrightarrow\mathrm{h}^{-1}$ 至少要换三次。建议**做题第一步就把所有量换到同一单位制**（通常取 $r_{\max}$ 的单位为基准），再开始代入。
+
+**难度评级：★★★☆☆**——覆盖面广但单点深度有限，每个板块的题套都属"练过就会"。真正能拉开差距的是 Q1 的 ESI-MS 对称差减 + 配位圈识别、Q6 富勒烯的"两物理参数—两未知数"几何反推、以及 Q7/Q8 的"双重近似 + 单位换算"组合拳，加上一个**隐形的节奏控制**：能否在 90 分钟内平稳穿越 6 个板块不陷入局部死磕。整体风格偏**"IChO 主考卷"而非"苏联预赛"**——与题 1、2、3 形成鲜明对照，可作为**训练"板块切换能力 + 文献阅读延伸"的标杆题**。若学生熟悉 2007 年 *Nat. Nanotech.* 的 Gao–Yan 磁铁矿纳米酶论文，本题几乎可以降到 ★★☆☆☆；若从零开始则会被 Q4、Q6 卡住一段时间，难度顶到 ★★★★☆。**文献阅读的杠杆效应**在这里体现得尤其明显。

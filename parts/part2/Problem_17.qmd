@@ -1,7 +1,7 @@
 ---
 title: "P2.17 — Carbohydrate chemistry"
 problem-id: 17
-status: not-started
+status: tbc
 difficulty: 3
 topics: []
 date: "2026-05-18"

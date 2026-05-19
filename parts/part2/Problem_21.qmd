@@ -81,22 +81,67 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 
 4. **Draw** the structure of the **product**.
 
-> **Solution (Q4 — hydrogenation product).**
+> **Solution (Q4 — hydrogenation product: two candidate structures).**
 >
-> **Revision note (2026-05-18).** Earlier revisions proposed (i) a diphenyl-alkene (m/z incompatible), (ii) 1-tert-butyl-4-ethylbenzene (rejected because its EI base peak is m/z 147 from $\alpha$-cleavage at the tert-butyl benzylic position), and (iii) 1-ethyl-4-**isobutyl**benzene. Assignment (iii) gave the correct m/z 119 base peak by $\alpha$-cleavage but was **inconsistent with the substrate scheme**: an isobutyl side chain $-\mathrm{CH_2CH(CH_3)_2}$ would require hydrogenation of a *branched* alkene `Ar-CH=C(CH₃)₂`, which the printed scheme does not show. The scheme depicts an unbranched 3-carbon alkene $\mathrm{R{-}CH{=}CH{-}CH_3}$ (or the terminal isomer $\mathrm{R{-}CH_2{-}CH{=}CH_2}$), which reduces to an **n-propyl** side chain. The substrate-consistent product is therefore the *n-butyl* (not isobutyl) isomer:
+> **Revision note (2026-05-18).** The mass spectrum + "max one plane of symmetry" clue does **not** uniquely determine the product — two regioisomers fit *both* the spectrum and the symmetry constraint and are indistinguishable by EI-MS alone. The single experimental discriminator is the substrate scheme, which depicts an *unbranched* 3-carbon alkene and so selects candidate **(A)** as the right answer. Earlier rejected alternatives (diphenyl-alkene with M ≠ 162; 1-tert-butyl-4-ethylbenzene with base peak m/z 147 from tertiary-benzylic α-cleavage) are not analysed here.
 >
-> $$\boxed{\mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2CH_2CH_2CH_3}}$$
-> i.e. **1-butyl-4-ethylbenzene** (CAS 7295-04-5).
+> ### Candidate (A) — 1-butyl-4-ethylbenzene  (the substrate-consistent answer)
 >
-> **Substrate connection.** With $\mathrm{R}=\mathrm{(4\text{-}Et\text{-}C_6H_4)CH_2{-}}$ (the 4-ethylbenzyl group), the substrate $\mathrm{R\text{-}CH=CH\text{-}CH_3}$ is 1-(4-ethylphenyl)-2-butene, and Wilkinson hydrogenation gives 4-ethyl-1-butylbenzene cleanly. The same product is obtained from $\mathrm{R\text{-}CH_2\text{-}CH=CH_2}=4\text{-}(4\text{-ethylphenyl})\text{-}1\text{-}\text{butene}$.
+> $$\boxed{\mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2CH_2CH_2CH_3}}\qquad\text{(C}_{12}\text{H}_{18},\ M=162.27\text{,\ CAS 7295-04-5)}$$
 >
-> **Formula and mass.** $\mathrm{C_{12}H_{18}}$, $M_r=162.27\,\mathrm{g\,mol^{-1}}$, matching the molecular-ion cluster near $m/z=162$ in the spectrum.
+> An n-butyl group para to an ethyl group on benzene. The n-propyl portion of the side chain (`-CH₂CH₂CH₃`) is the one introduced by hydrogenation; the benzylic `-CH₂-` of the n-butyl chain is the methylene that was already attached to the ring in the substrate.
 >
-> **Symmetry (one mirror plane).** The benzene ring plane is **not** a symmetry plane of the whole molecule, because the H atoms on each sp$^3$ alkyl carbon lie above and below the ring plane (and a terminal methyl can position only one of its three H's in that plane, never all three). The only symmetry plane is the **vertical plane containing the C1–C4 axis and perpendicular to the ring** — this plane contains the extended n-butyl and ethyl backbones (both of which have a local mirror plane through their C–C–C… chains) and maps the molecule onto itself. The perpendicular vertical plane (through C2–C5, swapping the two substituents) is **not** a mirror because the n-butyl and ethyl groups are different. Hence exactly **one** plane of symmetry, satisfying the question's clue.
+> **Symmetry.** The benzene ring plane is **not** a symmetry plane of an alkyl-substituted benzene: the H atoms on each sp³ alkyl carbon lie above and below the ring plane, and a terminal methyl can place only one of its three H's in the ring plane in any conformation. The only mirror plane is the **vertical plane containing the C1–C4 axis and perpendicular to the ring** — both alkyl backbones lie in this plane in their extended conformation, and the local mirror plane of each substituent coincides with it. The perpendicular vertical plane (through C2–C5, swapping the substituents) is *not* a mirror because n-Bu and Et are different groups. → exactly **1 mirror plane**. ✓
 >
-> **EI-MS rationalisation.** $\alpha$-cleavage at the benzylic position of the n-butyl side chain breaks the $\mathrm{C_\alpha\text{-}C_\beta}$ bond and gives the stable 4-ethylbenzyl cation ($\mathrm{C_9H_{11}^+}$, $m/z=119$, base peak) plus an n-propyl radical ($\mathrm{\cdot CH_2CH_2CH_3}$, $\Delta m=43$):
-> $$[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2^+}\;+\;\mathrm{\cdot C_3H_7}.$$
-> Secondary loss of ethene from $m/z=119$ delivers tropylium ($\mathrm{C_7H_7^+}$, $m/z=91$); complementary charge retention on the n-propyl side gives $\mathrm{C_3H_7^+}$ which dehydrogenates to $\mathrm{C_3H_5^+}$ ($m/z=41$). The much smaller $m/z=147$ peak in the spectrum corresponds to the rarer competing $\alpha$-cleavage at the ethyl side ($-\mathrm{CH_3}$), giving 4-butylbenzyl cation. Loss of $\mathrm{CH_3}$ is suppressed relative to loss of $\mathrm{C_3H_7}$ because the longer n-propyl radical is more stable, which is why $m/z=119$ is base and $m/z=147$ is barely visible — exactly the pattern observed.
+> **MS pattern.**
+>
+> - $m/z = 119$ (base): α-cleavage at the n-butyl benzylic position, loss of ·n-propyl (Δm = 43): $[\mathrm{M}]^{+\bullet}\rightarrow \mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2^+}+\mathrm{\cdot CH_2CH_2CH_3}$ → 4-ethylbenzyl/ethyl-tropylium cation. ✓
+> - $m/z = 91$ (~38%): secondary loss of ethene from the 4-Et-tropylium: $\mathrm{C_9H_{11}^+}\rightarrow \mathrm{C_7H_7^+}+\mathrm{C_2H_4}$. ✓
+> - $m/z = 41$ (~23%): complementary charge retention gives n-propyl cation (m/z 43, small), which loses H₂ → allyl/cyclopropenium $\mathrm{C_3H_5^+}$. ✓
+> - $m/z = 147$ (trace): minor competing α-cleavage at the *ethyl* benzylic position (loss of ·CH₃) → 4-butylbenzyl cation. Suppressed because ·CH₃ is a less stable radical than ·n-Pr, exactly matching the observed weak intensity. ✓
+> - $m/z = 105$ (~10%): M − ·n-Bu (57) → 4-ethylphenyl cation. Phenyl cations are less stable than benzyl, so it's only a minor peak. ✓
+>
+> **Substrate compatibility.** With $\mathrm{R}=\mathrm{(4\text{-}Et\text{-}C_6H_4)CH_2{-}}$ (the 4-ethylbenzyl group), the substrate $\mathrm{R\text{-}CH=CH\text{-}CH_3}$ is 1-(4-ethylphenyl)-2-butene, and Wilkinson hydrogenation gives 4-ethyl-1-butylbenzene cleanly. The same product is obtained from the terminal-alkene isomer $\mathrm{R\text{-}CH_2\text{-}CH=CH_2}=4\text{-}(4\text{-ethylphenyl})\text{-}1\text{-}\text{butene}$. **The printed scheme shows precisely this connectivity.** ✓
+>
+> ### Candidate (B) — 1-ethyl-4-isobutylbenzene  (rejected on substrate grounds only)
+>
+> $$\mathrm{4\text{-}Et\text{-}C_6H_4\text{-}CH_2CH(CH_3)_2}\qquad\text{(C}_{12}\text{H}_{18},\ M=162.27)$$
+>
+> An iso-butyl (`-CH₂-CH(CH₃)₂`) group para to an ethyl group on benzene. Structurally a 1,4-disubstituted benzene like (A), but the propyl tail of the side chain is branched (an isopropyl) rather than linear.
+>
+> **Symmetry.** Same analysis as for (A): only the vertical plane through C1–C4 is a mirror plane (the isobutyl group's local mirror plane bisects the two methyls and lies in this same vertical plane in the extended conformation). → exactly **1 mirror plane**. ✓
+>
+> **MS pattern.** **Identical to (A)** at every diagnostic peak:
+>
+> - $m/z = 119$ (base): α-cleavage at the isobutyl benzylic position, but the radical lost is now ·iso-propyl (Δm = 43, *same mass* as ·n-Pr) → same 4-ethylbenzyl cation. ✓
+> - $m/z = 91$, $41$, $147$, $105$: same secondary fragmentation paths and intensities. ✓
+>
+> The two isopropyl- and n-propyl radicals have the same mass (43), so α-cleavage from (A) and (B) produces *the same* m/z 119 cation. **EI-MS cannot distinguish (A) from (B).**
+>
+> **Substrate compatibility.** ✗ — to install an isobutyl side chain by hydrogenation would require the *branched* alkene $\mathrm{R\text{-}CH=C(CH_3)_2}$ (with $\mathrm{R}=\mathrm{(4\text{-}Et\text{-}C_6H_4)CH_2{-}}$), i.e. 1-(4-ethylphenyl)-3-methyl-2-butene. The printed substrate scheme does not show a methyl branch on the alkene — it draws an unbranched 3-carbon alkene. Candidate (B) is therefore **inconsistent with the printed scheme** and is excluded *only* on this ground.
+>
+> ### Side-by-side consistency check against every clue
+>
+> | Clue from the question | (A) 1-butyl-4-ethylbenzene | (B) 1-ethyl-4-isobutylbenzene |
+> |---|---|---|
+> | Molecular formula $\mathrm{C_{12}H_{18}}$, $M=162$ | ✓ ($M_r=162.27$) | ✓ ($M_r=162.27$) |
+> | M⁺ peak at $m/z\approx 162$ | ✓ | ✓ |
+> | $m/z=119$ is the base peak | ✓ — α-cleavage of n-butyl, $-\mathrm{\cdot n\text{-}C_3H_7}$ (43) → $\mathrm{4\text{-}EtC_6H_4CH_2^+}$ | ✓ — α-cleavage of isobutyl, $-\mathrm{\cdot iso\text{-}C_3H_7}$ (43) → same cation |
+> | $m/z=91$ noticeably intense | ✓ — secondary loss of $\mathrm{C_2H_4}$ from 119 → tropylium | ✓ — same secondary path |
+> | $m/z=41$ noticeably intense | ✓ — complementary n-propyl cation → $-\mathrm{H_2}$ → allyl/cyclopropenium | ✓ — complementary iso-propyl cation → $-\mathrm{H_2}$ → same |
+> | Two of the three peaks are fragments of *different* aromatic rings | ✓ — $\mathrm{C_7H_7^+}$ (tropylium) and $\mathrm{C_9H_{11}^+}$ (4-ethyl-tropylium) are different aromatic cations | ✓ — same two aromatic-ring cations |
+> | Trace $m/z=147$ (loss of $\mathrm{CH_3}$), not dominant | ✓ — competing α-cleavage at the ethyl side; $\mathrm{\cdot CH_3}$ is a less stable radical than $\mathrm{\cdot C_3H_7}$, so this channel is suppressed | ✓ — same competing channel, same suppression |
+> | Max one plane of symmetry | ✓ — exactly **1** mirror plane: the vertical plane through the C1–C4 axis; the perpendicular vertical plane is broken because Et ≠ n-Bu | ✓ — exactly **1** mirror plane: same vertical plane; Et ≠ iso-Bu |
+> | **Comes from hydrogenation of the substrate drawn in the scheme** ($\mathrm{R\text{-}CH=CH\text{-}CH_3}$ or $\mathrm{R\text{-}CH_2\text{-}CH=CH_2}$ — an *unbranched* 3-C alkene) | ✓ — with $\mathrm{R}=\mathrm{(4\text{-}EtC_6H_4)CH_2{-}}$, the substrate is 1-(4-ethylphenyl)-2-butene (or its terminal isomer), reducing cleanly to the n-butyl product | ✗ — would require the *branched* alkene $\mathrm{R\text{-}CH=C(CH_3)_2}$ (1-(4-ethylphenyl)-3-methyl-2-butene). The printed scheme shows no methyl branch at the alkene, so this substrate is *not* the one depicted |
+> | Wilkinson's catalyst regioselectivity | ✓ — RhCl(PPh₃)₃ hydrogenates unhindered internal/terminal C=C without isomerisation under standard conditions; n-butyl product is the kinetic and thermodynamic outcome | ✓ chemically reasonable *if* the substrate had been the branched alkene, but moot because the substrate is not |
+>
+> **Score:** (A) is consistent with **every** clue. (B) is consistent with every spectroscopic and symmetry clue but **fails the substrate clue** — and that is the only clue uniquely tying the molecule to the printed scheme.
+>
+> ### Final answer
+>
+> $$\boxed{\mathbf{(A)}\ \ \mathrm{1\text{-}butyl\text{-}4\text{-}ethylbenzene}\ =\ \mathrm{4\text{-}Et\text{-}C_6H_4\text{-}n\text{-}Bu}}$$
+>
+> The candidate (B), 1-ethyl-4-isobutylbenzene, would be the equally good answer **only if** the substrate scheme drew a methyl-branched alkene $\mathrm{R\text{-}CH=C(CH_3)_2}$. Under the printed scheme, (B) is excluded.
 
 5. **Find** the intensity ratio $\begin{array} {r} {[ \mathbf{M} ]^{+} {:} [ \mathbf{M} {+} 1 ]^{+}} \end{array}$ in the mass spectrum if the relative atomic mass of carbon is 12.011 and it consists of two stable isotopes.
 

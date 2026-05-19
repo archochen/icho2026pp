@@ -3,6 +3,7 @@ title: "P2.01 — Khoja Nasreddin is now a chemist"
 problem-id: 1
 status: final
 difficulty: 5
+foad: []
 topics: [inorganic, stoichiometry, ozonides, ammonium-salts, gas-laws]
 author: "Q. Chen"
 date: "2026-05-18"

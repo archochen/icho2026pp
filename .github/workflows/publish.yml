@@ -28,6 +28,9 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Build problem manifest (per-FoAD cross-links)
+        run: python3 scripts/build-manifest.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

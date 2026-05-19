@@ -3,7 +3,8 @@ title: "P2.02 — Avicenna"
 problem-id: 2
 status: final
 difficulty: 4
-topics: []
+foad: []
+topics: [inorganic, bornite, ferrate, stoichiometry, redox]
 date: "2026-05-19"
 description: ""
 ---

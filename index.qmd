@@ -6,10 +6,11 @@ listing:
   id: problem-listing
   contents: "parts/**/*.qmd"
   type: table
-  fields: [problem-id, title, status, difficulty, topics, date]
+  fields: [problem-id, title, foad, status, difficulty, topics, date]
   field-display-names:
     problem-id: "#"
     title: "Title"
+    foad: "FoAD"
     status: "Status"
     difficulty: "Diff."
     topics: "Topics"
@@ -21,7 +22,7 @@ listing:
   date-format: "YYYY-MM-DD"
   sort: ["problem-id asc"]
   sort-ui: [problem-id, title, status, difficulty, date]
-  filter-ui: [title, status, topics]
+  filter-ui: [title, foad, status, topics]
   categories: numbered
   page-size: 100
   table-striped: true
@@ -60,28 +61,57 @@ These solutions are **work in progress and unofficial**. They have no affiliatio
 
 ```{=html}
 <script>
-// Decorate the listing's "Status" cells with colored badge spans.
-// We do this post-render rather than via the Lua filter because the Lua filter
-// only runs per-page, while the listing table is built by scanning raw YAML.
+// Decorate the listing's "Status" cells and "FoAD" cells with coloured
+// badge spans. Done post-render because the Lua filter only runs per-page
+// while the listing table is assembled by scanning raw YAML at build time.
 (function () {
-  const LABELS = {
+  const STATUS_LABELS = {
     "not-started": "Not started",
     "draft": "Draft",
     "revised": "Revised",
     "final": "Final",
     "tbc": "TBC",
   };
-  function decorate() {
+  // Mirrors _foad.yml; keep in sync if the canonical FoAD vocabulary changes.
+  const FOAD_LABELS = {
+    "mass-spectrometry": "MS",
+    "kinetics": "Kinetics",
+    "thermodynamics": "Thermo",
+    "transition-metal-catalysis": "TM-cat",
+    "photochemistry": "Photochem",
+    "carbohydrate-chemistry": "Carbo",
+  };
+
+  function decorateStatus() {
     document.querySelectorAll('.listing-status').forEach(el => {
       const raw = (el.textContent || '').trim().toLowerCase();
       if (!raw) return;
       if (el.dataset.decorated) return;
       const cls = "status-" + raw;
-      const label = LABELS[raw] || raw;
+      const label = STATUS_LABELS[raw] || raw;
       el.innerHTML = '<span class="status-badge ' + cls + '">' + label + '</span>';
       el.dataset.decorated = "1";
     });
   }
+
+  function decorateFoad() {
+    document.querySelectorAll('.listing-foad').forEach(el => {
+      if (el.dataset.decorated) return;
+      // Quarto renders a multi-value list field as comma-separated text.
+      const raw = (el.textContent || '').trim();
+      if (!raw) { el.dataset.decorated = "1"; return; }
+      const slugs = raw.split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+      const badges = slugs.map(slug => {
+        const label = FOAD_LABELS[slug] || slug;
+        return '<span class="foad-badge foad-' + slug + '" title="' + slug + '">' + label + '</span>';
+      });
+      el.innerHTML = badges.join('');
+      el.dataset.decorated = "1";
+    });
+  }
+
+  function decorate() { decorateStatus(); decorateFoad(); }
+
   decorate();
   // Re-decorate after List.js (Quarto's listing) re-renders on sort/filter
   document.addEventListener('quarto-listing-loaded', decorate);

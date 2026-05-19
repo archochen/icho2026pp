@@ -96,6 +96,7 @@ def build_frontmatter(part: int, pid: int, title: str, status: str, difficulty: 
         f"problem-id: {pid}\n"
         f"status: {status}\n"
         f"difficulty: {difficulty}\n"
+        "foad: []\n"
         "topics: []\n"
         f'date: "{today}"\n'
         'description: ""\n'

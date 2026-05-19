@@ -16,12 +16,55 @@ This page reproduces **Part 1** of the 58th IChO 2026 Preparatory Problems — t
 
 ### Theoretical
 
+Each FoAD topic below is followed by an **"On this site"** line listing the migrated Part-2 problems that exercise it. Click a problem code to jump to its worked solution. Topics with no listed problems either haven't been migrated yet or aren't covered by any Part-2 problem.
+
 1. **Mass Spectrometry**: molecular ions, mass-to-charge ratio, isotope distribution.
+   <div class="foad-problem-list" data-foad-list="mass-spectrometry"></div>
+
 2. **Kinetics**: steady-state and quasi-equilibrium approximations, enzymatic kinetics, interpretation of phase portraits.
+   <div class="foad-problem-list" data-foad-list="kinetics"></div>
+
 3. **Thermodynamics**: heat capacity, temperature dependence of equilibrium constant, entropy and enthalpy change.
+   <div class="foad-problem-list" data-foad-list="thermodynamics"></div>
+
 4. **Transition metal catalysis**: elementary steps in the catalytic cycles with transition metal complexes; single electron transfer (SET) and hydrogen atom transfer (HAT); cross-coupling reactions.
+   <div class="foad-problem-list" data-foad-list="transition-metal-catalysis"></div>
+
 5. **Photochemistry**: Jablonski and Förster diagrams, fluorescence and phosphorescence, quenching, lifetimes, quantum yield.
+   <div class="foad-problem-list" data-foad-list="photochemistry"></div>
+
 6. **Carbohydrate chemistry**: represent chair conformations, carbohydrate reactions and protecting groups, repeating units.
+   <div class="foad-problem-list" data-foad-list="carbohydrate-chemistry"></div>
+
+```{=html}
+<script>
+// Populate each .foad-problem-list element with links to Part-2 problems
+// whose frontmatter tags this FoAD slug. We read /manifest.json (written
+// by scripts/build-manifest.py after each `quarto render`) because the
+// Quarto-generated /listings.json only contains item URLs, not the full
+// frontmatter metadata we need here.
+(function () {
+  function pad2(n) { return String(n).padStart(2, '0'); }
+
+  fetch('manifest.json').then(r => r.ok ? r.json() : []).then(items => {
+    if (!Array.isArray(items) || items.length === 0) return;
+    document.querySelectorAll('[data-foad-list]').forEach(el => {
+      const slug = el.dataset.foadList;
+      const matches = items.filter(it => Array.isArray(it.foad) && it.foad.includes(slug));
+      if (matches.length === 0) return;   // CSS :empty pseudo handles the fallback text
+      matches.sort((a, b) => (a['problem-id'] || 0) - (b['problem-id'] || 0));
+      const links = matches.map(it => {
+        const code = 'P2.' + pad2(it['problem-id']);
+        const path = it.path || ('parts/part2/Problem_' + pad2(it['problem-id']) + '.html');
+        const tail = (it.title || '').replace(/^P\d+\.\d+\s*[—-]\s*/, '');
+        return '<a href="' + path + '">' + code + '</a>' + (tail ? ' — ' + tail : '');
+      });
+      el.innerHTML = '<strong>On this site:</strong> ' + links.join('; ');
+    });
+  }).catch(() => { /* manifest absent; CSS :empty fallback will fire */ });
+})();
+</script>
+```
 
 Students are **not** expected to be specifically trained on the topics below:
 

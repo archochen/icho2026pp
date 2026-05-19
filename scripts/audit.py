@@ -37,6 +37,20 @@ ICLOUD_ROOT = Path(
 
 CN_MARKERS = ("中文版", "Chinese translation", "教学点评", "解题分析", "相对丰度表")
 
+# Canonical FoAD vocabulary — mirrors _foad.yml at the repo root.
+# Update both files together if the official IChO syllabus changes.
+FOAD_VOCAB = {
+    "mass-spectrometry",
+    "kinetics",
+    "thermodynamics",
+    "transition-metal-catalysis",
+    "photochemistry",
+    "carbohydrate-chemistry",
+}
+
+# YAML frontmatter `foad:` line — captures either `[a, b]` or `[]`.
+FOAD_LINE = re.compile(r"^foad:\s*\[(?P<items>.*?)\]\s*$", re.MULTILINE)
+
 # Match image refs in markdown: ![alt](url) and <img src="url" ...>
 IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*(?P<url>[^)\s]+)\s*[^)]*\)")
 IMG_HTML = re.compile(r"<img[^>]+\bsrc=[\"'](?P<url>[^\"']+)[\"']", re.IGNORECASE)
@@ -144,6 +158,19 @@ def audit_problem(part: int, qmd: Path, strict: bool = False) -> int:
         target = qmd.parent / rel
         if not target.exists():
             issues.append(f"local image referenced but not on disk: {rel}")
+
+    # 4. Every `foad:` frontmatter value must be in the canonical vocabulary
+    m_foad = FOAD_LINE.search(qmd_text)
+    if m_foad:
+        raw = m_foad.group("items").strip()
+        if raw:
+            slugs = [s.strip().strip('"').strip("'") for s in raw.split(",")]
+            for slug in slugs:
+                if slug and slug not in FOAD_VOCAB:
+                    issues.append(
+                        f"unknown foad slug: '{slug}' (allowed: "
+                        f"{', '.join(sorted(FOAD_VOCAB))})"
+                    )
 
     label = f"P{part}.{problem_id:02d}"
     if issues:

@@ -3,6 +3,7 @@ title: "P2.17 — Carbohydrate chemistry"
 problem-id: 17
 status: tbc
 difficulty: 3
+foad: [carbohydrate-chemistry]
 topics: []
 date: "2026-05-18"
 description: ""

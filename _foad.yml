@@ -1,0 +1,37 @@
+# Canonical FoAD (Fields of Advanced Difficulty) vocabulary.
+#
+# These six slugs are the ONLY valid values for the `foad:` frontmatter field
+# in problem .qmd files. The same vocabulary is encoded in:
+#   - scripts/audit.py     (for validating frontmatter values)
+#   - styles.scss          (for the per-topic badge colours)
+#   - index.qmd JS         (for slug -> short-label decoration)
+#   - syllabus.qmd         (for the on-page "Problems on this site" cross-links)
+#
+# If the official IChO syllabus changes, update this file AND all five
+# touchpoints above. Keep them in sync.
+
+foad:
+  - slug: mass-spectrometry
+    label: "MS"
+    full: "Mass Spectrometry"
+    color: "#0891b2"        # cyan-600
+  - slug: kinetics
+    label: "Kinetics"
+    full: "Kinetics"
+    color: "#ea580c"        # orange-600
+  - slug: thermodynamics
+    label: "Thermo"
+    full: "Thermodynamics"
+    color: "#dc2626"        # red-600
+  - slug: transition-metal-catalysis
+    label: "TM-cat"
+    full: "Transition metal catalysis"
+    color: "#7c3aed"        # violet-600
+  - slug: photochemistry
+    label: "Photochem"
+    full: "Photochemistry"
+    color: "#ca8a04"        # amber-600
+  - slug: carbohydrate-chemistry
+    label: "Carbo"
+    full: "Carbohydrate chemistry"
+    color: "#16a34a"        # green-600

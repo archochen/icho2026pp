@@ -3,7 +3,8 @@ title: "P2.21 — Catalyst C"
 problem-id: 21
 status: tbc
 difficulty: 3
-topics: []
+foad: [mass-spectrometry, transition-metal-catalysis]
+topics: [wilkinson-catalyst, hydrogenation, ms-fragments, allyl-cation, "[2+2+2]-cycloaddition"]
 date: "2026-05-18"
 description: ""
 ---

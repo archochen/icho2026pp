@@ -3,7 +3,8 @@ title: "P2.23 — HAT and XAT (HalAT)"
 problem-id: 23
 status: tbc
 difficulty: 4
-topics: [organic, organometallic, radical, mass-spectrometry, catalysis, mechanism, isotope-labeling]
+foad: [mass-spectrometry, transition-metal-catalysis]
+topics: [organic, organometallic, hat, xat, nickel-catalysis, palladium-catalysis, metallaphotoredox, isotope-labeling, bde]
 date: "2026-05-18"
 description: "Ni- and Pd-catalyzed remote C–H functionalization via 1,n-HAT and XAT. Nine subquestions span MS deduction, OS/CN/VE bookkeeping, full catalytic cycles, electron-source identification, D-labeling tracing, and pairwise BDE comparison."
 ---

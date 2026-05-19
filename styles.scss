@@ -25,6 +25,42 @@ $link-color: $primary;
 .status-final       { background: #ecfdf5; color: #047857; border-color: #6ee7b7; }
 .status-tbc         { background: #fef2f2; color: #b91c1c; border-color: #fca5a5; }
 
+// FoAD (Fields of Advanced Difficulty) badges — six canonical topics, one
+// distinct hue each. Vocabulary canonical in _foad.yml; slug mapping
+// mirrored in index.qmd JS, syllabus.qmd JS, and scripts/audit.py.
+.foad-badge {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  margin: 0 0.25em 0.15em 0;
+  border-radius: 4px;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff !important;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.foad-mass-spectrometry         { background: #0891b2; }   // cyan-600
+.foad-kinetics                  { background: #ea580c; }   // orange-600
+.foad-thermodynamics            { background: #dc2626; }   // red-600
+.foad-transition-metal-catalysis { background: #7c3aed; }  // violet-600
+.foad-photochemistry            { background: #ca8a04; }   // amber-600
+.foad-carbohydrate-chemistry    { background: #16a34a; }   // green-600
+
+// Per-FoAD-topic cross-link section on the Syllabus page
+.foad-problem-list {
+  margin: 0.25em 0 1em 1.5em;
+  font-size: 0.9em;
+  color: #475569;
+  a { color: inherit; text-decoration: underline; }
+  &:empty::before {
+    content: "(No problems on this site exercise this topic yet.)";
+    font-style: italic;
+    color: #94a3b8;
+  }
+}
+
 // Listing dashboard — status column
 .quarto-listing-default .listing-status .status-badge { margin-left: 0; }
 

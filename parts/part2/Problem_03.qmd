@@ -3,7 +3,8 @@ title: "P2.03 — Unusual inorganic synthesis"
 problem-id: 3
 status: tbc
 difficulty: 5
-topics: []
+foad: [kinetics]
+topics: [inorganic, nuclear, electrolysis, perbromate, szilard-chalmers, iodometric-titration]
 date: "2026-05-19"
 description: ""
 ---

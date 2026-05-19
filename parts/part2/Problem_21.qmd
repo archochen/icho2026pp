@@ -56,6 +56,8 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 
 > **Solution (Q3 — MS fragment cations).**
 >
+> **🟡 TBC — depends on Q21.4.** The three cation *identities* below are fixed by the m/z values alone and are not in dispute: $\mathrm{C_3H_5^+}$, $\mathrm{C_7H_7^+}$, and $\mathrm{C_9H_{11}^+}$. What *is* tentative is the **mechanistic narrative** describing how each cation forms — specifically, which radical is lost in the α-cleavage that gives m/z 119, and which propyl cation rearranges to m/z 41. The narrative below assumes the Q21.4 verdict (the n-butyl product); if Q21.4 changes to the isobutyl alternative, every "n-propyl radical" / "n-propyl cation" reference here changes to "iso-propyl", but the cation **drawings remain valid**.
+>
 > **Revision note (2026-05-18).** Earlier revisions of this solution proposed (i) a diphenylalkene (m/z mismatch — the diphenylmethyl cation is 167, not 119), (ii) 1-tert-butyl-4-ethylbenzene (rejected: reference EI gives a *dominant* m/z 147 peak, which is only a trace here), and (iii) 1-ethyl-4-**isobutyl**benzene (the iBu side chain requires a *branched* alkene precursor `Ar-CH=C(CH₃)₂`, which the substrate scheme does **not** depict). The substrate scheme shows an unbranched 3-carbon alkene `R-CH=CH-CH₃` or `R-CH₂-CH=CH₂`, which reduces to an **n-propyl** side chain. The product therefore has an unbranched chain at the benzylic position, and the cations below correspond to that interpretation.
 >
 > The molecular-ion region is at $m/z\approx 162$; the diagnostic fragments match **1-butyl-4-ethylbenzene** (Q21.4). The three intense cations are:
@@ -82,6 +84,8 @@ The mass spectrum of this **product** is shown below. The three peaks at m/z 41,
 4. **Draw** the structure of the **product**.
 
 > **Solution (Q4 — hydrogenation product).** *Two candidate structures both fit the spectroscopic clues; the substrate scheme breaks the tie.*
+>
+> **🟡 TBC — verify the substrate drawing.** The mass spectrum and the "max one plane of symmetry" clue are satisfied by **both** structures below (A and B); EI-MS *cannot* tell them apart because the lost α-cleavage radical has the same mass (·n-Pr and ·iso-Pr are both 43). The only experimental discriminator is the alkene drawn in the printed scheme: **unbranched** alkene → answer (A) **1-butyl-4-ethylbenzene**; **methyl-branched** alkene `R-CH=C(CH₃)₂` → answer (B) 1-ethyl-4-isobutylbenzene. We've read the scheme as unbranched, so (A) is the current verdict — but a student reading the scheme differently would converge on (B), and that reading would not be unreasonable. **Please cross-check the scheme image against the printed booklet before treating this as final.**
 >
 > **Revision note (2026-05-18).** The mass spectrum + "max one plane of symmetry" clue does **not** uniquely determine the product — two regioisomers fit *both* the spectrum and the symmetry constraint and are indistinguishable by EI-MS alone. The single experimental discriminator is the substrate scheme, which depicts an *unbranched* 3-carbon alkene and so selects candidate **(A)** as the right answer. Earlier rejected alternatives (diphenyl-alkene with M ≠ 162; 1-tert-butyl-4-ethylbenzene with base peak m/z 147 from tertiary-benzylic α-cleavage) are not analysed here.
 >

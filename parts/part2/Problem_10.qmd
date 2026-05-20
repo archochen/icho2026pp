@@ -361,11 +361,9 @@ d) Alignment of stereocentres
 
 Constructive and destructive mechanisms, where the corresponding amino acid was formed or destroyed, respectively, were investigated in open systems with a flow rate, $\boldsymbol{\varphi}$ , of corresponding reactants in each case.
 
-<img src="images/88407ac6d99112de96a38b8df8989e5a6b18e78b50f617cf85d85ffb7998c553.jpg" alt="image" style="zoom: 67%;" />
+<img src="assets/q10_13_flow_rate_plots.png" alt="Figure 2: homochiral dipeptide concentrations [LL]/C₀ (red) and [DD]/C₀ (blue) as a function of the normalised flow rate φ/(C₀ k_homo) for (a) ketoacid inflow / constructive mechanism, left; (b) amino-acid inflow / destructive mechanism, right. Bifurcation points φ₁ and φ₂ are marked on each plot." style="max-width: 760px; width: 100%; height: auto;" />
 
-<img src="images/368b48d8a667bb527cfa59bd156a94bd6291e2799bb62c314403a8e0deeaf238.jpg" alt="image" style="zoom:67%;" />
-
-Figure 2. Concentration of homochiral dipeptides vs flow rate of a) ketoacid (left, constructive mechanism); b) amino acid (right, destructive mechanism)
+Figure 2. Concentration of homochiral dipeptides vs flow rate of (a) ketoacid (left, constructive mechanism); (b) amino acid (right, destructive mechanism).
 
 13. **Deduce** the value of $\boldsymbol{\varphi}$ , at which the maximum chiral asymmetry is observed.
 

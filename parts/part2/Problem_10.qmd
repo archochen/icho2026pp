@@ -18,15 +18,13 @@ What makes Earth unique is that it has life. As far as we know, it is the only p
 
 One of the possible routes of how complex molecules like RNA and ribonucleotides formed from simple molecules cyanamide **1**, glycoaldehyde **2**, formaldehyde **3**, and cyanoacetylene **4** in prebiotic Earth was suggested by Powner et al.:
 
-<img src="images/c52587024bc6bc1084b6a1c4338992edfe524edc7b3a990b7c89ff5b7fc8da21.jpg" alt="image" style="zoom:50%;" />
+<img src="images/c52587024bc6bc1084b6a1c4338992edfe524edc7b3a990b7c89ff5b7fc8da21.jpg" alt="Powner et al. prebiotic ribonucleotide synthesis scheme" style="max-width: 600px; width: 100%; height: auto;" />
 
 In this scheme, direct reaction between sugar $\mathbf{E}$ and cytosine **H** (which is formed via reaction of **G**) yields no product **I**, presumably because of the low nucleophilicity of **H**. Therefore, the $\mathbf{1} + \mathbf{2} \to \mathbf{A} \to \mathbf{B} \to \mathbf{C}$ prebiotic route was suggested by researchers, where in each step the number of rings in the product increases by one.
 
 1. **Draw** molecular structures of compounds **A**–**G**, **G’** and **I**.
 
 > **Solution (Q1 — Powner/Sutherland prebiotic ribonucleotide synthesis).**
->
-> **Revision note:** Revised by Codex on 2026-05-18; Q10.1 was corrected against the arrows in the scheme, and a source-backed structure plate was added. Revised again on 2026-05-19: D was changed from open-chain ribose to the six-membered D-ribopyranose form, E was kept as D-ribofuranose, G was changed to propiolamide, and G' was changed first to acetyl cyanide and then to cyanoacetaldehyde. The original question text and figure were not changed.
 >
 > **Logic.** The route $1+2\to A\to B\to C$ increases the number of rings by one in each step: cyanamide **1** plus glycolaldehyde **2** gives monocyclic **2-aminooxazole A**; addition of glyceraldehyde gives bicyclic **arabinose amino-oxazoline B**; reaction with cyanoacetylene gives tricyclic **2,2'-anhydroarabinonucleoside C**. The separate "ribose + cytosine" route fails: six-membered ribose hemiacetal **D** equilibrates with ribofuranose **E**, but direct condensation of **E** with cytosine **H** does not give cytidine **I** in useful yield. If the glyceraldehyde feedstock is racemic, **D/E** are formed as enantiomeric sugar series; for the RNA branch, draw the D-ribose/D-ribofuranose series.
 >
@@ -71,7 +69,17 @@ In this scheme, direct reaction between sugar $\mathbf{E}$ and cytosine **H** (w
 >
 > Source IDs for the downloaded depictions: **A** PubChem CID 558521, **B** PubChem CID 11116544, **C** PubChem CID 25051, **D** PubChem CID 10975657, **E** PubChem CID 5779, **F** PubChem CID 1176, **G** PubChem CID 101445, **G′** PubChem CID 151404, and **I** PubChem CID 6175.
 >
-> $$\boxed{\text{A = 2-aminooxazole; B = arabinose amino-oxazoline; C = 2,2'-anhydroarabinonucleoside; D = D-ribopyranose; E = D-ribofuranose; F = urea; G = propiolamide; G' = cyanoacetaldehyde; I = cytidine.}}$$
+> $$\boxed{\begin{aligned}
+> \mathbf{A} &= \text{2-aminooxazole} \\
+> \mathbf{B} &= \text{arabinose amino-oxazoline} \\
+> \mathbf{C} &= \text{2,2'-anhydroarabinonucleoside} \\
+> \mathbf{D} &= \text{D-ribopyranose} \\
+> \mathbf{E} &= \text{D-ribofuranose} \\
+> \mathbf{F} &= \text{urea} \\
+> \mathbf{G} &= \text{propiolamide} \\
+> \mathbf{G'} &= \text{cyanoacetaldehyde} \\
+> \mathbf{I} &= \text{cytidine}
+> \end{aligned}}$$
 
 2. What is the reason behind the low nucleophilicity of **H**? **Choose** the correct answer(s):
 
@@ -90,8 +98,6 @@ The fact that life relies almost exclusively on single molecular handedness (hom
 3. In the scheme above, glycoaldehyde **2** and formaldehyde **3** react to form glyceraldehyde – the simplest sugar molecule that contains a stereocentre. **Depict** the structural formulae of L- and D-glyceraldehyde with the shown absolute configuration of the stereocentre.
 
 > **Solution (Q3 — L- and D-glyceraldehyde).**
->
-> **Revision note:** Revised by Codex on 2026-05-18; the Fischer projections were kept, but the loose wedge/dash wording was replaced with source-backed stereochemical structure images. Revised again on 2026-05-19: the PubChem wedge/dash images were replaced with online Fischer-projection images from Wikimedia Commons. The original question text was not changed.
 >
 > Glyceraldehyde is $\mathrm{HOCH_2{-}CH(OH){-}CHO}$. At C2 the CIP order is $\mathrm{OH > CHO > CH_2OH > H}$. In the Fischer projection the CHO group is drawn at the top and CH₂OH at the bottom; the horizontal bonds point toward the viewer.
 >
@@ -142,8 +148,6 @@ $$
 
 > **Solution (Q4 — ee from CISS kinetic bias).**
 >
-> **Revision note:** Revised by Codex on 2026-05-19; added the short kinetic derivation that justifies replacing the product ratio by the rate-constant ratio for a racemic substrate, then expanded the algebra showing how the given rate constants reduce to the hyperbolic-tangent form. The original question text was not changed.
->
 > Let the right-handed electron donor be present in the same effective concentration for both enantiomeric substrates. Then the initial rates are
 > $$\frac{d[\mathrm{LY}]}{dt}=k_L[\mathrm{LX}][\mathrm{De^-}],\qquad \frac{d[\mathrm{DY}]}{dt}=k_D[\mathrm{DX}][\mathrm{De^-}].$$
 > For a racemic substrate, $[\mathrm{LX}]=[\mathrm{DX}]$. Over the same short time interval, or at low conversion where the substrate concentrations have not changed appreciably,
@@ -169,11 +173,9 @@ $$
 
 5. Consider some racemic solution of L-/D-isomers in water with a total concentration of $1\ \mathbf{M}$, where symmetry breaking (i.e. conversion of one isomer into another) occurs, resulting in overall chiral amplification of the system. **Depict** possible symmetry-breaking trajectories in a phase portrait of the system.
 
-   <img src="images/0999913bdcae8aa357b971653b4a59617438a8d2cd82f9b94f1644d35327d49e.jpg" alt="image" style="zoom:50%;" />
+   <img src="images/0999913bdcae8aa357b971653b4a59617438a8d2cd82f9b94f1644d35327d49e.jpg" alt="Blank phase portrait template for Q10.5" style="max-width: 420px; width: 100%; height: auto;" />
 
 > **Solution (Q5 — Symmetry-breaking phase portrait).**
->
-> **Revision note:** Revised by Codex on 2026-05-19; added references for the Frank-type chiral symmetry-breaking phase portrait. The original question text and figure were not changed.
 >
 > With the conservation constraint $[L]+[D]=1$ M, the accessible states lie on the diagonal line segment from $(1,0)$ to $(0,1)$ in the $([L],[D])$ plane. The racemic point $(0.5,0.5)$ is an **unstable fixed point** (saddle along the $[L]-[D]$ axis); the two **stable fixed points** are the homochiral corners $(1,0)$ and $(0,1)$.
 >
@@ -274,8 +276,6 @@ The mathematical model above was found valid for a real biochemical system, wher
 
 > **Solution (Q9 — Structure of K).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18; K was corrected from an amino-acid thioester to the N-acetyl α-aminonitrile required by the drawn amidine intermediate. Representative stereochemical images were added from PubChem. The original question text and figures were not changed.
->
 > K must be the **N-acetyl α-aminonitrile of aa₁**, not a thioester:
 > $$\boxed{\mathrm{K = AcNH{-}CH(R_1){-}C{\equiv}N}}$$
 > where $\mathrm{R_1}$ is the side chain of aa₁ and the stereochemistry at $\mathrm{CH(R_1)}$ carries the ee of aa₁. This assignment is forced by the next structure in the question scheme: reaction of K with amino acid aa₂ gives an N-acetyl **amidine**,
@@ -293,8 +293,6 @@ The role of the dipeptide catalyst in reaction **(1)** is based on promoting a h
 
 > **Solution (Q10 — HAT-active groups in L-prolinyl-L-valine).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18 and updated on 2026-05-19; the Pro residue was corrected to the N-terminal secondary amine, and the HAT-active groups were separated from merely supporting hydrogen-bond sites. The mechanistic wording was tightened: because the scheme shows $\mathrm{[LL-H]^+}$, the catalyst step is best treated as LL-mediated proton transfer/formal 1,3-H shift rather than literal neutral-radical HAT. The original question structure was not changed.
->
 > In L-Pro–L-Val, the groups to mark on **LL** are:
 >
 > - the **secondary amine of the N-terminal proline ring**; this is the most direct acid/base site and can be protonated to give the drawn $\mathrm{[LL-H]^+}$ form;
@@ -305,8 +303,6 @@ The role of the dipeptide catalyst in reaction **(1)** is based on promoting a h
 11. **Draw** the structures of compounds **M**–**O**.
 
 > **Solution (Q11 — Intermediates M, N, O in the Pro-Val HAT cycle).**
->
-> **Revision note:** Revised by Codex on 2026-05-18 and updated on 2026-05-19; M was corrected to a PM-derived ketimine rather than an aldimine, and the carboxylate/Schiff-base connectivities were tightened. The N assignment was refined from a neutral radical-style HAT drawing to a deprotonated quinonoid/azaallyl intermediate, because the question scheme explicitly forms $\mathrm{[LL-H]^+}$. Source-article structure images were added below. Exact standalone database images labelled M-N-O were not found, so the images are taken from the Yu et al. source schemes and mapped explicitly to the problem labels. The original question figure was not changed.
 >
 > In the Yu et al. pyruvate → alanine mechanism, pyruvate condenses with pyridoxamine (PM) to give a **ketimine**, which is converted by the LL-mediated formal H-transfer/1,3-proton-shift sequence into a PL-derived **aldimine**, then hydrolysed to alanine + pyridoxal (PL). Let $\mathrm{Py}$ denote the vitamin-B6 pyridine ring fragment.
 >
@@ -352,8 +348,6 @@ d) Alignment of stereocentres
 
 > **Solution (Q12 — Origin of D-Ala > L-Ala selectivity in the reverse step).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18 and updated on 2026-05-19; π-stacking was restored because the cited transition-state model involves stacking between the pyridoxal aldimine and the Pro-Val catalyst, not between alanine and an aromatic alanine substituent. A source figure and more detailed DFT-based justification were added. The original question options were not changed.
->
 > The best answer is **(a), (b), and (d)**.
 >
 > The reference calculation compares the reaction of $\mathrm{rac}$-Ala with PL catalysed by Pro-Val (PV, corresponding to the LL-Pro-Val catalyst in this problem):
@@ -383,8 +377,6 @@ Figure 2. Concentration of homochiral dipeptides vs flow rate of a) ketoacid (le
 
 > **Solution (Q13 — Flow rate of maximum chiral asymmetry).**
 >
-> **Revision note:** Revised by Codex on 2026-05-18; the answer was changed from "near $\varphi_1$ / just below $\varphi_2$" to the actual maximum separation of the two plotted branches. The original figure was not changed.
->
 > The chiral asymmetry is measured by the branch separation,
 > $$\Delta(\varphi)=|[LL](\varphi)-[DD](\varphi)|.$$
 > Therefore $\varphi_{\max}$ is **inside the symmetry-broken interval** $\varphi_1<\varphi<\varphi_2$, at the point where the red and blue curves are farthest apart.
@@ -406,8 +398,6 @@ b) $\displaystyle \psi_{1} < \varphi < \varphi_{2}$
 c) $\varphi > \varphi_2$
 
 > **Solution (Q14 — Three flow-rate regimes).**
->
-> **Revision note:** Revised by Codex on 2026-05-18; the high-flow regime was split between the constructive and destructive plots instead of treating both as simple total wash-out. The original question and figure were not changed.
 >
 > The open-flow system is bistable: the autocatalytic loop (LL catalyses formation of more LL, DD catalyses more DD) competes with convective wash-out by the flow $\Phi$.
 >

@@ -39,6 +39,13 @@ H1_CN_PART = re.compile(r"^\s*#\s+(第[一二三四五六七八九十]+部分.*)
 H1_CN_TITLE = re.compile(r"^\s*#\s+(第\s*\d+\s*题.*)$", re.MULTILINE)
 H1_CN_TABLE = re.compile(r"^\s*#\s+(相对丰度表.*)$", re.MULTILINE)
 DIFFICULTY = re.compile(r"难度评级[：:]\s*([★☆]+)")
+# Maintainer-internal Codex revision notes from the source archive; strip them
+# (along with their trailing empty blockquote line) so they never reach the
+# rendered site.
+CODEX_NOTE = re.compile(
+    r"^> \*\*Revision note:\*\* Revised by Codex on [^\n]*\n(?:>\s*\n)?",
+    re.MULTILINE,
+)
 
 LOCAL_IMG_MD = re.compile(r"!\[[^\]]*\]\(\s*((?:\./)?(?:images|assets)/[^)\s]+)\s*\)")
 LOCAL_IMG_HTML = re.compile(r'<img[^>]+\bsrc=["\']((?:\./)?(?:images|assets)/[^"\']+)["\']')
@@ -87,6 +94,7 @@ def transform(body: str) -> str:
     body = H1_CN_PART.sub(r"## \1", body)
     body = H1_CN_TITLE.sub(r"## \1", body)
     body = H1_CN_TABLE.sub(r"## \1", body)
+    body = CODEX_NOTE.sub("", body)
     return body
 
 

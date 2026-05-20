@@ -127,6 +127,32 @@ Items that don't block but would improve the site once the core migration is don
 - **Review difficulty ratings**. The migration script reads `难度评级：★★★★☆` from the source's analysis section. For sources without that line (P2.04 today), it defaults to 3, which may understate.
 - **Review the `topics:` lists** on P2.02 and P2.17 — I picked them from source content but they may need refinement after a closer read.
 
+### Typography polish — P2.10 (in progress)
+
+The user asked for a typography optimization pass on P2.10. Done so far (2026-05-19):
+
+- **Long boxed identification line in Q10.1** — replaced the single un-wrappable `\boxed{\text{A = …; B = …; …}}` with a multi-line `\boxed{\begin{aligned}…\end{aligned}}` so the box wraps naturally. The previous version overflowed into the right-side TOC sidebar.
+- **Powner scheme image** (`c52587…jpg`, 1258×1055 px natural) — capped at `max-width: 600px` instead of falling under the global 720 px cap, so it no longer dominates the column.
+- **Phase-portrait blank image** (`0999913…jpg`, 956×953 px natural) — capped at `max-width: 420px` (it's a square reference figure, not a primary scheme).
+- **10 residual "Revision note: Revised by Codex" lines** stripped from `parts/part2/Problem_10.qmd`. These slipped past the earlier global cleanup because P2.10 was migrated *after* that cleanup ran.
+
+Still on the to-do list for P2.10 (lower priority):
+
+- **Wide math expressions in Q10.4 derivation** — the long ratio
+  `(k_L − k_D)/(k_L + k_D) = … = …` is written as a single `$$…$$` block; convert to `\begin{aligned}\\…\\\end{aligned}` for cleaner line breaks on desktop. Mobile is already covered by the `.katex-display { overflow-x: auto }` rule.
+- **Wide resonance equation in Q10.11 N** — the
+  `Py-CH⁻-N=C(CH₃)-CO₂⁻ ⟷ Py-CH=N-C⁻(CH₃)-CO₂⁻` boxed expression is long; consider stacking with `\\` inside `\boxed{}` for parity with the Q10.1 fix.
+- **Other large jpg schemes** (1014–1311 px natural width, the K-dipeptide and HAT mechanism schemes around lines 256–270): they hit the global 720 px cap but are still wide on a narrow desktop column. If any feels too big after the next deploy, add an explicit `max-width: 560px` per-image override.
+- **Image alt text quality** — most are `alt="image"` placeholders carried over from MinerU OCR. Replace with content-aware descriptions once the scientific review is complete. Same applies to most of the other migrated problems.
+
+### Migration script — Codex-note auto-strip (2026-05-19)
+
+`scripts/migrate.py` now strips `> **Revision note:** Revised by Codex on …` blockquote lines (and any trailing empty `>` continuation) during the source `.md` → `.qmd` transform. Future imports won't carry these maintainer-internal notes through to the published site. No action needed unless the same note pattern resurfaces with a different opener; if it does, extend the `CODEX_NOTE` regex in `migrate.py`.
+
+### Favicon redesign (2026-05-19)
+
+User asked for a simpler favicon than the red-flask original: "Uz" stacked over "26" on a solid IChO-red rounded square. Implemented in `favicon.svg`. The previous flask design is gone; if the user wants both available, we can ship the flask as `favicon-alt.svg` and add a `<link rel="alternate icon">`, but that's only worth doing if there's demand.
+
 ---
 
 ## 6. Future enhancements (low priority)

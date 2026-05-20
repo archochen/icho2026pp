@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   IChO 2026 Preparatory Problems Solutions — favicon.
-  Based on the IChO 2026 logo's distinctive element: the red round-bottom
-  flask that forms the "I" of "IChO". Designed to remain recognisable at
-  16×16 px (browser tab) while reading as "chemistry" at any size.
+  "Uz" (Uzbekistan, ISO 3166 alpha-2 country code) stacked over "26" (the year).
+  Set on a solid IChO-red rounded square so it stays legible as a small tab icon.
 
-  Colour: #C8102E (close match to the official IChO 2026 red).
+  Colour: #C8102E — sampled to match the red of the official IChO 2026
+  wordmark (the "IChO" letters and the flask-shaped "I" share this red).
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IChO 2026 flask">
-  <!-- Round-bottom body of the flask -->
-  <circle cx="32" cy="44" r="16" fill="#C8102E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IChO 2026 — Uzbekistan">
+  <!-- Solid IChO-red rounded square background (iOS-style corner radius). -->
+  <rect width="64" height="64" rx="10" fill="#C8102E"/>
 
-  <!-- Tall vertical neck -->
-  <rect x="26" y="8" width="12" height="28" fill="#C8102E"/>
+  <!-- "Uz" — upper half. ISO country code, identifies Uzbekistan. -->
+  <text x="32" y="29" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="24" font-weight="800" letter-spacing="-0.5"
+        fill="#ffffff">Uz</text>
 
-  <!-- Wider lip at the top of the neck -->
-  <rect x="22" y="6" width="20" height="4" rx="1" fill="#C8102E"/>
-
-  <!-- White liquid-surface highlight inside the body for depth -->
-  <ellipse cx="27" cy="40" rx="3" ry="4" fill="#ffffff" opacity="0.35"/>
+  <!-- "26" — lower half. The year. -->
+  <text x="32" y="56" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="24" font-weight="800" letter-spacing="-0.5"
+        fill="#ffffff">26</text>
 </svg>

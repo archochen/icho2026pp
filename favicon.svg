@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  IChO 2026 Preparatory Problems Solutions — favicon.
+  IChO 2026 Preparatory Problems Solutions — favicon (iteration 3).
 
-  Layout: "Uz" (Uzbekistan, ISO 3166 alpha-2 country code) stacked over "26"
-  (the year of the Olympiad), on a solid IChO-red rounded-square background.
+  Colours sampled directly from the official IChO 2026 logo:
+    - #2F3090  navy blue   (the "IChO" wordmark + "58th International
+                            Chemistry Olympiad" tagline)
+    - #197F64  deep teal   (the "Uzbekistan 2026" footer)
 
-  Design notes (iteration 2, 2026-05-19):
+  Layout: a rounded square split horizontally — blue (IChO) on top,
+  green (Uzbekistan 2026) on the bottom. White text:
+    - "Uz" on the upper (blue) half
+    - "26" on the lower (green) half, sized larger and heavier so the
+      year reads as the brand anchor at 16×16.
 
-  - Typographic hierarchy: "26" is rendered larger and heavier than "Uz".
-    The year is THE brand identifier (the thing students are studying
-    for); the country code is a secondary annotation. Sizing them
-    equally wastes the favicon's scarcest resource — vertical pixels —
-    on an artificial balance. With this hierarchy "26" gets ~9 px of
-    glyph height at the 16×16 browser-tab size (up from ~6 px), while
-    "Uz" is still cleanly readable because its two distinctive
-    letterforms only need ~5 px.
+  Why a split: using both brand colours from the logo (not just one)
+  makes the favicon visually traceable to the logo, and it preserves
+  the logo's spatial logic (IChO/Olympiad on top, Uzbekistan/year on
+  the bottom).
 
-  - Font stack: 'Helvetica Neue' → Helvetica → Arial → sans-serif.
-    Helvetica and Arial share the same metric family and are present on
-    every desktop OS, so the rendered favicon looks nearly identical to
-    every visitor. The previous -apple-system stack rendered SF Pro on
-    macOS and fell through to whatever on other OSes, which made the
-    icon look subtly different to every viewer.
-
-  - Corner radius rx=12 (~19% of side length) lands in the modern
-    "squircle" sweet spot — friendlier than rx=10 (iOS app icon) without
-    becoming a pill.
-
-  - Colour: #C8102E, sampled to match the red of the IChO 2026 wordmark
-    (the "IChO" letters and the flask-shaped "I" share this red).
+  Iteration history:
+    1. Red round-bottom flask icon — wrong colour, generic chemistry.
+    2. Red squircle with "Uz" / "26" — wrong colour (logo isn't red).
+    3. This — blue+green split, sampled from the actual logo.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IChO 2026 — Uzbekistan favicon">
-  <!-- IChO-red squircle background. -->
-  <rect width="64" height="64" rx="12" fill="#C8102E"/>
+  <!-- A rounded-square clip so the two coloured rectangles end up with
+       matching outer corners on every browser. -->
+  <defs>
+    <clipPath id="rounded">
+      <rect width="64" height="64" rx="12"/>
+    </clipPath>
+  </defs>
 
-  <!-- "Uz" — country code, upper half. Slightly smaller because it's
-       the secondary identifier. -->
+  <g clip-path="url(#rounded)">
+    <!-- Top half: IChO navy blue, sampled from the wordmark. -->
+    <rect width="64" height="32" fill="#2F3090"/>
+    <!-- Bottom half: Uzbekistan 2026 deep teal, sampled from the footer. -->
+    <rect y="32" width="64" height="32" fill="#197F64"/>
+  </g>
+
+  <!-- "Uz" — country code on the blue (IChO/Olympiad) half. Slightly
+       smaller because the year below is the brand anchor. -->
   <text x="32" y="25"
         text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="22" font-weight="800" letter-spacing="-0.6"
         fill="#ffffff">Uz</text>
 
-  <!-- "26" — the year, lower half. Sized larger (30 vs 22) and heavier
-       (weight 900 vs 800) so it dominates at every viewport size,
-       including the 16×16 browser-tab worst case where two-digit
-       numerals are the most legible mark possible. Tighter
-       letter-spacing (-1.5) lets the digits get visually larger
-       without overflowing the column. -->
+  <!-- "26" — the year, on the green (Uzbekistan 2026) half. Sized
+       larger (30 vs 22) and heavier (weight 900 vs 800) so it
+       dominates at every viewport size, especially the 16×16
+       browser-tab worst case. -->
   <text x="32" y="56"
         text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"

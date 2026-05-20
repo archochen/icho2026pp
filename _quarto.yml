@@ -12,6 +12,7 @@ website:
   description: "Solutions and pedagogical analysis for the 58th IChO (Uzbekistan, 2026) preparatory problems. Solutions are dynamic; please report errors on Discord."
   site-url: "https://archochen.github.io/icho2026pp/"
   repo-url: "https://github.com/archochen/icho2026pp"
+  favicon: favicon.svg
   repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true

@@ -266,11 +266,7 @@ $$
 
 The mathematical model above was found valid for a real biochemical system, where the initial transamination reaction with pyridoxamine catalysed by a strictly homochiral dipeptide molecule **aa1-aa2** yields a racemic amino acid molecule **aa** and pyridoxal. The amino acid molecules formed react with another amino acid’s derivative molecule **K**, which results in a dipeptide derivative. The latter yields the dipeptide **aa1-aa2**, thus looping the cycle:
 
-<img src="images/70d4f33706748fdd34b3bdc7af003be1c002e1301111077c08bc5744ca3e8788.jpg" alt="image" style="zoom: 67%;" />
-
-<img src="images/59c359de8763e198caf67dcc2f2cda47313ee178513750538cc344b39a3a96b4.jpg" alt="image" style="zoom:67%;" />
-
-<img src="images/ad98865ce78a371a799f4fc108fc87b58f6d2b7857cc6f7a7ca24eaa72e83a59.jpg" alt="image" style="zoom: 67%;" />
+<img src="assets/q10_9_aa_dipeptide_cycle_scheme.png" alt="Consolidated scheme: PM/aa/PL transamination loop (top) and K + aa₂ → amidine → dipeptide aa₁-aa₂ assembly (bottom)" style="max-width: 760px; width: 100%; height: auto;" />
 
 9. **Draw** the structure of **K**.
 
@@ -285,9 +281,7 @@ The mathematical model above was found valid for a real biochemical system, wher
 
 The role of the dipeptide catalyst in reaction **(1)** is based on promoting a hydrogen atom transfer (HAT) reaction. For instance, Yu et al. proposed the mechanism below for the L-prolinyl-L-valinecatalysed alanine synthesis reaction from pyruvate:
 
-<img src="images/5928dbb91cea5b5e1ec814924766b48abc6fe9527645254aba9c2699cf4b9876.jpg" alt="image" style="zoom:67%;" />
-
-<img src="images/4cac7e090a9187ec1c90974639dab6effc0cf678e8740be3c0d017cabd2fda49.jpg" alt="image" style="zoom: 67%;" />
+<img src="assets/q10_10_pro_val_hat_mechanism.png" alt="L-prolinyl-L-valine catalysed transamination: pyruvate + PM ⇌ M ⇌ N ⇌ O ⇌ PL + alanine, with LL ⇌ [LL-H]⁺ proton transfer; the L-Pro-L-Val catalyst (LL) is drawn in the inset." style="max-width: 760px; width: 100%; height: auto;" />
 
 10. **Mark** the functional group(s) in the **LL** molecule involved in the hydrogen atom transfer process.
 
@@ -304,9 +298,9 @@ The role of the dipeptide catalyst in reaction **(1)** is based on promoting a h
 
 > **Solution (Q11 — Intermediates M, N, O in the Pro-Val HAT cycle).**
 >
-> In the Yu et al. pyruvate → alanine mechanism, pyruvate condenses with pyridoxamine (PM) to give a **ketimine**, which is converted by the LL-mediated formal H-transfer/1,3-proton-shift sequence into a PL-derived **aldimine**, then hydrolysed to alanine + pyridoxal (PL). Let $\mathrm{Py}$ denote the vitamin-B6 pyridine ring fragment.
+> **🟡 HAT language — read as a formal H shift, not a free-radical step.** The drawn catalyst state $\mathrm{[LL-H]^+}$ is *not* produced by pure neutral hydrogen-atom abstraction. It is produced when LL acts as a Brønsted base, removes the C4′ proton from the PM-derived ketimine, and leaves the C–H bonding electrons delocalised over the vitamin-B6 imine system. Thus the problem's "HAT" language should be read as a **formal H shift** rather than as a free-radical HAT step.
 >
-> The important charge-bookkeeping caveat is that the drawn catalyst state $\mathrm{[LL-H]^+}$ is not produced by pure neutral hydrogen-atom abstraction. It is produced when LL acts as a Brønsted base, removes the C4′ proton from the PM-derived ketimine, and leaves the C-H bonding electrons delocalised over the vitamin-B6 imine system. Thus the problem's "HAT" language should be read as a **formal H shift** rather than as a free-radical HAT step.
+> In the Yu et al. pyruvate → alanine mechanism, pyruvate condenses with pyridoxamine (PM) to give a **ketimine**, which is converted by the LL-mediated formal H-transfer/1,3-proton-shift sequence into a PL-derived **aldimine**, then hydrolysed to alanine + pyridoxal (PL). Let $\mathrm{Py}$ denote the vitamin-B6 pyridine ring fragment.
 >
 > - **M — PM ketimine of pyruvate:**
 > $$\boxed{\mathrm{Py{-}CH_2{-}N{=}C(CH_3){-}CO_2^-}}$$

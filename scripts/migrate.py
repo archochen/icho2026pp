@@ -59,6 +59,8 @@ def parse_filename(name: str) -> tuple[int, str]:
     pid = int(m.group(1))
     if "TBC" in stem:
         status = "tbc"
+    elif "draft" in stem.lower():
+        status = "draft"
     elif "with Key" in stem or "with Analysis" in stem:
         status = "final"  # maintainer may downgrade to revised/draft as needed
     else:

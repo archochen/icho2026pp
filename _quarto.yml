@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - "assets/**"
   render:
     - "index.qmd"
     - "syllabus.qmd"
@@ -12,7 +14,7 @@ website:
   description: "Solutions and pedagogical analysis for the 58th IChO (Uzbekistan, 2026) preparatory problems. Solutions are dynamic; please report errors on Discord."
   site-url: "https://archochen.github.io/icho2026pp/"
   repo-url: "https://github.com/archochen/icho2026pp"
-  favicon: favicon.svg
+  favicon: assets/favicon.svg
   repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true
@@ -53,6 +55,12 @@ format:
       method: katex
     include-in-header:
       - text: |
+          <!-- IChO 2026 PP favicons -->
+          <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+          <meta name="theme-color" content="#2a2b80">
+          <!-- KaTeX + mhchem -->
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
           <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
           <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>

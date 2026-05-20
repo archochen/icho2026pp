@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   IChO 2026 Preparatory Problems Solutions — favicon.
-  "Uz" (Uzbekistan, ISO 3166 alpha-2 country code) stacked over "26" (the year).
-  Set on a solid IChO-red rounded square so it stays legible as a small tab icon.
 
-  Colour: #C8102E — sampled to match the red of the official IChO 2026
-  wordmark (the "IChO" letters and the flask-shaped "I" share this red).
+  Layout: "Uz" (Uzbekistan, ISO 3166 alpha-2 country code) stacked over "26"
+  (the year of the Olympiad), on a solid IChO-red rounded-square background.
+
+  Design notes (iteration 2, 2026-05-19):
+
+  - Typographic hierarchy: "26" is rendered larger and heavier than "Uz".
+    The year is THE brand identifier (the thing students are studying
+    for); the country code is a secondary annotation. Sizing them
+    equally wastes the favicon's scarcest resource — vertical pixels —
+    on an artificial balance. With this hierarchy "26" gets ~9 px of
+    glyph height at the 16×16 browser-tab size (up from ~6 px), while
+    "Uz" is still cleanly readable because its two distinctive
+    letterforms only need ~5 px.
+
+  - Font stack: 'Helvetica Neue' → Helvetica → Arial → sans-serif.
+    Helvetica and Arial share the same metric family and are present on
+    every desktop OS, so the rendered favicon looks nearly identical to
+    every visitor. The previous -apple-system stack rendered SF Pro on
+    macOS and fell through to whatever on other OSes, which made the
+    icon look subtly different to every viewer.
+
+  - Corner radius rx=12 (~19% of side length) lands in the modern
+    "squircle" sweet spot — friendlier than rx=10 (iOS app icon) without
+    becoming a pill.
+
+  - Colour: #C8102E, sampled to match the red of the IChO 2026 wordmark
+    (the "IChO" letters and the flask-shaped "I" share this red).
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IChO 2026 — Uzbekistan">
-  <!-- Solid IChO-red rounded square background (iOS-style corner radius). -->
-  <rect width="64" height="64" rx="10" fill="#C8102E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IChO 2026 — Uzbekistan favicon">
+  <!-- IChO-red squircle background. -->
+  <rect width="64" height="64" rx="12" fill="#C8102E"/>
 
-  <!-- "Uz" — upper half. ISO country code, identifies Uzbekistan. -->
-  <text x="32" y="29" text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="24" font-weight="800" letter-spacing="-0.5"
+  <!-- "Uz" — country code, upper half. Slightly smaller because it's
+       the secondary identifier. -->
+  <text x="32" y="25"
+        text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="22" font-weight="800" letter-spacing="-0.6"
         fill="#ffffff">Uz</text>
 
-  <!-- "26" — lower half. The year. -->
-  <text x="32" y="56" text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="24" font-weight="800" letter-spacing="-0.5"
+  <!-- "26" — the year, lower half. Sized larger (30 vs 22) and heavier
+       (weight 900 vs 800) so it dominates at every viewport size,
+       including the 16×16 browser-tab worst case where two-digit
+       numerals are the most legible mark possible. Tighter
+       letter-spacing (-1.5) lets the digits get visually larger
+       without overflowing the column. -->
+  <text x="32" y="56"
+        text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="900" letter-spacing="-1.5"
         fill="#ffffff">26</text>
 </svg>

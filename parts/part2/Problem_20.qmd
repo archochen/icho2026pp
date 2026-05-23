@@ -4,7 +4,7 @@ problem-id: 20
 status: draft
 difficulty: 3
 foad: []
-topics: []
+topics: [porphyrin, dipyrromethane, vilsmeier-haack, schiff-base, porphyrin-metalation, pacman-porphyrin, hangman-porphyrin, cage-compound, supramolecular, o2-binding]
 date: "2026-05-21"
 description: ""
 ---

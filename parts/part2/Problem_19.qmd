@@ -3,8 +3,8 @@ title: "P2.19 — Carbohydrates as chiral pools"
 problem-id: 19
 status: draft
 difficulty: 3
-foad: []
-topics: []
+foad: [carbohydrate-chemistry]
+topics: [chiral-pool, total-synthesis, swainsonine, thromboxane-b2, glucopyranoside, mannopyranoside, benzylidene-acetal, cyclohexenone, "2,3-anhydro-sugar", alkaloid]
 date: "2026-05-23"
 description: ""
 ---

@@ -1,0 +1,213 @@
+---
+title: "P2.19 — Carbohydrates as chiral pools"
+problem-id: 19
+status: draft
+difficulty: 3
+foad: []
+topics: []
+date: "2026-05-23"
+description: ""
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Found an issue?** Post the problem number (**P2.19**) and the **step** on Discord.
+[💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
+:::
+
+Asymmetric synthesis has attracted significant attention in recent years thanks to advances in asymmetric catalysis. However, using chiral auxiliary groups in the substrate structure remains an efficient approach for chiral total synthesis, especially when chiral substrates are readily available. Different monosaccharides are handy starting materials in natural product synthesis. For example, in 1985, the first synthesis of compound **X** from L-sorbose derivative **A** was published.
+
+<img src="images/020b5480640ec916de11683e67d8877d47dd0f3b8fcf9a48de1bcdbabc7a236b.jpg" alt="image" style="zoom: 67%;" />
+
+<img src="images/2b6e04a2312e1ab39c51fbfabbb54b126b065448f6c392022538d65ff6f0987a.jpg" alt="image" style="zoom:67%;" />
+
+1. **Draw** the structures of compounds **B**, **C**, and the most stable diastereomer of **X,** including stereochemistry. Note: **X** contains a five-membered heterocycle, and the formation of **X** proceeds through an imine intermediate.
+
+> **Solution (Q1 — L-sorbose derivative to DMDP).**
+>
+> **B** is obtained by direct $\mathrm{S_N2}$ substitution at the tosylate-bearing C5 stereocentre of **A**:
+>
+> $$\boxed{\mathbf{B}=\text{the C5-azide analogue of A: replace } \mathrm{OTs}\text{ by }\mathrm{N_3}\ \text{with inversion at C5},\text{ leaving both OAc groups and the acetonide unchanged.}}$$
+>
+> The $\mathrm{NaOMe}$ step removes the acetyl groups, and acidic workup hydrolyses the acetonide. Therefore **C** is the deprotected C5-azidosugar drawn in the article as a cyclic hemiacetal, not an amino compound or imine:
+>
+> $$\boxed{\mathbf{C}=5\text{-azido-}5\text{-deoxy-L-sorbose}\;(\text{drawn as the article's pyranose/hemiacetal form}).}$$
+>
+> Hydrogenation reduces $\mathrm{N_3}$ to $\mathrm{NH_2}$; the amine condenses intramolecularly with the C2 ketone to form a cyclic imine, and further hydrogenation gives the most stable pyrrolidine iminosugar:
+>
+> <img src="./assets/image-20260523155543928.png" alt="image-20260523155543928" style="zoom:67%;" />
+>
+> Thus **X** is DMDP, $(2R,3R,4R,5R)$-2,5-bis(hydroxymethyl)-3,4-dihydroxypyrrolidine. The structure sequence is consistent with Card and Hitz, *J. Org. Chem.* 1985, 50, 891-893, DOI: [10.1021/jo00206a037](https://doi.org/10.1021/jo00206a037).
+
+Thromboxane B2 (TxB2) is a stable, inactive breakdown product of Thromboxane A2 (TxA2), a potent molecule that causes blood platelets to clump (aggregate) and blood vessels to constrict. It was synthesised from D-glucose. The following scheme shows the synthesis of key intermediate **I**.
+
+![image-20260523154415312](./assets/image-20260523154415312.png)
+
+2. **Draw** the structures of **D**–**I** with stereochemistry. Note: Acetal/ketal formation involves a primary alcohol when it is available.
+
+> **Solution (Q2 — corrected D-I assignments from the printed scheme).**
+>
+> **D** is the product of methanolysis followed by benzylidene acetal formation:
+>
+> | Compound | Correct structure to draw |
+> |---|---|
+> | **D** | <img src="assets/q19_D_methyl_46_benzylidene_alpha_D_glucopyranoside_pubchem.png" width="145"><br>methyl 4,6-O-benzylidene-$\alpha$-D-glucopyranoside; C2-OH and C3-OH remain free. |
+> | **E** | methyl 2,3-anhydro-4,6-O-benzylidene-$\alpha$-D-mannopyranoside/allopyranoside epoxide, formed by tosylation followed by intramolecular displacement by the neighbouring OH. |
+> | **F** | LiAlH4 opens the 2,3-anhydro sugar to the **2-deoxy** pyranoside; BzCl protects the newly retained secondary OH as OBz while the 4,6-benzylidene remains. |
+> | **G** | After hydrogenolysis of the benzylidene and selective TBDPS protection of the primary C6-OH, Swern oxidation converts the remaining secondary OH into the corresponding ketone/ulose. |
+> | **H** | Horner-Wadsworth-Emmons olefination of **G** gives the exocyclic $\alpha,\beta$-unsaturated ester at the ketone carbon. |
+> | **I** | Hydrogenation followed by base treatment gives the protected TxB2 key intermediate with formula $\mathrm{C_{25}H_{32}SiO_5}$; draw the pyranoside stereochemistry exactly as inherited from the scheme, with the C6-OTBDPS group retained. |
+>
+> The key correction is that the "primary alcohol participates in acetal formation" clue refers to formation of the **4,6-O-benzylidene** acetal in **D**, not to a 1,2:5,6-di-O-isopropylidene furanose. The D structure image is from PubChem name lookup; 
+>
+> ![image-20260523182657589](./assets/image-20260523182657589.png)
+
+3. **Determine** in what order the following combinations of reagents $\left( Z_{1} \mathrm{-} Z_{4} \right)$ must be used to obtain Thromboxane $\mathbf{B}_{2}$ from **I**: 
+
+$Z_{1} - 1 )$ PCC $\mathrm {( P y H^{+} {\cdot} C r O_{3} C l^{-}}$ ), 2) $\mathrm {P h_{3} P^{+} C H^{-} C ( O ) ( C H_{2} )_{4} C H_{3}} ;$
+
+Z2 – 1) BzCl, 2) $\mathrm {B u_{4} N^{+} F^{-}}$ ;
+
+Z3 – 1) NaBH4, 2) ${\mathrm{K}}_{2} {\mathrm{CO}}_{3}$ , 3) HCl;
+
+Z4 – 1) (i-Bu)2AlH, 2) Ph3P+CH−(CH2)3COOH, 3) CH2N2.
+
+> **Solution (Q3 — ordering of Z1-Z4 for I -> TxB2).**
+>
+> **Order: Z4 -> Z2 -> Z1 -> Z3.**
+>
+> ![image-20260523183703060](./assets/image-20260523183703060.png)
+>
+> **Why this order is forced by the structure of I.**
+>
+> Intermediate **I** is already the protected thromboxane ring system, but it is missing both side chains in their final oxidation states. It still contains the lactone/lactol-side carbonyl precursor needed for the **alpha chain**, a free secondary alcohol on the ring, and a primary alcohol masked as the **OTBDPS** ether.
+>
+> **1. Z4 must be first.** DIBAL reduces the lactone/lactol carbonyl of **I** to the aldehyde/lactol oxidation level required for Wittig homologation. The ylide $\mathrm{Ph_3P{=}CH(CH_2)_3CO_2Li}$ then installs the alpha chain with the alkene and terminal carboxylate skeleton. $\mathrm{CH_2N_2}$ converts that carboxylic acid/carboxylate into the methyl ester, giving intermediate **9** in the provided structure plate. This step cannot wait until after oxidative side-chain elaboration, because it uses the lactone/lactol carbonyl functionality present in **I**.
+>
+> **2. Z2 comes next.** The newly formed **9** still has a free ring alcohol and a primary **OTBDPS** group. $\mathrm{BzCl}$ protects the ring alcohol as **OBz**, and $\mathrm{Bu_4NF}$ removes the TBDPS group to expose the primary alcohol, giving **10**. This sequencing is chemoselective: the ring alcohol must be protected before the primary alcohol is unmasked for oxidation in the next step.
+>
+> **3. Z1 then installs the omega chain.** PCC/Collins-type oxidation converts the primary alcohol of **10** into the aldehyde. The stabilised ylide $\mathrm{Ph_3P{=}CHC(O)(CH_2)_4CH_3}$ then forms the enone side chain, giving **11**. This reagent set has to follow Z2, because the aldehyde needed for the Wittig reaction is generated only after desilylation of the primary alcohol.
+>
+> **4. Z3 is the final deprotection/reduction sequence.** $\mathrm{NaBH_4}$ (the literature plate uses $\mathrm{Zn(BH_4)_2}$ for the same hydride-reduction role) reduces the side-chain ketone of **11** to the C15 alcohol, giving the C15 epimeric alcohols **12/13**. $\mathrm{K_2CO_3/MeOH}$ removes the benzoate to give **14/15**, and acid then hydrolyses the methyl glycoside and methyl ester to the free lactol/carboxylic acid products **16/17**, corresponding to TxB2 stereoisomeric products. The natural TxB2 assignment uses the isomer with the correct C15 alcohol configuration.
+>
+> This matches the Hanessian-Lavallee D-glucose route to thromboxane B2: the sequence first constructs the alpha chain from **I**, then unmasks the primary alcohol, oxidises it for omega-chain Wittig extension, and only at the end reduces/deprotects to the free TxB2 framework.
+
+Using compound **D**, it is possible to synthesise other chiral molecules. $( + )$ -Actinobolin, isolated from the culture fluid of Streptomyces, has a broad antibacterial spectrum and moderate antitumor activity. In the synthesis of $( + )$ -Actinobolin, overall, five new stereocentres were formed using the chiral auxiliary.
+
+![image](images/f38692d967d292075469ecb019df529ae88157e77f020d1dbcfb3621fc7ff9dc.jpg)
+
+4. **Draw** the structures of **J**–**O**, including stereochemistry.
+
+> **Solution (Q4 — corrected J-O logic).**
+>
+> **🟡 Structures of J–O to be added.** The table below describes each compound's connectivity, stereochemistry, and the transformation that produces it in words, but the actual **drawings** of J through O on the cyclohexenone scaffold are still pending and will be added in a later revision.
+>
+> The unlabeled substrate entering this sequence is the protected cyclohexenone drawn in the problem, not the glucose acetal **D** itself. The labels **J-O** are therefore assigned by the transformations in that cyclohexenone route:
+>
+> | Compound | Correct structure to draw |
+> |---|---|
+> | **J** | The conjugate-addition/aldol adduct: vinyl cuprate adds to the enone, then the chiral PMP-protected aldehyde adds to the ketone-derived enolate. Draw the new vinyl substituent and the $\mathrm{CH(CH_3)OPMP}$ side chain with the relative stereochemistry shown by the later drawn intermediate. |
+> | **K** | NaBH4 reduction of **J** gives the corresponding secondary alcohol; the newly formed OH is the one converted into OTs in the next step. |
+> | **L** | After tosylation of that alcohol and MOM protection of the other alcohol, DDQ removes the PMP group and Dess-Martin periodinane oxidises the resulting alcohol to the carbonyl shown by the L skeleton. |
+> | **M** | Ozonolysis of the terminal alkene followed by Pinnick oxidation converts the vinyl group into a carboxylic acid. |
+> | **N** | NaBH4 reduces the carbonyl, then DCC/DMAP promotes intramolecular esterification/lactonisation to the protected lactone. |
+> | **O** | NaN3 displaces the tosylate with inversion; HF/pyridine removes TBS; Swern oxidation gives the ketone/alcohol oxidation state needed for coupling with N-Cbz-alanine and final hydrogenolysis to (+)-actinobolin. |
+>
+> **Source note:** No reliable standalone online structure images for J-O were found. The answer should therefore use the stereochemical skeleton printed in the problem's actinobolin scheme and propagate each reagent change exactly as above; this is safer than substituting unrelated database drawings.
+
+Swainsonine, an indolizidine alkaloid, was synthesised using benzyl-$\alpha$-D-mannopyranoside. It is a potent inhibitor of Golgi apparatus alpha-mannosidase II, an immunomodulator, and a potential chemotherapeutic agent. The synthesis of (–)-Swainsonine is given below.
+
+<img src="images/dd7309964813406a6eca677311c2a1172b040518589400493fc57a1f41c4cad5.jpg" alt="image" style="zoom: 50%;" />
+
+<img src="images/1beca045758b06c8411b5edca030d353f50eb6b0cd7acbc516b57784cd3f62e2.jpg" alt="image" style="zoom: 67%;" />
+
+Hint: **P** and **Q** are epimers.
+
+5. **Determine** the configurations of all stereocentres in $( - )$ -Swainsonine and the starting material.
+
+> **Solution (Q5 — absolute configurations).**
+>
+> | Compound | Configuration image / stereochemical name |
+> |---|---|
+> | Starting benzyl $\alpha$-D-mannopyranoside | <img src="assets/q19_benzyl_alpha_D_mannopyranoside_pubchem.png" width="145"><br>PubChem CID [10956572](https://pubchem.ncbi.nlm.nih.gov/compound/10956572): $(2R,3S,4S,5S,6S)$-2-(hydroxymethyl)-6-(phenylmethoxy)oxane-3,4,5-triol. |
+> | $(-)$-Swainsonine | <img src="assets/q19_swainsonine_pubchem.png" width="145"><br>PubChem CID [51683](https://pubchem.ncbi.nlm.nih.gov/compound/51683): $(1S,2R,8R,8aR)$-1,2,3,5,6,7,8,8a-octahydroindolizine-1,2,8-triol. |
+>
+> Therefore the target stereocentres of $(-)$-swainsonine are:
+>
+> $$\boxed{1S,\;2R,\;8R,\;8aR.}$$
+
+6. **Draw** the structures of **P**–**U**, including stereochemistry.
+
+> **Solution (Q6 — corrected P-U assignments).**
+>
+> The following literature route image matches the problem's swainsonine scheme and is useful for drawing P-U:
+>
+> ![image-20260523192626308](./assets/image-20260523192626308.png)
+>
+> **Source note:** The route image is from DrugFuture's reproduction of Fleet et al., *Tetrahedron Letters* 1984, 25, 1853, "Enantiospecific synthesis of swainsonine ... from D-mannose".
+
+7. **Indicate** which stereocentres are preserved and which centres are newly formed.
+
+> **Solution (Q7 — preserved, inverted, and newly set stereocentres).**
+>
+> - The two acetonide-bearing stereocentres corresponding to the mannose C2/C3 region are carried through the route and appear as the 1,2-diol stereochemistry of $(-)$-swainsonine.
+> - The C4 centre is **not simply preserved**: P -> Q inverts it by oxidation/reduction, and Q -> R inverts it again by triflate displacement with azide. Net, this centre is controlled by two stereospecific operations and ends with the configuration required for the C8-OH of swainsonine.
+> - The primary C6 carbon is not initially stereogenic; after oxidation, Wittig homologation, and reductive cyclisation it becomes part of the piperidine ring but does not introduce an uncontrolled stereochemical ambiguity.
+> - The anomeric C1 centre is labile during hydrogenolysis to a lactol/open-chain aminoaldehyde and is re-set during the final intramolecular reductive amination that gives the indolizidine ring junction. This is the principal **newly fixed** stereocentre in the late-stage bicyclisation.
+>
+> In short: most of the stereochemical information is transferred from D-mannose, C4 is deliberately inverted twice, and the ring-junction stereocentre is newly formed under substrate control during the final reductive amination.
+
+---
+
+## 中文版 / Chinese translation
+## 第19题 糖类手性源
+
+近年来，随着不对称催化的发展，不对称合成备受关注。然而在手性全合成中，直接使用含手性辅助基的底物仍不失为有效策略，尤其是对于容易获取的手性底物。比如，各种单糖便可作为天然产物合成中便捷的手性源。1985 年，首次报道了以L–山梨糖衍生物A为原料合成化合物X的路线。
+
+![image](images/c94b406d87ba5a7c61717677a1b41eb06b8c300b5e78b6fdd3b1a046cc7a534d.jpg)
+
+
+19-1 画出化合物B、C、X的最稳定非对映异构体的结构式，需标明立体化学。
+
+注： $\pmb {\mathrm{x}}$ 中含有一个五元杂环，经过亚胺中间体生成。
+
+血栓素 A2可强烈促进血小板聚集并引起血管收缩。血栓素 B2(TxB2) 是血栓素A2 (TxA2) 分解而得的稳定产物，无生物活性。血栓素B2 可由 D–葡萄糖人工合成，其关键中间体I的合成路线如下所示：
+
+![image](images/909a526f6abba903ea8291ab9cc35f1e80e51b6feaaa5d7179aa478f99f49c11.jpg)
+
+
+19-2 画出D–I的结构式，需标明立体化学。
+
+注：缩醛/缩酮形成时，若存在伯醇，则优先与伯醇反应。
+
+19-3 指出应按什么顺序使用下列试剂组合Z1–Z4，将中间体I转化为血栓素B2：
+
+· Z1：(1) PCC $\left( \mathrm{Py} \mathrm{H}^{+} {\cdot} \mathrm{Cr} \mathrm{O}_{3} \mathrm{Cl}^{-} \right.$ ); (2) Ph3P+CH−C(O)(CH2)4CH3 
+
+· Z2：(1) BzCl; (2) $\mathrm {B u_{4} N^{+} F^{-}}$ 
+
+· Z3：(1) NaBH4; (2) $\mathrm{K}_{2} \mathrm{CO}_{3} ;$ (3) HCl 
+
+· Z4：(1) ${}^{i} \mathrm{Bu}_{2} \mathrm{AlH}$ ; (2) Ph3P+CH−(CH2)3COOH; (3) CH2N2 
+
+化合物 D还可以用于合成其他手性分子。链霉菌培养液中分离得到的 $( + ) \cdot$ –放线菌素 (Actinobolin) 具有广谱抗菌活性和中等抗肿瘤活性。 $( + ) \cdot$ –放线菌素的合成中，借助手性辅助基团构建了五个新的手性中心。
+
+![image](images/3b4c89041608881ac3c733db65230ac51035df473ae19b2c7c94869458831bf8.jpg)
+
+
+19-4 画出J到O的结构式，需标明立体化学。
+
+(−)–苦马豆碱 (Swainsonine) 是八氢吲嗪类生物碱，可作为高尔基体 $\alpha \cdot$ -甘露糖苷酶II 的强效抑制剂，具有免疫调节作用，也是潜在的化疗药物。(−)–苦马豆碱可由苄基- $\mathbf{\nabla} \cdot \mathbf{a} .$ -D–吡喃甘露糖苷合成，路线如下所示：
+
+![image](images/30f41308d07221a408307e8ade3065c21872a56f9d416077df01372836751e68.jpg)
+
+
+![image](images/3e020677a64a75165a61e873285cf8b4fc3ef8a3cd2791cf5f0fa68d986922bc.jpg)
+
+
+提示： $\mathsf{P}$ 和 $\mathbf{Q}$ 为差向异构体。
+
+19-5 指出 (−)–苦马豆碱及起始原料中所有立体中心的构型。
+
+19-6 画出 P 到 U 的结构式，需标明立体化学。
+
+19-7 指出哪些立体中心得以保持，哪些是新形成的。

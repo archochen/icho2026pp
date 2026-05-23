@@ -43,7 +43,9 @@ DIFFICULTY = re.compile(r"难度评级[：:]\s*([★☆]+)")
 # (along with their trailing empty blockquote line) so they never reach the
 # rendered site.
 CODEX_NOTE = re.compile(
-    r"^> \*\*Revision note:\*\* Revised by Codex on [^\n]*\n(?:>\s*\n)?",
+    # Both the dated form ("Revised by Codex on 2026-04-30; …") and the
+    # date-less form ("Revised by Codex. …") are stripped.
+    r"^> \*\*Revision note:\*\* Revised by Codex\b[^\n]*\n(?:>\s*\n)?",
     re.MULTILINE,
 )
 

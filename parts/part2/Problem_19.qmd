@@ -5,7 +5,7 @@ status: draft
 difficulty: 3
 foad: [carbohydrate-chemistry]
 topics: [chiral-pool, total-synthesis, swainsonine, thromboxane-b2, glucopyranoside, mannopyranoside, benzylidene-acetal, cyclohexenone, anhydro-sugar, alkaloid]
-date: "2026-05-23"
+date: "2026-05-24"
 description: ""
 ---
 
@@ -65,11 +65,11 @@ Thromboxane B2 (TxB2) is a stable, inactive breakdown product of Thromboxane A2 
 
 $Z_{1} - 1 )$ PCC $\mathrm {( P y H^{+} {\cdot} C r O_{3} C l^{-}}$ ), 2) $\mathrm {P h_{3} P^{+} C H^{-} C ( O ) ( C H_{2} )_{4} C H_{3}} ;$
 
-Z2 – 1) BzCl, 2) $\mathrm {B u_{4} N^{+} F^{-}}$ ;
+$Z_2$ – 1) BzCl, 2) $\mathrm {B u_{4} N^{+} F^{-}}$ ;
 
-Z3 – 1) NaBH4, 2) ${\mathrm{K}}_{2} {\mathrm{CO}}_{3}$ , 3) HCl;
+$Z_3$ – 1) $\ce{NaBH4}$, 2) ${\mathrm{K}}_{2} {\mathrm{CO}}_{3}$ , 3) HCl;
 
-Z4 – 1) (i-Bu)2AlH, 2) Ph3P+CH−(CH2)3COOH, 3) CH2N2.
+$Z_4$ – 1) $\ce{(i-Bu)2AlH}$, 2) $\ce{Ph3P+CH^−(CH2)3COOH}$, 3) $\ce{CH2N2}$.
 
 > **Solution (Q3 — ordering of Z1-Z4 for I -> TxB2).**
 >
@@ -99,20 +99,22 @@ Using compound **D**, it is possible to synthesise other chiral molecules. $( + 
 
 > **Solution (Q4 — corrected J-O logic).**
 >
-> **🟡 Structures of J–O to be added.** The table below describes each compound's connectivity, stereochemistry, and the transformation that produces it in words, but the actual **drawings** of J through O on the cyclohexenone scaffold are still pending and will be added in a later revision.
->
 > The unlabeled substrate entering this sequence is the protected cyclohexenone drawn in the problem, not the glucose acetal **D** itself. The labels **J-O** are therefore assigned by the transformations in that cyclohexenone route:
 >
 > | Compound | Correct structure to draw |
 > |---|---|
-> | **J** | The conjugate-addition/aldol adduct: vinyl cuprate adds to the enone, then the chiral PMP-protected aldehyde adds to the ketone-derived enolate. Draw the new vinyl substituent and the $\mathrm{CH(CH_3)OPMP}$ side chain with the relative stereochemistry shown by the later drawn intermediate. |
-> | **K** | NaBH4 reduction of **J** gives the corresponding secondary alcohol; the newly formed OH is the one converted into OTs in the next step. |
-> | **L** | After tosylation of that alcohol and MOM protection of the other alcohol, DDQ removes the PMP group and Dess-Martin periodinane oxidises the resulting alcohol to the carbonyl shown by the L skeleton. |
-> | **M** | Ozonolysis of the terminal alkene followed by Pinnick oxidation converts the vinyl group into a carboxylic acid. |
-> | **N** | NaBH4 reduces the carbonyl, then DCC/DMAP promotes intramolecular esterification/lactonisation to the protected lactone. |
-> | **O** | NaN3 displaces the tosylate with inversion; HF/pyridine removes TBS; Swern oxidation gives the ketone/alcohol oxidation state needed for coupling with N-Cbz-alanine and final hydrogenolysis to (+)-actinobolin. |
+> | **J** | The conjugate-addition/aldol adduct shown in the added structure plate: vinyl cuprate adds to the enone, then the chiral aldehyde bearing an MPM/PMB-protected alcohol traps the enolate. **J** retains the ring ketone, has the newly installed terminal vinyl group, and bears the $\mathrm{CH(OH)CH(CH_3)OMPM}$ side chain with the stereochemistry drawn in the plate. |
+> | **K** | $\mathrm{NaBH_4}$ reduces the **ring ketone** of **J** to the secondary ring alcohol. Thus **K** contains two free alcohols: the pre-existing aldol side-chain alcohol and the newly formed ring alcohol. In the following step, BuLi/TsCl converts the side-chain alcohol into **OTs**, while MOMCl protects the newly formed ring alcohol as **OMOM**. |
+> | **L** | After the OTs/OMOM intermediate, DDQ cleaves the MPM ether and Dess-Martin periodinane oxidises that liberated secondary alcohol to the methyl ketone drawn in **L**. The terminal alkene, OTBS, OBn, OTs, and OMOM groups remain in place. |
+> | **M** | Ozonolysis of the terminal alkene followed by Pinnick oxidation converts that vinyl group into the carboxylic acid; the methyl ketone, OTs, OMOM, OTBS, and OBn groups are retained. |
+> | **N** | $\mathrm{NaBH_4}$ reduces the methyl ketone of **M** to the hydroxy acid, and DCC/DMAP then promotes intramolecular esterification to the protected lactone **N**. The tosylate is still present at this stage and is not replaced until the next step. |
+> | **O** | $\mathrm{NaN_3}$ displaces the tosylate with inversion to install the azide; HF/pyridine removes the TBS group; Swern oxidation followed by silica gel gives the enolised lactone/alcohol oxidation pattern drawn as **O**. The azide and benzyl ether are retained until the final hydrogenation/coupling sequence with Cbz-D-alanine. |
 >
-> **Source note:** No reliable standalone online structure images for J-O were found. The answer should therefore use the stereochemical skeleton printed in the problem's actinobolin scheme and propagate each reagent change exactly as above; this is safer than substituting unrelated database drawings.
+> ![image-20260524122501465](./assets/image-20260524122501465.png)
+>
+> **Structure note:** The added structure image is consistent with the problem scheme and should be used as the J-O structure plate. It also shows the drawn route leading to the $(-)$-actinobolin series; if the surrounding OCR text says $(+)$-actinobolin, treat that as a sign/text mismatch and keep the stereochemistry shown in the scheme unless the target enantiomer is explicitly changed.
+>
+> **Abbreviation / source note:** $\mathrm{MPM}$ is **not** the same as $\mathrm{PMP}$ in standard protecting-group shorthand. $\mathrm{MPM}$ = $\mathrm{PMB}$ = p-methoxybenzyl = p-methoxyphenylmethyl, whereas $\mathrm{PMP}$ normally means p-methoxyphenyl. The source article for this actinobolin route gives the relevant aldehyde as **P = MPM**, and the later DDQ cleavage in **K -> L** is also diagnostic for an MPM/PMB ether. Therefore the $\mathrm{PMP}$/$\mathrm{OPMP}$ label in the question scheme should be treated as a typographical/OCR error and corrected in the solution to $\mathrm{MPM}$/$\mathrm{OMPM}$, without altering the original question image. Reference: S. Imuta, H. Tanimoto, M. K. Momose, N. Chida, "Total synthesis of actinobolin from D-glucose by way of the stereoselective three-component coupling reaction," *Tetrahedron* **2006**, 62, 6926-6944, DOI: [10.1016/j.tet.2006.04.079](https://doi.org/10.1016/j.tet.2006.04.079).
 
 Swainsonine, an indolizidine alkaloid, was synthesised using benzyl-$\alpha$-D-mannopyranoside. It is a potent inhibitor of Golgi apparatus alpha-mannosidase II, an immunomodulator, and a potential chemotherapeutic agent. The synthesis of (–)-Swainsonine is given below.
 

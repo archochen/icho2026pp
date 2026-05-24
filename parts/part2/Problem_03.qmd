@@ -5,7 +5,7 @@ status: draft
 difficulty: 5
 foad: []
 topics: [inorganic, nuclear, electrolysis, perbromate, szilard-chalmers, iodometric-titration]
-date: "2026-05-19"
+date: "2026-05-24"
 description: ""
 ---
 
@@ -111,20 +111,24 @@ Another 3.0 mL sample of solution **S0** was not subjected to electrolysis. Inst
 
 > **Solution (Q5 — identity of C and D).**
 >
-> **Strategy.** $\mathrm{A1}=\mathrm{BrO_{4}^{-}}$ is kinetically stable but thermodynamically unstable with respect to $\mathrm{BrO_{3}^{-}}+\tfrac12\mathrm{O}_{2}$. Bromate stays in solution (not a gas), so the only **gaseous elemental** substances that can appear are the two allotropes of oxygen, $\mathrm{O_{2}}$ and $\mathrm{O_{3}}$. A decomposition pathway that delivers C and D in the required **1 : 2** molar ratio and balances atoms/charge is obtained by splitting the released oxygen atoms between $\mathrm{O_{2}}$ and $\mathrm{O_{3}}$ in a 1 : 2 ratio:
+> **Strategy.** $\mathrm{A1}$ is not just ordinary perbromate; from Q3 it is radioactive $\mathrm{^{83}BrO_{4}^{-}}$. The second first-order constant in the scheme, $k_{2}=0.0048\ \mathrm{min^{-1}}$, gives
 >
-> $$\boxed{\;8\,\mathrm{BrO_{4}^{-}}\;\longrightarrow\; 8\,\mathrm{BrO_{3}^{-}}\; +\; \mathrm{O_{2}}\; +\; 2\,\mathrm{O_{3}}\;}$$
+> $$t_{1/2}=\frac{\ln 2}{k_{2}}=\frac{0.693}{0.0048}=144\ \mathrm{min}=2.40\ \mathrm{h},$$
 >
-> Atom balance: Br $8=8$ ✓, O $32=24+2+6=32$ ✓, charge $-8=-8$ ✓. The elemental gaseous products are
+> which matches the half-life of $\mathrm{^{83}Br}$ beta decay to $\mathrm{^{83}Kr}$. Therefore the "spontaneous decomposition" of **A1** is best understood as the nuclear decay of the bromine atom in the perbromate ion, followed by loss of the oxygen ligand shell as dioxygen:
+>
+> $$\boxed{\mathrm{^{83}BrO_{4}^{-}\longrightarrow{}^{83}Kr+2\,O_{2}+\beta^{-}+\bar{\nu}_{e}}}$$
+>
+> The beta particle accounts for charge balance; the chemical gaseous elemental substances are $\mathrm{^{83}Kr}$ and $\mathrm{O_{2}}$.
 >
 > | Species | Formula | Notes |
 > |---|---|---|
-> | **C** | $\mathrm{O_{2}}$ | triplet dioxygen |
-> | **D** | $\mathrm{O_{3}}$ | ozone |
+> | **C** | $\mathrm{^{83}Kr}$ | monatomic krypton formed by $\beta^{-}$ decay of $\mathrm{^{83}Br}$ |
+> | **D** | $\mathrm{O_{2}}$ | dioxygen released from the four oxygen atoms of perbromate |
 >
-> with $n(\mathrm{O_{2}}):n(\mathrm{O_{3}})=1:2$ as required. (Assignments C ↔ O₂ and D ↔ O₃ may be interchanged without loss of generality.)
+> Thus $n(\mathrm{C}):n(\mathrm{D})=n(\mathrm{Kr}):n(\mathrm{O_{2}})=1:2$, exactly matching the problem statement. This also explains why the process is first order: it is governed by radioactive decay rather than by an ordinary perbromate disproportionation.
 >
-> **Remark.** In concentrated aqueous HBrO₄, an auxiliary channel $4\,\mathrm{HBrO_{4}}\rightarrow 2\,\mathrm{Br_{2}}+7\,\mathrm{O_{2}}+2\,\mathrm{H_{2}O}$ is occasionally observed, but it produces Br₂ and O₂ in a ratio $2:7$ fixed by stoichiometry — inconsistent with the stated $1:2$. The oxygen-only channel above is the one compatible with the problem.
+> **Reference note.** The reported half-life for $\mathrm{^{83}Br\to{}^{83}Kr}$ is about $2.39\ \mathrm{h}$, consistent with the scheme value. See, for example, *Decay of Br-83*, *Nuclear Physics* **45** (1963), 336-340.
 >
 
 6. **Calculate** the time (t, in min) after the start of the decomposition of **B**, which corresponds to the maximum concentration of **A1**.
@@ -141,7 +145,7 @@ Another 3.0 mL sample of solution **S0** was not subjected to electrolysis. Inst
 > **Numerical evaluation with the rate constants from the scheme.**
 > The step $\mathrm{B\to A1}$ is the $\beta^{-}$ decay of $\mathrm{^{83}Se}$ ($t_{1/2}=22.3\ \mathrm{min}$), so
 > $$k_{1}=\frac{\ln 2}{22.3\ \mathrm{min}}=3.11\times 10^{-2}\ \mathrm{min^{-1}}.$$
-> The step $\mathrm{A1\to C+D}$ uses the value shown in the scheme image, $k_{2}=4.8\times10^{-3}\ \mathrm{min^{-1}}$ ($t_{1/2}=144\ \mathrm{min}$). Thus
+> The step $\mathrm{A1\to C+D}$ is the $\beta^{-}$ decay of $\mathrm{^{83}Br}$ in $\mathrm{^{83}BrO_4^-}$; the value shown in the scheme image, $k_{2}=4.8\times10^{-3}\ \mathrm{min^{-1}}$, gives $t_{1/2}=144\ \mathrm{min}$, matching $\mathrm{^{83}Br}$. Thus
 > $$t_{\max}=\frac{\ln\!\left(\dfrac{4.8\times 10^{-3}}{3.11\times 10^{-2}}\right)}{4.8\times 10^{-3}-3.11\times 10^{-2}}=\frac{\ln(0.154)}{-2.63\times 10^{-2}}=\frac{-1.87}{-2.63\times 10^{-2}}\approx 71\ \mathrm{min}.$$
 > $$\boxed{\;t_{\max}\approx 7.1\times 10^{1}\ \mathrm{min}\;}$$
 > (about 1.2 h after $\mathrm{^{82}Se}$ dissolution). If the copied text is read as $k_{2}=0.048\ \mathrm{min^{-1}}$, that is a decimal-place error relative to the figure and gives a different, incorrect result.
@@ -153,39 +157,32 @@ It was subsequently discovered that $\mathrm{XeF}_{2}$ also oxidises **A2** to *
 
 > **Solution (Q7 — identity of E and F).**
 >
-> **Strategy.** "Exactly the same unusual method like $\mathrm{B\to A1}$" means $(n,\gamma)$ activation of an enriched isotope followed by $\beta^{-}$ decay of the daughter, with the recoil atom ending up in a binary xenon compound. Xenon arises from $\beta^{-}$ decay of an **iodine** precursor: $\mathrm{^{127}I\xrightarrow{(n,\gamma)}{}^{128}I\xrightarrow{\beta^{-}}{}^{128}Xe}$ (or $\mathrm{^{129}I\to{}^{129}Xe}$, etc.). The iodine must sit in a high-oxidation-state oxoanion so that the daughter Xe is in the oxidation state of a known binary Xe oxide. Two analogies are natural:
+> **Strategy.** "Exactly the same unusual method like $\mathrm{B\to A1}$" again means beta decay inside a pre-organised ligand shell. To obtain a xenon binary compound that is **not a fluoride**, the strongest candidate is a chloride ligand cage around radioactive iodine:
 >
-> | Parent in F | Oxidation state of I | Daughter Xe oxidation state | Plausible binary E |
-> |---|---|---|---|
-> | $\mathrm{IO_{4}^{-}}$ (periodate) | +VII | +VIII | $\mathrm{XeO_{4}}$ |
-> | $\mathrm{IO_{3}^{-}}$ (iodate) | +V | +VI | $\mathrm{XeO_{3}}$ |
+> $$\mathrm{K[{}^{129}ICl_{4}] \xrightarrow{\beta^-} {}^{129}XeCl_{4}+\ K^{+}+\beta^{-}+\bar{\nu}_{e}}.$$
 >
-> Only the first path gives a *strictly* binary Xe–O molecule that mirrors $\mathrm{BrO_{4}^{-}}$ most closely; however, both $\mathrm{XeO_{3}}$ and $\mathrm{XeO_{4}}$ are real, well-known "binary compounds of Xe that are not fluorides."
+> In $\mathrm{[ICl_4]^-}$, iodine is formally +III. After $\beta^{-}$ decay, the nuclear charge increases by one, so retaining the four chloride ligands gives neutral xenon(IV) tetrachloride, $\mathrm{XeCl_4}$. This is directly analogous to the hot-atom inheritance in $\mathrm{^{83}SeO_4^{2-}\to{}^{83}BrO_4^-}$.
 >
 > **Pinning down F from $w_{\mathrm{K}}=12.62\%$.**
-> A potassium salt with $w_{\mathrm{K}}=12.62\%$ has mass per K atom
-> $$\frac{M_{\mathrm{F}}}{n_{\mathrm{K}}}=\frac{39.10}{0.1262}=309.8\ \mathrm{g\,mol^{-1}}.$$
-> Testing standard potassium periodates / iodates (and their hydrates):
 >
-> | Trial F | $M$ (g mol⁻¹) | $w_{\mathrm{K}}$ (%) |
-> |---|---|---|
-> | $\mathrm{KIO_{3}}$ | 214.00 | 18.27 |
-> | $\mathrm{KIO_{4}}$ | 230.00 | 17.00 |
-> | $\mathrm{KIO_{4}\cdot 3H_{2}O}$ | 284.04 | 13.77 |
-> | $\mathrm{KIO_{4}\cdot 4H_{2}O}$ | 302.05 | 12.94 |
-> | $\mathrm{K_{2}H_{3}IO_{6}}$ | 304.12 | 25.71 |
-> | $\mathrm{K[IO_{2}F_{4}]\cdot 2H_{2}O}$ | 310.03 | **12.61** ✓ |
+> Using $\mathrm{^{129}I}$, the formula mass of $\mathrm{K[{}^{129}ICl_4]}$ is
 >
-> The only formula that matches the stated $12.62\%$ to within experimental rounding is $\mathbf{K[IO_{2}F_{4}]\cdot 2H_{2}O}$ — the dihydrate of potassium tetrafluorodioxoperiodate(VII), an iodine(+VII) fluorooxoanion analogous to $\mathrm{XeO_{2}F_{4}}$. After neutron capture + $\beta^{-}$ decay, the daughter Xe(+VIII) sheds its fluoride ligands on contact with water (fluoride is hydrolytically labile on Xe(VIII)) to leave the strictly binary $\mathbf{XeO_{4}}$ — a yellow, highly explosive gas/solid that is the genuine Xe analogue of perbromate.
+> $$M=39.10+128.90+4(35.45)=309.8\ \mathrm{g\,mol^{-1}},$$
+>
+> so
+>
+> $$w_{\mathrm{K}}=\frac{39.10}{309.8}=0.1262=12.62\%.$$
+>
+> This exact match is much stronger than the previous periodate/fluoroperiodate fit and also gives a binary xenon compound containing no fluorine.
 >
 > **Answers.**
 >
 > | Symbol | Formula | Name / comment |
 > |---|---|---|
-> | **E** | $\boxed{\mathrm{XeO_{4}}}$ | xenon tetraoxide (binary, no F — the direct Xe analogue of $\mathrm{BrO_{4}^{-}}$) |
-> | **F** | $\boxed{\mathrm{K[IO_{2}F_{4}]\cdot 2H_{2}O}}$ | potassium tetrafluorodioxoperiodate(VII) dihydrate, $w_{\mathrm{K}}=12.61\%$ |
+> | **E** | $\boxed{\mathrm{{}^{129}XeCl_{4}}}$ | xenon tetrachloride, a binary Xe-Cl compound; square-planar Xe(IV) environment |
+> | **F** | $\boxed{\mathrm{K[{}^{129}ICl_{4}]}}$ | potassium tetrachloroiodate(III), $w_{\mathrm{K}}=12.62\%$ |
 >
-> **Caveat.** The problem does not explicitly say whether F contains fluoride — only that $\mathbf{E}$ must not. If the problem-setters intended a strictly oxygen-only F, the best fit is the hydrate $\mathbf{KIO_{4}\cdot 4H_{2}O}$ ($w_{\mathrm{K}}=12.94\%$; agrees to ≈0.3 %), in which case E is still $\mathrm{XeO_{4}}$ (from $\mathrm{IO_{4}^{-}\to XeO_{4}}$ by $\beta^{-}$). Either reading gives the same E.
+> **Reference note.** This assignment is literature-backed: G. J. Perlow and M. R. Perlow reported Mossbauer evidence for $\mathrm{XeCl_4}$ formed from $\mathrm{K[{}^{129}ICl_4]}$; see "Mossbauer Effect Evidence for the Existence and Structure of XeCl4," *J. Chem. Phys.* **1964**, 41, 1157-1158, DOI: [10.1063/1.1726022](https://doi.org/10.1063/1.1726022).
 >
 
 ---
@@ -247,26 +244,27 @@ $$
 - **B** 是 $\mathrm{^{83}SeO}_{4}^{2-}$（硒酸根，Se 为 +VI 价）——关键点：$\beta^{-}$ 衰变改变的是核内质子数，**电子壳层与配位氧基本保持原位**（即所谓的"热原子继承"），所以 +VI 的 $\mathrm{SeO}_{4}^{2-}$ 衰变后天然变为 +VII 的 $\mathrm{BrO}_{4}^{-}$。这也是为什么整个合成只能在 $\mathrm{O}_{3}$/碱性条件下先把 Se 氧化到 +VI 最高价，随后坐等核衰变完成"化学上不可能的那一步"；
 - **A3** 是 $\mathrm{Br}^{-}$ 来自 HBr，稀 HBr 先选择性还原 $\mathrm{BrO}_{3}^{-}$，生成的 $\mathrm{Br}_{2}$ 被 Ar 吹除；浓 HBr 再还原更惰性的 $\mathrm{BrO}_{4}^{-}$（两步法区分 A1/A2 的量）；
 - **A4** 是 $\mathrm{Br}_{2}$（黄色，可用 Ar 鼓气吹除）；
-- **C、D** 按 1:2 物质的量比出现的"气态单质"只能形式化地配成 $\mathrm{O}_{2}$ 与 $\mathrm{O}_{3}$——这是为满足题设比例而采用的计量判断，不应理解为高溴酸盐的常规干净分解路径；
-- **E** 是 $\mathrm{XeO}_{4}$——与 $\mathrm{BrO}_{4}^{-}$ 对应的高价氙氧化物，通过 $\mathrm{^{127}I}\to\mathrm{^{128}Xe}$ 的同类热原子合成路线获得；
-- **F** 为 $\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$（钾四氟二氧代高碘酸盐二水合物），$w_{\mathrm{K}}=12.61\%$ 几近完美吻合。
+- **C、D** 分别为 $\mathrm{^{83}Kr}$ 与 $\mathrm{O}_{2}$。关键证据不是普通化学配平，而是题图 $k_{2}=0.0048\ \mathrm{min}^{-1}$ 对应 $t_{1/2}=144\ \mathrm{min}\approx2.40\ \mathrm{h}$，正好匹配 $\mathrm{^{83}Br}\to\mathrm{^{83}Kr}$ 的 $\beta^{-}$ 衰变半衰期；因此
+  $$\mathrm{^{83}BrO_{4}^{-}\rightarrow{}^{83}Kr+2O_{2}+\beta^{-}+\bar{\nu}_{e}}.$$
+- **E** 是 $\mathrm{^{129}XeCl}_{4}$——由 $\mathrm{K[{}^{129}ICl_{4}]}$ 中的 $\mathrm{^{129}I}$ 衰变而来，女核继承四个氯配体，形成中性的氙(IV)二元氯化物；
+- **F** 为 $\mathrm{K[{}^{129}ICl_{4}]}$（钾四氯合碘(III)酸盐），$w_{\mathrm{K}}=39.10/(39.10+128.90+4\times35.45)=12.62\%$，与题设精确吻合。
 
-**三处逻辑不完全吻合之处。** 此题确实有三处"**答案能出但严格逻辑需要交代**"的地方；它们不是同等强度的"陷阱"，更适合按证据强弱写成 caveat：
+**三处容易误判之处。** 此题有三处特别容易被常规无机直觉带偏的地方；修正后只有第一处仍是真正的 caveat，后两处应按核衰变与文献线索处理：
 
 1. **B 的质量比 1.613 对不上 $\mathrm{SeO}_{4}^{2-}$**——这是三处中最硬的一处 caveat。若 B 严格为 neutron capture 后的 $\mathrm{^{83}SeO}_{4}^{2-}$，理论比约为 $(82.92+64.00)/81.92=1.79$；实测 1.613 却更接近硒(IV)氧物种，例如 $\mathrm{SeO}_{3}^{2-}$、$\mathrm{HSeO}_{3}^{-}$ 或 $\mathrm{H}_{2}\mathrm{SeO}_{3}$ 的量级。但**热原子化学的要求**（女核须继承 +VII 氧化态）**不容妥协**——B 必须是 Se(+VI) 的 $\mathrm{SeO}_{4}^{2-}$，否则 $\beta^{-}$ 衰变后得不到 $\mathrm{BrO}_{4}^{-}$。**正确姿势**是保留化学正确的 $\mathrm{SeO}_{4}^{2-}$ 赋值，同时注明命题方给出的质量比更像是 ozonisation 未完成时的亚硒酸型中间态；
-2. **C:D = 1:2 是题设强迫出来的形式配平**——在"两种气态单质、物质的量比 1:2"这一条件下，$8\,\mathrm{BrO}_{4}^{-}\to 8\,\mathrm{BrO}_{3}^{-}+\mathrm{O}_{2}+2\,\mathrm{O}_{3}$ 可以同时满足原子守恒、电荷守恒和气体比例，让 $\mathrm{O}_{3}$ 作为**第二种氧的单质**参演。但这不应被说成高溴酸盐的常规干净分解路径；通常讨论的高溴酸盐热分解更自然地指向 $\mathrm{BrO}_{3}^{-}+\mathrm{O}_{2}$。因此此处最好写成"为满足题设而采用的形式化计量"，而不是把它当作文献中稳定、独立的特征反应；
-3. **F 的 12.62% 以质量分数优先锁定含氟氧代高碘酸盐**——$\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$ 给出 $w_{\mathrm{K}}=12.61\%$，与题设最吻合，应作为主答案。$\mathrm{KIO}_{4}\cdot 4\mathrm{H}_{2}\mathrm{O}$ 给出 $w_{\mathrm{K}}\approx 12.94\%$，只能作为较弱的备选解释：它在"直接保留 $\mathrm{IO}_{4}^{-}$ 骨架并由 $\beta^{-}$ 衰变得到 $\mathrm{XeO}_{4}$"这一点上更干净，但质量分数不如前者。换言之，答题时应以 $\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot 2\mathrm{H}_{2}\mathrm{O}$ 为主，只在担心命题方要求纯含氧前体时补充 $\mathrm{KIO}_{4}\cdot 4\mathrm{H}_{2}\mathrm{O}$ 的 caveat，而不宜把二者写成完全等价的两个标准答案。
+2. **C:D = 1:2 不应硬凑成 $\mathrm{O}_{2}/\mathrm{O}_{3}$**——若只做普通化学配平，确实容易被"两种气态单质"诱导到 $\mathrm{O}_{2}$ 与 $\mathrm{O}_{3}$。但题图给出的 $k_{2}=0.0048\ \mathrm{min}^{-1}$ 对应半衰期约 2.40 h，几乎直接锁定 $\mathrm{^{83}Br}$ 的 $\beta^{-}$ 衰变。因此正确理解是 $\mathrm{^{83}BrO}_{4}^{-}$ 核衰变为 $\mathrm{^{83}Kr}$，四个氧原子释放为 $2\,\mathrm{O}_{2}$，比例自然为 $\mathrm{Kr}:\mathrm{O}_{2}=1:2$；
+3. **F 的 12.62% 精确锁定 $\mathrm{K[{}^{129}ICl_{4}]}$**——$\mathrm{K[{}^{129}ICl_{4}]}$ 的钾质量分数为 $12.62\%$，且文献中正是通过 $\mathrm{K[{}^{129}ICl_{4}]}$ 的 $\beta^{-}$ 衰变证明了 $\mathrm{XeCl}_{4}$ 的存在和结构。相比之下，$\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]\cdot2\mathrm{H}_{2}\mathrm{O}$ 虽然质量分数也接近，但会导向含氧/含氟配位壳层，与题目"不含氟的氙二元化合物"和已知 $\mathrm{XeCl}_{4}$ 文献线索都不如 $\mathrm{KICl}_{4}$ 干净。
 
 **Bateman 动力学收官。** Q6 是经典"两步一级串联反应 + 中间体浓度极值"题，套用 Bateman 公式
 $$t_{\max}=\frac{\ln(k_{2}/k_{1})}{k_{2}-k_{1}}$$
-代入题图中的 $k_{1}=0.031\ \mathrm{min}^{-1}$、$k_{2}=0.0048\ \mathrm{min}^{-1}$ 即得 $t_{\max}\approx 71\ \mathrm{min}$。这一步只要公式记得住就是送分题，但需留意**不要误读 $k_{2}$ 的小数点**——题图中是 $0.0048$，不是 $0.048$。
+代入题图中的 $k_{1}=0.031\ \mathrm{min}^{-1}$、$k_{2}=0.0048\ \mathrm{min}^{-1}$ 即得 $t_{\max}\approx 71\ \mathrm{min}$。这一步只要公式记得住就是送分题，但需留意**不要误读 $k_{2}$ 的小数点**——题图中是 $0.0048$，不是 $0.048$；而且 $k_{2}$ 的半衰期恰好反过来支持 Q5 的 $\mathrm{^{83}Br}$ 核衰变解释。
 
 **经验总结。**
 
 1. **"非化学"的突破口需要非化学知识**——热原子化学、Szilard–Chalmers 效应、Mössbauer 化学这些冷门专题偶尔会出现在苏联/东欧风格竞赛题中。平时读竞赛题解时**不要跳过背景段落**，很多关键题眼就藏在"1968 年"、"Appelman"、"热中子"这种年份/人名/仪器关键词里；
-2. **氧化态继承 = 热原子化学的核心**——$\beta^{-}$ 衰变只改核内质子数，配位壳层（氧原子、氟原子）基本保持原位，故女核继承母核的**形式氧化态**。这一原理解释了"先氧化到最高价、再等核衰变"的合成策略——化学上不可能一步到位的高氧化态，通过这种方式可"曲线救国"。$\mathrm{BrO}_{4}^{-}$、$\mathrm{XeO}_{4}$ 是最经典的两个例子；
-3. **遇到数据对不上别硬凑**——B 的质量比与 C:D 比例分别给出 caveat，**坦诚说明"命题方数据与严格化学存在微小张力"**比硬凑答案更能体现素养。IChO 评分细则往往对 caveat 型回答给予部分甚至满分；
+2. **配位壳层继承 = 热原子化学的核心**——$\beta^{-}$ 衰变只改核内质子数，母体的配位壳层可在极短时间内限制女核的初始化学环境。$\mathrm{SeO}_{4}^{2-}\to\mathrm{BrO}_{4}^{-}$ 是氧配位壳层的继承；$\mathrm{[ICl}_{4}]^{-}\to\mathrm{XeCl}_{4}$ 是氯配位壳层的继承；
+3. **遇到速率常数要想到核半衰期**——本题 $k_{1}$ 与 $k_{2}$ 分别对应 $\mathrm{^{83}Se}$ 和 $\mathrm{^{83}Br}$ 的核衰变，不能把全部箭头都当成普通化学反应处理。B 的质量比仍需作为 caveat 交代，但 C/D 与 E/F 现在有更强的核化学解释；
 4. **Bateman 公式务必背熟**——两步一级串联反应的中间体极值时间 $t_{\max}=\ln(k_{2}/k_{1})/(k_{2}-k_{1})$ 是动力学高频考点，$k_{1}\gg k_{2}$ 或 $k_{1}\ll k_{2}$ 的极限形式也要熟记；
 5. **分析路线图先于代数**——此题信息密度极高（电解 + 两步 HBr 还原 + 碘量法双路滴定），先把 S0→S1→S2→S3→S4→S5 和 S0→S6 两条平行路线画清楚，再挑"只含 A2 的 S6"做 $[\mathrm{A2}]$ 的干净反推，可避开 S5 数据中 $\mathrm{Br}_{2}$ 被 Ar 吹除所致的复杂校正。
 
-**难度评级：★★★★★**——超纲核化学背景 + 三处 caveat + Bateman 动力学 + 冷门含氟高碘酸盐，几乎把"难度顶满"的所有套路叠在一起。对于未读过 Appelman 原文的选手，即便给出全部定量数据也几乎无路可寻；对于读过原文的选手则是一道"爽题"。典型的**知识型难题**而非**能力型难题**——与题 1、题 2 的"纯推理+冷门物种"风格略有不同，本题更多依赖背景阅读的厚度。
+**难度评级：★★★★★**——超纲核化学背景 + 同位素半衰期识别 + Bateman 动力学 + 冷门 $\mathrm{XeCl}_{4}$ Mossbauer 化学，几乎把"难度顶满"的所有套路叠在一起。对于未读过 Appelman/Perlow 原文的选手，即便给出全部定量数据也几乎无路可寻；对于读过原文的选手则是一道"爽题"。典型的**知识型难题**而非**能力型难题**——与题 1、题 2 的"纯推理+冷门物种"风格略有不同，本题更多依赖背景阅读的厚度。

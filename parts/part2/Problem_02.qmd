@@ -5,7 +5,7 @@ status: draft
 difficulty: 4
 foad: []
 topics: [inorganic, bornite, ferrate, stoichiometry, redox]
-date: "2026-05-19"
+date: "2026-05-24"
 description: ""
 ---
 
@@ -166,7 +166,7 @@ $$n(\mathrm{Fe}) = 2 \times \frac{0.256}{257.18} = 1.99 \times 10^{-3}\ \mathrm{
 **经验总结。**
 
 1. **颜色是硬约束**——遇到"大部分信息对、只差颜色一点点"的诱惑时，切忌将就；推翻假设重来，往往比硬凑更快。
-2. **冷门物种是苏联题的常客**——$[\mathrm{Li}(\mathrm{NH}_{3})_{4}]\mathrm{O}_{3}$（题 1）、$\mathrm{FeO}_{4}^{2-}/\mathrm{BaFeO}_{4}$（本题）、$\mathrm{K}[\mathrm{IO}_{2}\mathrm{F}_{4}]$（题 3）——平时读题多积累几类"反常"物种的颜色与溶解性是有效投资。
+2. **冷门物种是苏联题的常客**——$[\mathrm{Li}(\mathrm{NH}_{3})_{4}]\mathrm{O}_{3}$（题 1）、$\mathrm{FeO}_{4}^{2-}/\mathrm{BaFeO}_{4}$（本题）、$\mathrm{K[{}^{129}ICl_{4}]}/\mathrm{XeCl}_{4}$（题 3）——平时读题多积累几类"反常"物种的颜色、溶解性与核化学来源是有效投资。
 3. **定性锁定优先于定量**——定量数据是用来**确认**（或证伪）定性猜测的，而不是用来盲目反推元素的；元素一旦猜错，定量只会给出毫无物理意义的摩尔比。
 4. **独立路径交叉验证**——此题的 $\mathrm{NO}_{2}$ 电子衡算与摩尔比推导完全独立，两者同时匹配才真正锁定 $\mathrm{Cu}_{5}\mathrm{FeS}_{4}$。
 

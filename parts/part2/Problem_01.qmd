@@ -8,11 +8,11 @@ topics: [inorganic, stoichiometry, ozonides, ammonium-salts, gas-laws]
 author:
   - name: "Dr. Chen"
     url: "https://dcho.us"
-date: "2026-05-18"
+date: "2026-05-24"
 description: "Soviet-style inorganic puzzle: ozone (F), lithium ozonide (C), ammonium ozonide (A), tetraamminelithium(I) ozonide (D), with a four-stage gas-evolution and phase-transition accounting."
 ---
 
-::: {.callout-tip appearance="simple" icon=false}
+::: {.callout-note appearance="simple" icon=false}
 **Found an issue?** Post the problem number (**P2.01**) and the **step** on Discord.
 [💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
 :::
@@ -49,7 +49,7 @@ To determine the amount of gas **F** required for the synthesis of $1.000\ \math
 > So **C = LiO₃** (lithium ozonide, notoriously difficult to prepare — consistent with the hint).
 >
 > **Identification of A.**
-> A is a red salt whose anion is O₃⁻; its cation must yield NO solid residue after complete decomposition (see below) — i.e. an ammonium salt. Hence **A = NH₄O₃** (ammonium ozonide, red-orange, thermally unstable above ≈ $-126\,°\mathrm{C}$), with $M_{A} = 66.05\ \mathrm{g\,mol^{-1}}$.
+> A is a red salt whose anion is O₃⁻; its cation must yield no solid residue after complete decomposition (see below) — i.e. an ammonium salt. Hence **A = NH₄O₃** (ammonium ozonide, red-orange, thermally unstable above ≈ $-126\,°\mathrm{C}$), with $M_{A} = 66.05\ \mathrm{g\,mol^{-1}}$.
 >
 > **Identification of E from the 4.21 % clue.**
 > LiOH has $w_{\mathrm{H}} = 1.008/23.95 = 4.21\%$ ✓. So **E = LiOH**.
@@ -105,14 +105,14 @@ To determine the amount of gas **F** required for the synthesis of $1.000\ \math
 ---
 
 ## 中文版 / Chinese translation
-
-# 第1题 阿凡提当起了化学家
+## 第1题 阿凡提当起了化学家
 
 **译者注**：原文中的霍加·纳斯雷丁 (Khoja Nasreddin) 其实就是大家熟悉的纳斯雷丁·阿凡提（直译为纳斯雷丁先生）。鉴于阿凡提的形象在国内深入人心，本篇试题沿用这一习惯译名。
 
 阿凡提是东方民间传说人物，常见于短小幽默、带有讽刺意味的故事和轶事中，有时也出现在日常生活题材的传说中。2022 年，讲述阿凡提笑话的传统入选《人类非物质文化遗产代表作名录》。
 
 <img src="images/92b6f85842eaa260d3e6814056acfcb3679ad55812750ae13c39018230f624b2.jpg" alt="image" style="zoom:25%;" />
+
 
 有一天，阿凡提决定当一回化学家。他从一种未知红色盐 A 的热分解开始研究，开启了这场对初学者颇具挑战的化学之旅。
 

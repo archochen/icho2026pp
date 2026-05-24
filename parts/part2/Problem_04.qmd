@@ -5,7 +5,7 @@ status: draft
 difficulty: 3
 foad: [kinetics]
 topics: [nanozyme, peroxidase, oxide-nanoparticles, co-precipitation, michaelis-menten, enzymatic-kinetics, inorganic]
-date: "2026-05-19"
+date: "2026-05-24"
 description: ""
 ---
 
@@ -99,7 +99,7 @@ d) Na3PO4
 > |---|---|---|
 > | a) $\mathrm{NaIO_4}$ | strong oxidant ($\mathrm{I^{VII}}$) — would further oxidise Fe(II) | No |
 > | b) $\mathrm{NaBH_4}$ | strong reductant ($\mathrm{Fe^{3+}\!\rightarrow Fe^{2+}}$; widely used to re-reduce spent $\mathrm{Fe_3O_4}$ nanozymes) | **Yes** |
-> | c) $\mathrm{Na_3C_6H_5O_7}$ | mild reductant / Fe-chelator; maintains Fe(II) by stabilising it and reducing Fe(III) at physiological pH | **Yes** |
+> | c) $\mathrm{Na_3C_6H_5O_7}$ | citrate can stabilise/complex surface iron and support Fe(III)/Fe(II) recycling under the assay conditions; less direct than $\mathrm{BH_4^-}$ but compatible with sustaining activity | **Yes** |
 > | d) $\mathrm{Na_3PO_4}$ | precipitates iron as $\mathrm{FePO_4}$/$\mathrm{Fe_3(PO_4)_2}$ and destroys the NPs; not redox-active | No |
 >
 > Correct answers: $\boxed{\text{b) NaBH}_4 \text{and c) Na}_3\mathrm{C_6H_5O_7}}$.
@@ -232,10 +232,12 @@ $\mathbf{Y}_{p}$ 基纳米酶的催化活性遵循米氏动力学。在 $\mathrm
 
 - **Q4 失活产物的机理锁定**——问题中给出的 $\mathrm{X}^{(n-1)+}+\mathrm{H_{2}O_{2}}\rightarrow\mathrm{X}^{n+}+\mathrm{OH}^{\bullet}+\mathrm{OH}^{-}$ 正是经典的 **Fenton 反应**（1894 年 H. J. H. Fenton）；$\mathrm{Fe}^{2+}$ 被 $\mathrm{H_{2}O_{2}}$ 氧化生成 $\mathrm{OH}^{\bullet}$ 自由基。该 $\mathrm{OH}^{\bullet}$ 才是真正氧化无色 $\mathrm{H_{2}TMB_{red}}$ 到蓝绿色 $\mathrm{TMB_{ox}}$ 的"显色活手"——这正是 2007 年 Gao–Yan 在 *Nat. Nanotech.* 提出"$\mathrm{Fe_{3}O_{4}}$ 纳米酶 = 非蛋白过氧化物酶"的核心论证。磁铁矿中 $\mathrm{Fe}^{2+}$ 被 $\mathrm{H_{2}O_{2}}$ 单向消耗殆尽后，剩余全为 $\mathrm{Fe}^{3+}$，产物即**全氧化铁** $\mathrm{Fe_{2}O_{3}}$（纳米尺度一般为 $\gamma$-磁赤铁矿，$w_{\mathrm{Fe}}=69.94\%$）；
 - **"更低质量分数"的判决作用**——"产物 $w_{\mathrm{X}}<72.36\%$" 这一约束是命题方为**防止学生错写水合氧化物** $\mathrm{FeOOH}$ ($w_{\mathrm{Fe}}=62.8\%$) 或 $\mathrm{Fe(OH)_{3}}$ ($w_{\mathrm{Fe}}=52.3\%$) 而埋的过滤器。另外题干明写"**oxide NPs**"——氧化物而非氢氧化物/羟基氧化物——已经把答案锁死为 $\mathrm{Fe_{2}O_{3}}$。一个原理约束 + 一个不等式约束 + 一个物种约束**三重锁定**，是命题学上的规范动作；
+
+
 - **Q5 再生试剂的多维筛选**——活性丢失源于 $\mathrm{Fe}^{2+}$ 耗尽，补回 $\mathrm{Fe}^{2+}$ 的**唯一**路径就是还原。四个选项恰好考察四个维度：
   - (a) $\mathrm{NaIO_{4}}$：$\mathrm{I(+VII)}$ 强氧化剂 → 方向相反，直接 PASS；
   - (b) $\mathrm{NaBH_{4}}$：氢化物强还原剂，是文献中再生 $\mathrm{Fe_{3}O_{4}}$ 纳米酶的**金标准**（Jana 组 2011）；须注意在水相中 $\mathrm{BH_{4}}^{-}$ 缓慢水解为 $\mathrm{BH(OH)_{3}}^{-}$，但速率远慢于 $\mathrm{Fe}^{3+}$ 还原，故可用；
-  - (c) 柠檬酸钠：**双功能**——既是温和还原剂（Turkevich-type），又是 $\mathrm{Fe}^{3+}$ 螯合剂，在生理 pH 下能把 $\mathrm{Fe}^{3+}$ 缓慢回还为 $\mathrm{Fe}^{2+}$ 同时防止 Fe 析出；
+  - (c) 柠檬酸钠：**辅助型再生/维持剂**——还原性远弱于 $\mathrm{NaBH_{4}}$，但可络合并稳定表面铁物种，帮助 $\mathrm{Fe}^{III}/\mathrm{Fe}^{II}$ 循环并减少铁物种析出；因此可作为维持活性的兼容试剂，但不应把它写成与 $\mathrm{BH_{4}^{-}}$ 等强度的直接还原剂；
   - (d) $\mathrm{Na_{3}PO_{4}}$：非氧化还原活性，但会形成 $\mathrm{FePO_{4}}$ ($K_{sp}\approx 10^{-22}$) 沉淀——不仅不能再生，反而**破坏 NP 骨架**并沉淀流失 Fe，双重杀伤；
   
   **正解 (b) + (c)**。本题的深层技巧是：识别"还原剂"只是第一层，还要**同时**兼顾 pH 相容、溶解度相容、无副沉淀——缺一条就错选。

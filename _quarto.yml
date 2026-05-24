@@ -35,10 +35,8 @@ website:
         text: "Discord"
         aria-label: "Discuss on Discord"
   page-footer:
-    left: |
-      Found an error? **[Open the Discord →](https://discord.gg/CHANGE-ME)**
-    right: |
-      Solutions by [Dr. Chen @ dcho.us](https://dcho.us) · CC BY-NC-SA 4.0
+    left: 'Found an error? <strong><a href="https://discord.gg/CHANGE-ME">Open the Discord →</a></strong>'
+    right: 'Solutions by <a href="https://dcho.us">Dr. Chen @ dcho.us</a> · CC BY-NC-SA 4.0'
 
 format:
   html:

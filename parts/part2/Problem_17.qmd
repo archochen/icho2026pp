@@ -58,18 +58,21 @@ It is known that **A**, **G**, and **D** contain the same functional groups; **G
 > | **F** | methyl 2,3,4,6-tetra-$O$-methyl-$\alpha$-D-glucopyranoside, as drawn in the corrected structure image |
 > | **G** | 2,3,4,6-tetra-$O$-methyl-D-glucopyranose |
 >
-> ![3a660aa5-af13-435f-88fa-c9d80731a840](./assets/3a660aa5-af13-435f-88fa-c9d80731a840.png)
+> <img src="./assets/image-20260525145433576.png" alt="image-20260525145433576" style="zoom:67%;" />
 >
 > **Checks.**
 >
 > - **Corrected image check.** In the updated drawing, **B**, **C**, **D**, and **F** all retain the anomeric $\mathrm{OMe}$ group. The added Me labels in **B** and **C** belong to the C1-O-Me methyl glycoside, not to an extra C-methyl substituent. Only **G** is drawn with a wavy anomeric OH because acid hydrolysis of **F** regenerates the reducing hemiacetal.
 > - **Ring count.** **B** and **C** each contain the pyranose ring, the benzylidene acetal ring, and the phenyl ring, i.e. three six-membered rings.
 > - **Hydrolysis of C.** Hydrolysis of **C** removes only the 4,6-benzylidene acetal, giving **D**; the methyl glycoside at C1 survives these conditions.
-> - **A/D/G functional-group clue.** The statement that **A**, **D**, and **G** contain the same functional groups should be read in the broad protected-sugar sense: all three are oxygen-only carbohydrate derivatives containing hydroxy-type and ether-type functionality, and none contains an ester, carbonyl, benzylidene acetal, boronate, or other additional protecting-group functionality. Strictly, **A** and **D** are methyl glycosides with an anomeric acetal, whereas **G** is a reducing sugar hemiacetal after hydrolysis of **F**.
 > - **G-D formula clue.** The formula clue is separate from the functional-group clue: **G** and **D** differ by $\mathrm{CH_2}$, which is a molecular-formula difference, not a functional group. Exhaustive methylation of glucose gives **F**, and acid hydrolysis cleaves only the anomeric methyl glycoside to give **G**. Thus **G** has two additional non-anomeric methyl ethers relative to **D** but lacks the anomeric methyl ether, giving net **G - D = $\mathrm{CH_2}$**.
 > - **Two reductions, two different jobs.** In Q17.2, $\mathrm{NaBH_3CN}$ and excess DIBAL-H should not be treated as interchangeable hydride reagents. $\mathrm{NaBH_3CN}$ edits the benzylidene protecting group, while excess DIBAL-H edits the acetate substituent made from the free 4-OH.
 > - **$\mathrm{NaBH_3CN}$ step in the lower branch.** After O2/O3 benzylation, the 4,6-$O$-benzylidene acetal is reductively opened under the acid-assisted $\mathrm{NaBH_3CN}$ conditions implied by the scheme. The C6 oxygen becomes the 6-$O$-benzyl ether, while O4 is released as 4-OH. Thus the intermediate is methyl 2,3,6-tri-$O$-benzyl-$\alpha$-D-glucopyranoside with 4-OH free, matching the corrected image.
 > - **Ac2O/Py then excess DIBAL-H.** Acetylation converts the only free alcohol into 4-$O$Ac. Excess DIBAL-H is then used as a formal reduction of the acetate ester, $\mathrm{ROCOCH_3 \to ROCH_2CH_3}$, so the acetyl group becomes the 4-$O$-ethyl substituent in **E**. The two different methyl groups in **E** are therefore the anomeric $\mathrm{OMe}$ and the terminal $\mathrm{CH_3}$ of $\mathrm{OEt}$.
+
+::: {.callout-note}
+**A/D/G functional-group clue.** The statement that **A**, **D**, and **G** contain the same functional groups should be read in the broad protected-sugar sense: all three are oxygen-only carbohydrate derivatives containing hydroxy-type and ether-type functionality, and none contains an ester, carbonyl, benzylidene acetal, boronate, or other additional protecting-group functionality. Strictly, **A** and **D** are methyl glycosides with an anomeric acetal, whereas **G** is a reducing sugar hemiacetal after hydrolysis of **F**.
+:::
 
 However, these transformations cannot differentiate neighbouring 2,3- and 3,4-diols, since in both cases the hydroxy groups are in a trans-configuration and occupy equatorial positions. A brilliant solution to this challenge was found by using the common tetrahydropyranyl protecting group in chiral form:
 

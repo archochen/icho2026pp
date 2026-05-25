@@ -213,3 +213,43 @@ Hint: **P** and **Q** are epimers.
 19-6 画出 P 到 U 的结构式，需标明立体化学。
 
 19-7 指出哪些立体中心得以保持，哪些是新形成的。
+
+---
+
+## 教学点评 / 解题分析
+
+本题是 FoAD 第 6 项**碳水化合物化学**的"实战题"——题目直接命名为"Carbohydrates as chiral pools"，覆盖**三条独立的天然产物合成路线**：(i) L-sorbose → DMDP（吡咯烷亚胺糖，Q1）；(ii) D-glucose → Thromboxane B₂（前列腺素类，Q2–Q4）；(iii) D-mannose → (−)-Swainsonine（吲哚里西丁生物碱，Q5–Q7）。每条路线都是文献级的全合成，要求学生**追踪手性中心的传递**与**保护基的编排**。难度集中在 Q19.4 的 J–O 长链中间体推断；其余对学过 FoAD #6 的学生属于标准范式。
+
+**题眼。** 全题的钥匙是**"手性池" 哲学**——不需要不对称催化，直接借用天然糖固有的 D/L 构型，**每一步都不破坏手性中心**。具体题眼分散在三条路线的关键节点：
+
+- **Q19.1 的"X 含五元杂环 + 经过亚胺中间体"提示**——立刻锁定**吡咯烷亚胺糖** (iminosugar) 家族。L-sorbose 的 C5-OTs 经 SN2 反相 → C5-azide → 氢化为 C5-胺 → 与 C2 酮分子内缩合形成五元亚胺 → 再次氢化 → DMDP。
+- **Q19.2 的"缩醛形成涉及伯醇"**——与 P2.17 完全相同的钥匙提示。D-葡萄糖的 C6 是伯醇位，因此 D = methyl 4,6-O-benzylidene-α-D-glucopyranoside；从这一锁定开始 E（2,3-环氧）、F（2-脱氧）、G（酮）、H（HWE 烯化）、I（饱和酯）整条链都能顺序解开。
+- **Q19.5 的"Swainsonine + Fleet 路线"**——用 D-mannose（而非 D-glucose）的原因是 mannose 的 C2/C3 立体化学正好匹配 swainsonine 双环吲哚里西丁母核的构型；这是"看目标 → 反推糖源"的经典手性匹配。
+
+**推断链。**
+
+- **DMDP 合成（Q19.1）**：A = 1,2:5,6-双异丙叉 L-sorbose-3-OAc-2-OTs → B (C5-azide, SN2 反相) → C (NaOMe 脱乙酰 + 酸水解异丙叉, 自由 5-azido-5-deoxy-L-sorbose 吡喃形) → H₂/Pd 还原 azide → 自发分子内亚胺 → 再次氢化 → **X = DMDP** = (2R,3R,4R,5R)-2,5-bis(hydroxymethyl)-3,4-dihydroxypyrrolidine。
+- **Thromboxane B₂ 合成（Q19.2–Q19.4）**：D-葡萄糖 → D (4,6-亚苄基甲苷) → E (2,3-环氧通过分子内 SN2 关环) → F (LiAlH₄ 开 2,3-环氧给 2-脱氧吡喃糖 + BzCl 保 C3-OH) → G (氢解亚苄基 + TBDPS 保 6-OH + Swern 氧化 4-OH 为酮) → H (HWE 烯化生成 α,β-不饱和酯) → I (氢化 + 碱处理给 Thromboxane B₂ 关键中间体，分子式 $\mathrm{C_{25}H_{32}SiO_5}$)。**Q19.4 的 Z 顺序 = Z4 → Z2 → Z1 → Z3**：Z4 用 DIBAL + Wittig 安装 α 链 + $\mathrm{CH_2N_2}$ 酯化；Z2 用 BzCl 保 ring-OH + Bu₄NF 脱 TBDPS；Z1 用 PCC 氧化伯醇为醛 + Wittig 安装 ω 链；Z3 用 NaBH₄ 还原酮 + $\mathrm{K_2CO_3}$ 水解 + HCl 最终脱保护。每一步的"位点匹配 + 试剂选择"完全互锁——任何一步顺序换乱都会断链。
+- **Swainsonine 合成（Q19.5–Q19.7）**：(−)-Swainsonine 的 (1S,2R,8R,8aR) 立体构型指明起始物必须是 D-mannose（C2、C3 构型直接匹配）。**Q19.6 的 P–U 涵盖**：Mitsunobu C4 反相 → 四脚环 → azide 取代 → Pt/H₂ 氢化关环为二级胺 → 还原 → swainsonine。**Q19.7 测试"立体中心的保留 vs 反相 vs 新生"**：D-mannose 自带的 C2、C3、C5 立体中心**保留**（never broken）；C4 立体中心通过 Mitsunobu **反相**；C7 是双环关环时**新生**的立体中心。
+
+**板块。**
+
+| 板块 | 小问 | 核心化学 |
+|---|---|---|
+| L-sorbose → DMDP | Q19.1 | C-azide → 胺 → 自动闭环亚胺 → 再次氢化 |
+| D-glucose → Thromboxane B₂ | Q19.2–Q19.3 | 4,6-亚苄基 + 2,3-环氧 + HWE + 多步保护基 |
+| Z 顺序推断 | Q19.4 | 试剂兼容性 + 保护基匹配 |
+| D-mannose → Swainsonine (Fleet) | Q19.5–Q19.7 | C4 反相 + 双环关环 + Pt/H₂ |
+| 立体中心追踪 | Q19.7 | 保留 vs 反相 vs 新生 |
+
+**经验总结。**
+
+1. **手性池 (chiral pool) 哲学** 的精髓是"立体中心一次设、永不破坏"——所有 C–O / C–N 键的切断都要**避开手性中心**，让该手性中心穿透整条合成链直达天然产物。
+2. **保护基的"伯醇优先" 原则**与 P2.17 完全相同——4,6-O-亚苄基是葡萄糖系合成的中央保护基。
+3. **2,3-环氧吡喃糖** 是 D-葡萄糖 → D-甘露糖 (C2 反相) 或 → 2-脱氧糖的通用中间体。本题 E (2,3-anhydro) 即此中间体；LiAlH₄ 开环给 2-脱氧糖是教科书反应。
+4. **Z 顺序的"试剂兼容性"**——任何一步都不能因为"先释放某 OH"或"先氧化某酮"而破坏后续步骤。**先做不可逆安装、再做去保护**是不变铁律。
+5. **D-mannose vs D-glucose 选择哲学**——两种糖的 C2、C3 立体化学相反，对应不同的合成目标。mannose-derived 多有 Swainsonine 的 (S,R) 模式；glucose-derived 多为 thromboxane 的 (R,S) 模式。学生需要能"看目标手性 → 反推糖源"。
+6. **Fleet (1985) 与 Card-Hitz (1985)** 是糖→生物碱的双经典——前者 D-mannose → Swainsonine，后者 L-sorbose → DMDP。两者都用"先安装 azide、再氢化关环"的策略。
+7. **立体中心的三种命运**：(i) **保留**——糖固有手性穿透到底；(ii) **反相**——通过 Mitsunobu / Pirkle / SN2 翻转；(iii) **新生**——通过环化 / HWE / 不对称还原引入。Q19.7 直接考这一点。
+
+**难度评级：★★★★☆**——典型的"手性池全栈题"。对受过 FoAD #6 系统训练 + 看过 Fleet/Hanessian 全合成文献的学生属于 ★★★☆☆；对仅有通识有机背景的学生顶到 ★★★★★（每一步都是"先做什么再做什么"的细节排序题，节奏一打乱就全盘崩溃）。Q19.4 是真正难点——8 步 Z₁–Z₄ 排序，错一步全错。整题与 P2.17 形成"基础（保护基）→ 应用（全合成）"对比，是 IChO 主考卷风格中的"高级碳水题"。

@@ -4,7 +4,7 @@ problem-id: 10
 status: draft
 difficulty: 3
 foad: []
-topics: []
+topics: [prebiotic-chemistry, powner-sutherland-synthesis, cytidine, chirality-amplification, ciss-spin-selectivity, frank-model, enantiomeric-excess, plp-transamination, dipeptide-catalysis, cstr-bistability]
 date: "2026-05-19"
 description: ""
 ---

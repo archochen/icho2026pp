@@ -2,7 +2,7 @@
 title: "P2.19 — Carbohydrates as chiral pools"
 problem-id: 19
 status: draft
-difficulty: 3
+difficulty: 4
 foad: [carbohydrate-chemistry]
 topics: [chiral-pool, total-synthesis, swainsonine, thromboxane-b2, glucopyranoside, mannopyranoside, benzylidene-acetal, cyclohexenone, anhydro-sugar, alkaloid]
 date: "2026-05-24"
@@ -14,7 +14,7 @@ description: ""
 [💬 Discuss on Discord →](https://discord.gg/CHANGE-ME){.discord-cta}
 :::
 
-Asymmetric synthesis has attracted significant attention in recent years thanks to advances in asymmetric catalysis. However, using chiral auxiliary groups in the substrate structure remains an efficient approach for chiral total synthesis, especially when chiral substrates are readily available. Different monosaccharides are handy starting materials in natural product synthesis. For example, in 1985, the first synthesis of compound **X** from L-sorbose derivative **A** was published.
+Asymmetric synthesis has attracted significant attention in recent years thanks to advances in asymmetric catalysis. Nevertheless, the transformation of stereocenters in readily available chiral substrates remains an efficient approach to enantioselective total synthesis, commonly referred to as the “chiral pool” strategy. Various monosaccharides serve as convenient starting materials in natural product synthesis. For example, in 1985, the first synthesis of compound **X** from L-sorbose derivative **A** was published.
 
 <img src="images/020b5480640ec916de11683e67d8877d47dd0f3b8fcf9a48de1bcdbabc7a236b.jpg" alt="image" style="zoom: 67%;" />
 
@@ -163,7 +163,7 @@ Hint: **P** and **Q** are epimers.
 ## 中文版 / Chinese translation
 ## 第19题 糖类手性源
 
-近年来，随着不对称催化的发展，不对称合成备受关注。然而在手性全合成中，直接使用含手性辅助基的底物仍不失为有效策略，尤其是对于容易获取的手性底物。比如，各种单糖便可作为天然产物合成中便捷的手性源。1985 年，首次报道了以L–山梨糖衍生物A为原料合成化合物X的路线。
+近年来，随着不对称催化的发展，不对称合成备受关注。然而，利用易得的手性底物中已有立体中心进行转化，仍是对映选择性全合成的高效路径——通常称为“手性池 (chiral pool) 策略”。各类单糖是天然产物合成中便利的起始原料。1985 年，首次报道了以L–山梨糖衍生物A为原料合成化合物X的路线。
 
 ![image](images/c94b406d87ba5a7c61717677a1b41eb06b8c300b5e78b6fdd3b1a046cc7a534d.jpg)
 

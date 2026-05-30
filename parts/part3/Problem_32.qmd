@@ -242,10 +242,89 @@ The $\Delta A$ column rises to a single maximum between $x_{\mathrm{Fe}} = 0.25$
 
 > **Solution (Q4 — Fe : SBH from Job's plot).**
 >
-> Plotting the baseline-corrected $\Delta A$ against $x_{\mathrm{Fe}}$ gives a single asymmetric peak (see figure). The classical Job's analysis is to **extrapolate the two straight wings** to their intersection — the rising wing (Fe-poor side, $x_{\mathrm{Fe}} \le 0.25$, all Fe consumed) and the falling wing (Fe-rich side, $x_{\mathrm{Fe}} \ge 0.5$, all SBH consumed). The intersection is much less sensitive to the curvature near the peak than the raw maximum is.
->
-> ![**Job's plot for the Fe(III)/SBH system.** Open circles: raw absorbance $A$. Solid circles: baseline-corrected $\Delta A = A - A_L(1-x_{\mathrm{Fe}}) - A_M\,x_{\mathrm{Fe}}$. Dashed lines: least-squares linear fits to the rising wing ($x_{\mathrm{Fe}} \in \{0.125,\,0.250\}$, through-origin slope $+0.497$) and the falling wing ($x_{\mathrm{Fe}} \ge 0.500$, slope $-0.252$, intercept $+0.252$). Their intersection at $x_{\mathrm{Fe}}^{\,*} = 0.336$ pins the stoichiometric mole fraction to within $\mathbf{+0.9\,\%}$ of $1/3$.](images/q32_jobs_plot.png){#fig-jobs width=85%}
->
+> Plotting the baseline-corrected $\Delta A$ against $x_{\mathrm{Fe}}$ gives a single asymmetric peak (@fig-jobs). The classical Job's analysis is to **extrapolate the two straight wings** to their intersection — the rising wing (Fe-poor side, $x_{\mathrm{Fe}} \le 0.25$, all Fe consumed) and the falling wing (Fe-rich side, $x_{\mathrm{Fe}} \ge 0.5$, all SBH consumed). The intersection is much less sensitive to the curvature near the peak than the raw maximum is.
+
+```{python}
+#| label: fig-jobs
+#| fig-cap: "**Job's plot for the Fe(III)/SBH system.** Open circles: raw absorbance $A$. Solid circles: baseline-corrected $\\Delta A = A - A_L(1-x_{\\mathrm{Fe}}) - A_M\\,x_{\\mathrm{Fe}}$. Dashed lines: least-squares linear fits to the rising wing ($x_{\\mathrm{Fe}} \\in \\{0.125, 0.250\\}$, through-origin slope $+0.497$) and the falling wing ($x_{\\mathrm{Fe}} \\ge 0.500$, slope $-0.252$, intercept $+0.252$). Their intersection at $x_{\\mathrm{Fe}}^{*} = 0.336$ pins the stoichiometric mole fraction to within $+0.9\\,\\%$ of $1/3$."
+#| fig-width: 7.8
+#| fig-height: 5.0
+#| code-fold: true
+#| code-summary: "Show the Python source for this Job's plot"
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Data from the problem statement (V_Fe, V_SBH, A) — 1 mM stocks, V_tot = 1.20 mL
+x = np.array([0.000, 0.125, 0.250, 0.375, 0.500, 0.583, 0.667,
+              0.750, 0.833, 0.917, 1.000])
+A = np.array([0.031, 0.091, 0.152, 0.183, 0.150, 0.128, 0.105,
+              0.084, 0.061, 0.039, 0.017])
+A_L, A_M = A[0], A[-1]
+dA = A - (A_L * (1 - x) + A_M * x)            # linear-baseline correction
+
+# Rising-wing through-origin fit (Fe-limited region, x_Fe in {0.125, 0.250})
+m_rise = float(np.sum(x[1:3] * dA[1:3]) / np.sum(x[1:3] ** 2))
+# Falling-wing LS fit (SBH-limited region, x_Fe >= 0.500)
+m_fall, b_fall = np.polyfit(x[x >= 0.5], dA[x >= 0.5], 1)
+# Wing intersection -> stoichiometric mole fraction
+x_star = b_fall / (m_rise - m_fall)
+y_star = m_rise * x_star
+
+fig, ax = plt.subplots(figsize=(7.8, 5.0))
+
+ax.plot(x, A, 'o', mfc='white', mec='#888', mew=1.4, ms=7,
+        label=r'Raw absorbance $A$', zorder=3)
+ax.plot(x, dA, 'o', color='#2a2b80', ms=7,
+        label=r'Baseline-corrected $\Delta A$', zorder=4)
+ax.plot(np.linspace(0, 0.50, 50), m_rise * np.linspace(0, 0.50, 50),
+        '--', color='#c0392b', lw=1.4,
+        label=fr'Rising wing fit:  $\Delta A = {m_rise:.3f}\,x_{{\rm Fe}}$', zorder=2)
+ax.plot(np.linspace(0.20, 1.0, 50), m_fall * np.linspace(0.20, 1.0, 50) + b_fall,
+        '--', color='#117a3d', lw=1.4,
+        label=fr'Falling wing fit:  $\Delta A = {b_fall:.3f} {m_fall:+.3f}\,x_{{\rm Fe}}$', zorder=2)
+ax.axvline(1/3, ls=':', color='black', lw=1.0, alpha=0.6, zorder=1)
+ax.axvline(x_star, ls=':', color='#c0392b', lw=1.0, alpha=0.4, zorder=1)
+ax.plot([x_star], [y_star], '*', color='#c0392b', ms=20,
+        mec='black', mew=0.7, zorder=6)
+
+# Annotation in upper-left empty triangle, well below the title
+ax.annotate(
+    fr'$x_{{\rm Fe}}^{{\,*}} = {x_star:.3f} \approx \dfrac{{1}}{{3}}$'
+    '\n' r'$\Rightarrow$  Fe : SBH = 1 : 2',
+    xy=(x_star, y_star), xytext=(0.06, 0.205),
+    fontsize=11, ha='left', va='center',
+    bbox=dict(boxstyle='round,pad=0.45', fc='#fff8dc', ec='#888', lw=0.7, alpha=0.95),
+    arrowprops=dict(arrowstyle='->', color='black', lw=1.0,
+                    connectionstyle='arc3,rad=-0.18'), zorder=7)
+
+# Legend in upper-right empty triangle
+ax.legend(loc='upper right', bbox_to_anchor=(0.99, 0.99),
+          fontsize=9, frameon=True, fancybox=True,
+          facecolor='white', edgecolor='#bbb', framealpha=0.9,
+          handlelength=2.5, borderpad=0.5)
+
+# Guide-line label near the x-axis (out of the title's way)
+ax.text(1/3 + 0.008, 0.012, r'$x_{\rm Fe} = 1/3$',
+        fontsize=10, va='bottom', color='#222')
+
+ax.set_xlim(-0.02, 1.02)
+ax.set_ylim(-0.012, 0.255)
+ax.set_xticks(np.linspace(0.0, 1.0, 11))
+ax.set_yticks(np.linspace(0.00, 0.25, 6))
+ax.set_xlabel(r'Mole fraction of Fe(III),  $x_{\rm Fe} = V_{\rm Fe}/(V_{\rm Fe}+V_{\rm SBH})$',
+              fontsize=11)
+ax.set_ylabel('Absorbance', fontsize=11)
+ax.set_title("Job's plot — Fe(III)/SBH (1 mM each, methanol)",
+             fontsize=12, pad=14)
+ax.grid(True, ls=':', alpha=0.4)
+plt.tight_layout()
+plt.show()
+
+print(f"x_Fe* = {x_star:.4f}  (1/3 = {1/3:.4f}; deviation {(x_star-1/3)/(1/3)*100:+.2f} %)")
+print(f"Rising slope  = {m_rise:+.4f}")
+print(f"Falling slope = {m_fall:+.4f}, intercept = {b_fall:+.4f}")
+```
+
 > Setting the two wings equal,
 >
 > $$0.497\,x_{\mathrm{Fe}} = 0.252 - 0.252\,x_{\mathrm{Fe}} \;\Longrightarrow\; x_{\mathrm{Fe}}^{\,*} = \dfrac{0.252}{0.749} = 0.336 \approx \dfrac{1}{3}.$$

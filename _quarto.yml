@@ -75,6 +75,13 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
 
+execute:
+  freeze: auto      # Cache executed code-block outputs in _freeze/ so the CI
+                    # build (no Python on the GH Actions runner) renders from
+                    # the cache. To regenerate, run `quarto render <file.qmd>`
+                    # locally with python3 + jupyter + matplotlib installed,
+                    # then commit the updated _freeze/ directory.
+
   # Per-problem PDF — uncomment when you have a LaTeX engine and want printable handouts.
   # pdf:
   #   documentclass: scrartcl

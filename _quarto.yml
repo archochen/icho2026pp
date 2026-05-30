@@ -58,21 +58,16 @@ format:
           <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
           <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
           <meta name="theme-color" content="#2a2b80">
-          <!-- KaTeX + mhchem -->
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
-          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-            onload="renderMathInElement(document.body,{
-              delimiters:[
-                {left:'$$',right:'$$',display:true},
-                {left:'$',right:'$',display:false},
-                {left:'\\(',right:'\\)',display:false},
-                {left:'\\[',right:'\\]',display:true}
-              ],
-              trust:true,
-              strict:false
-            });"></script>
+    include-after-body:
+      - text: |
+          <!-- mhchem for \ce{}. Must reload AFTER Quarto's own katex@latest script
+               (added by html-math-method:katex), because that script overwrites
+               window.katex and would clobber any mhchem extension attached before
+               it. End-of-body defer position guarantees this runs after Quarto's
+               katex@latest but before its DOMContentLoaded katex.render(...) call.
+               Without this, every \ce{...} in the site renders with the macro
+               name in red and the rest as plain italic math. -->
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/mhchem.min.js"></script>
     filters:
       - status-badge
       - q-headings

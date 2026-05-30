@@ -21,10 +21,8 @@ description: "Wet-lab synthesis of salicylaldehyde benzoyl hydrazone (SBH), its 
 - **Techniques exercised.** Dropwise addition, vacuum filtration, recrystallisation from a hot–cold ethanol cycle, ice-bath crystallisation, drying under vacuum, mole-fraction (continuous-variations) spectrophotometry.
 :::
 
-::: {.callout-note appearance="default" title="Overall reaction scheme"}
-<!-- Reaction-scheme overview image (salicylaldehyde + benzhydrazide -> SBH; SBH + CuCl2/EtOH -> Cu_w(SBH)_x; SBH + FeCl3/EtOH-H2O -> Fe_y(SBH)_z).
-     Save the scheme image as parts/part3/images/q32_scheme_sbh_overview.png and the line below will pick it up. -->
-![Overall scheme: condensation of salicylaldehyde with benzhydrazide gives **SBH**; SBH then reacts with $\ce{CuCl2}$ in EtOH to give $\ce{Cu_w(SBH)_x}$ and with $\ce{FeCl3}$ in EtOH/$\ce{H2O}$ to give $\ce{Fe_y(SBH)_z}$.](images/q32_scheme_sbh_overview.png){#fig-scheme width=75%}
+::: {.callout-note appearance="simple" title="Overall reaction scheme (in words)"}
+$$\underbrace{\text{salicylaldehyde}}_{\text{2-HO-C6H4-CHO}} \;+\; \underbrace{\text{benzhydrazide}}_{\ce{PhC(O)NHNH2}} \;\xrightarrow{\ \ce{H2O}/\ce{EtOH}\ }\; \mathbf{SBH} \;\xrightarrow[\ \ce{EtOH}\ ]{\ \ce{CuCl2}\ }\; \ce{Cu_w(SBH)_x} \;;\quad \mathbf{SBH} \;\xrightarrow[\ \ce{EtOH}/\ce{H2O}\ ]{\ \ce{FeCl3}\ }\; \ce{Fe_y(SBH)_z}$$
 :::
 
 # Chemistry behind the experiment
@@ -118,6 +116,7 @@ You are running the classical **aroyl-hydrazone condensation** $\ce{R-CONHNH2 + 
 ## Annotated procedure
 
 ::: {.callout-important appearance="default" title="Do Part A in the fume hood"}
+All Part A steps below are run **inside a fume hood**: salicylaldehyde and benzhydrazide are both eye/skin/respiratory irritants and **suspected mutagens** (H341 / H351). Wear nitrile gloves and avoid dusting when transferring the solid.
 :::
 
 1. **Weigh** 1.0 g benzhydrazide into a 100 mL beaker, place it on the magnetic stirrer, drop the stirring bar in, and **dissolve** the solid in **40 mL of distilled water** with stirring.
@@ -140,27 +139,15 @@ You are running the classical **aroyl-hydrazone condensation** $\ce{R-CONHNH2 + 
 - **Drying time matters for the yield calculation.** Damp solid weighs too much and inflates the apparent yield.
 :::
 
-## Solutions for Part A
-
 1. **Write** the reaction equation showing the structural formulae of the reagents and the product.
 
 > **Solution (Q1 — SBH condensation equation).**
 >
-> The terminal $\ce{-NH2}$ of benzhydrazide attacks the aldehyde carbon of salicylaldehyde; subsequent loss of water from the carbinolamine gives the $E$-aroyl hydrazone (the *ortho* phenolic O–H closes an intramolecular six-membered H-bond to the imine nitrogen, fixing the $E$-geometry):
+> The terminal $\ce{-NH2}$ of benzhydrazide attacks the aldehyde carbon of salicylaldehyde; subsequent loss of water from the carbinolamine gives the $E$-aroyl hydrazone — the *ortho* phenolic O–H closes an intramolecular six-membered H-bond to the imine nitrogen, which fixes the $E$-geometry and pre-organises the ONO metal-binding pocket:
 >
-> $$\ce{Ph-C(=O)-NH-NH2 \ +\ 2\text{-}HO\text{-}C6H4\text{-}CHO\ ->\ Ph-C(=O)-NH-N=CH-C6H4\text{-}2\text{-}OH\ +\ H2O}$$
+> $$\ce{Ph-C(=O)-NH-NH2 \ +\ 2\text{-}HO\text{-}C6H4\text{-}CHO \ ->\ Ph-C(=O)-NH-N=CH-C6H4\text{-}2\text{-}OH \ +\ H2O}$$
 >
-> Structurally,
->
-> ```
->      O                  OH                  O               OH
->      ||                  |                  ||               |
->  Ph–C–NH–NH2    +    [C6H4]–CHO  ──►   Ph–C–NH–N=CH–[C6H4]   +   H2O
->     (benzhydrazide)     (salicylaldehyde)        (SBH, salicylaldehyde benzoyl hydrazone)
-> ```
-> with the salicyl O–H positioned ortho to the new $\ce{HC=N}$ so that it can hydrogen-bond to the imine N.
->
-> $$\boxed{\ce{C6H5-C(=O)-NH-NH2 + 2-HO-C6H4-CHO -> C6H5-C(=O)-NH-N=CH-C6H4-2-OH + H2O}}$$
+> $$\boxed{\ \ce{C6H5-C(=O)-NH-NH2 + 2-HO-C6H4-CHO -> C6H5-C(=O)-NH-N=CH-C6H4-2-OH + H2O}\ }$$
 
 2. **Calculate** the reaction yield.
 
@@ -174,7 +161,7 @@ You are running the classical **aroyl-hydrazone condensation** $\ce{R-CONHNH2 + 
 >
 > Moles of each reagent:
 >
-> $$n(\text{benzhydrazide}) = \frac{1.00\ \mathrm{g}}{136.15\ \mathrm{g\,mol^{-1}}} = 7.345\ \mathrm{mmol}$$
+> $$n(\text{benzhydrazide}) = \frac{1.00\ \mathrm{g}}{136.15\ \mathrm{g\,mol^{-1}}} = 7.345\ \mathrm{mmol},$$
 >
 > $$n(\text{salicylaldehyde}) = \frac{1.5\ \mathrm{mL} \times 1.17\ \mathrm{g\,mL^{-1}}}{122.12\ \mathrm{g\,mol^{-1}}} = 14.37\ \mathrm{mmol}.$$
 >
@@ -182,9 +169,9 @@ You are running the classical **aroyl-hydrazone condensation** $\ce{R-CONHNH2 + 
 >
 > $$m_\text{th}(\text{SBH}) = 7.345\ \mathrm{mmol} \times 240.26\ \mathrm{g\,mol^{-1}} = 1.765\ \mathrm{g}.$$
 >
-> Reaction yield $= m_\text{exp}/m_\text{th} \times 100\%$. If you isolate, say, $m_\text{exp} = 1.50$ g, the yield is $1.50/1.765 \times 100\% = 85.0\%$. Report **your own** $m_\text{exp}$.
+> Reaction yield $\eta = m_\text{exp}/m_\text{th} \times 100\%$. If you isolated, say, $m_\text{exp} = 1.50$ g, the yield is $1.50/1.765 \times 100\% = 85.0\%$. Report **your own** $m_\text{exp}$.
 >
-> $$\boxed{\ \eta = \dfrac{m_\text{exp}(\text{SBH})}{1.765\ \mathrm{g}}\times 100\%\ \ ;\ \ \text{benzhydrazide is the limiting reagent (1.96}\times\text{ excess salicylaldehyde).}\ }$$
+> $$\boxed{\ \eta_{\text{SBH}} = \dfrac{m_\text{exp}}{1.765\ \mathrm{g}}\times 100\%\ }$$
 
 # Part B — Synthesis of the Cu–SBH complex
 
@@ -203,7 +190,9 @@ In ethanol with no added base, $\ce{CuCl2.2H2O}$ deprotonates the **phenolic –
 6. When precipitation begins, **place the flask in the ice-water bath** and leave it there **10 min**.
 7. **Filter** by vacuum, wash twice with **10 mL ice-cold water** (water — *not* ethanol — to remove unreacted Cu salt without re-dissolving the complex).
 8. **Dry in air with the vacuum pump for 30 min**.
-9–11. **Weigh the empty vial**, **transfer the solid in**, **record the product mass**.
+9. **Weigh the empty vial.**
+10. **Transfer the dry solid into the vial.**
+11. **Reweigh and record the product mass** (mass of vial + solid minus mass of empty vial).
 
 ::: {.callout-warning title="Pay attention in Part B"}
 - **Order of mixing.** Add the metal solution **into** the hot ligand solution (not the other way around). Reverse addition gives a poorly mixed metal hot-spot and a sticky/inhomogeneous solid.
@@ -212,8 +201,6 @@ In ethanol with no added base, $\ce{CuCl2.2H2O}$ deprotonates the **phenolic –
 - **Don't over-grind.** This complex is moisture- and friction-sensitive on the spatula; transfer with the spatula's flat side, do not scrape.
 - The **stoichiometry given to you is essentially 1 : 1** (Cu : SBH ≈ 2.99 : 3.00 mmol), so any product whose elemental composition gives a Cu : SBH ratio far from 1 : 1 is a wrong product.
 :::
-
-## Solution for Part B (procedural ratio)
 
 3. **Indicate** the stoichiometric ratio of Cu : SBH you expect in the complex based on the experimental procedure.
 
@@ -235,7 +222,7 @@ $$x_{\ce{Fe}} = \frac{V(\ce{Fe(III)})}{V(\ce{Fe(III)})+V(\text{SBH})} = \frac{V(
 Subtracting the **linear baseline** between the two pure-component absorbances ($A_L = 0.031$ at $x_{\ce{Fe}}=0$ and $A_M = 0.017$ at $x_{\ce{Fe}}=1$) gives the **complex-only absorbance**
 $$\Delta A = A - \bigl[\,A_L(1-x_{\ce{Fe}}) + A_M\,x_{\ce{Fe}}\,\bigr].$$
 
-| $V_\ce{Fe}$ / mL | $V_\text{SBH}$ / mL | $x_{\ce{Fe}}$ | $A$ | $\Delta A$ |
+| $V_{\mathrm{Fe}}$ / mL | $V_{\mathrm{SBH}}$ / mL | $x_{\mathrm{Fe}}$ | $A$ | $\Delta A$ |
 |---:|---:|---:|---:|---:|
 | 0.00 | 1.20 | 0.000 | 0.031 | 0.000 |
 | 0.15 | 1.05 | 0.125 | 0.091 | 0.062 |
@@ -249,38 +236,37 @@ $$\Delta A = A - \bigl[\,A_L(1-x_{\ce{Fe}}) + A_M\,x_{\ce{Fe}}\,\bigr].$$
 | 1.10 | 0.10 | 0.917 | 0.039 | 0.021 |
 | 1.20 | 0.00 | 1.000 | 0.017 | 0.000 |
 
-The $\Delta A$ column rises to a clear single maximum between $x_{\ce{Fe}} = 0.25$ and $x_{\ce{Fe}} = 0.50$. A parabolic fit through the three points at $x_{\ce{Fe}} \in \{0.250, 0.375, 0.500\}$ places the vertex at $x_{\ce{Fe}}^{\max} \approx 0.38$. The nearest clean stoichiometric mole fraction is $x_{\ce{Fe}} = 1/3$, i.e. $\ce{Fe : SBH} = 1 : 2$ — the experimental peak lies above $1/3$ because the data grid has no point at $0.333$, and the asymmetry of the $\Delta A$ values around the peak (0.124 at $x_{\ce{Fe}}=0.25$ vs. 0.126 at $x_{\ce{Fe}}=0.50$, nearly equal) is exactly what a Job's peak at $1/3$ produces on this grid.
+The $\Delta A$ column rises to a single maximum between $x_{\mathrm{Fe}} = 0.25$ and $x_{\mathrm{Fe}} = 0.50$. A parabolic fit through the three points at $x_{\mathrm{Fe}} \in \{0.250,\,0.375,\,0.500\}$ places the vertex at $x_{\mathrm{Fe}}^{\max} \approx 0.38$. The nearest clean stoichiometric mole fraction is $x_{\mathrm{Fe}} = 1/3$, i.e. **Fe : SBH = 1 : 2** — the experimental peak lies above $1/3$ because the data grid has no point at $0.333$, and the $\Delta A$ values around the peak (0.124 at $x_{\mathrm{Fe}}=0.25$ vs. 0.126 at $x_{\mathrm{Fe}}=0.50$, nearly equal) are exactly what a Job's peak at $1/3$ produces on this grid.
 
 4. **Calculate** the Fe : SBH ratio in the complex.
 
 > **Solution (Q4 — Fe : SBH from Job's plot).**
 >
-> Baseline-corrected $\Delta A$ is tabulated above. The maximum of $\Delta A$ falls at $x_{\ce{Fe}} \approx 0.33$–$0.38$. With the grid available, the **closest stoichiometric mole fraction is** $x_{\ce{Fe}}=1/3$, which corresponds to
+> Plotting the baseline-corrected $\Delta A$ against $x_{\mathrm{Fe}}$ gives a single asymmetric peak (see figure). The classical Job's analysis is to **extrapolate the two straight wings** to their intersection — the rising wing (Fe-poor side, $x_{\mathrm{Fe}} \le 0.25$, all Fe consumed) and the falling wing (Fe-rich side, $x_{\mathrm{Fe}} \ge 0.5$, all SBH consumed). The intersection is much less sensitive to the curvature near the peak than the raw maximum is.
 >
-> $$\frac{x}{x+y}=\frac{1}{3}\;\Longrightarrow\;\frac{x}{y}=\frac{1}{2}.$$
+> ![**Job's plot for the Fe(III)/SBH system.** Open circles: raw absorbance $A$. Solid circles: baseline-corrected $\Delta A = A - A_L(1-x_{\mathrm{Fe}}) - A_M\,x_{\mathrm{Fe}}$. Dashed lines: least-squares linear fits to the rising wing ($x_{\mathrm{Fe}} \in \{0.125,\,0.250\}$, through-origin slope $+0.497$) and the falling wing ($x_{\mathrm{Fe}} \ge 0.500$, slope $-0.252$, intercept $+0.252$). Their intersection at $x_{\mathrm{Fe}}^{\,*} = 0.336$ pins the stoichiometric mole fraction to within $\mathbf{+0.9\,\%}$ of $1/3$.](images/q32_jobs_plot.png){#fig-jobs width=85%}
 >
-> $$\boxed{\ \ce{Fe : SBH} = 1 : 2\ \ \Rightarrow\ \ce{[Fe(SBH)2]^{n+}}.\ }$$
+> Setting the two wings equal,
+>
+> $$0.497\,x_{\mathrm{Fe}} = 0.252 - 0.252\,x_{\mathrm{Fe}} \;\Longrightarrow\; x_{\mathrm{Fe}}^{\,*} = \dfrac{0.252}{0.749} = 0.336 \approx \dfrac{1}{3}.$$
+>
+> This is the Job's signature of a 1 : 2 complex:
+>
+> $$\dfrac{x}{x+y} = \dfrac{1}{3} \;\Longrightarrow\; \dfrac{x}{y} = \dfrac{1}{2}.$$
+>
+> $$\boxed{\ \text{Fe : SBH} = 1 : 2 \;\Longrightarrow\; \ce{[Fe(SBH)2]^{n+}}.\ }$$
 
 5. **Draw** the structural formula of the Fe complex.
 
 > **Solution (Q5 — $\ce{[Fe(HL)2]+}$ structure).**
 >
-> Iron is $\ce{Fe^{3+}}$; SBH coordinates as the **mono-anion** (phenolic O–H lost, amide N–H retained — the keto tautomer) so each $\ce{HL^-}$ contributes charge $-1$ and three donor atoms (phenolate-O, imine-N, carbonyl-O). Two such ligands give an **octahedral**, $d^5$ high-spin Fe(III) centre with $\mathrm{CN} = 6$ and overall charge
+> Iron is $\ce{Fe^{3+}}$; SBH coordinates as the **mono-anion** (phenolic O–H lost, amide N–H retained — the keto tautomer), so each $\ce{HL-}$ contributes charge $-1$ and three donor atoms (phenolate-O, imine-N, carbonyl-O). Two such ligands give an **octahedral**, $d^5$ high-spin Fe(III) centre with $\mathrm{CN} = 6$ and overall charge
 >
-> $$\underbrace{(+3)}_{\ce{Fe}} + 2\times\underbrace{(-1)}_{\ce{HL-}} = +1.$$
+> $$\underbrace{(+3)}_{\text{Fe}} \;+\; 2\times\underbrace{(-1)}_{\text{HL}^-} \;=\; +1.$$
 >
-> This matches the formula $\ce{[Fe_x(SBH)_y]^{n+}}$ from the problem with $x=1$, $y=2$, $n=1$. The two tridentate ONO ligands occupy *meridional* sites (forced by the geometric rigidity of the salicylaldehyde-imine-benzoyl backbone) and lie in mutually perpendicular planes:
+> This matches the problem's formula $\ce{[Fe_x(SBH)_y]^{n+}}$ with $x=1$, $y=2$, $n=1$. The two tridentate ONO ligands occupy **meridional** (*mer*-) sites — each ligand spans three coordination positions in a single plane, and the two coordination planes are mutually perpendicular, related by an approximate $C_2$ axis through Fe. The geometric rigidity of the salicylaldehyde–imine–benzoyl backbone makes the *mer-mer* isomer the only accessible one.
 >
-> ```
->                          [O]^phen       [O]^carb
->                              \           /
->                       [N]^im─Fe^III─[N]^im
->                              /           \
->                          [O]^carb       [O]^phen
-> ```
-> i.e. the two ONO ligands span three *meridional* coordination sites each, related by an approximate $C_2$ axis through Fe.
->
-> $$\boxed{\ \ce{[Fe^{III}(HL)2]+},\ \text{octahedral}, \text{two ONO-tridentate keto-monoanion SBH ligands, meridional}.\ }$$
+> $$\boxed{\ \ce{[Fe^{III}(HL)2]+},\ \text{octahedral},\ \text{two ONO-tridentate keto-monoanion SBH ligands, } mer\text{-}mer.\ }$$
 
 6. **Draw** the structural formula of the Cu–SBH complex if the coordination number is 4 and the complex is neutral.
 
@@ -288,7 +274,7 @@ The $\Delta A$ column rises to a clear single maximum between $x_{\ce{Fe}} = 0.2
 >
 > $\ce{Cu^{2+}}$ supplies $+2$. For the complex to be **neutral** the ligands must sum to $-2$. The procedure provides one $\ce{Cl-}$ (from $\ce{CuCl2}$, the second chloride leaves as HCl) and SBH coordinated as the **mono-anion** $\ce{HL-}$ (only the phenolic –OH deprotonated; no base is added, and the amide N–H is far less acidic than the phenol):
 >
-> $$\underbrace{(+2)}_{\ce{Cu}} + \underbrace{(-1)}_{\ce{HL-}} + \underbrace{(-1)}_{\ce{Cl-}} = 0.$$
+> $$\underbrace{(+2)}_{\text{Cu}} \;+\; \underbrace{(-1)}_{\text{HL}^-} \;+\; \underbrace{(-1)}_{\text{Cl}^-} \;=\; 0.$$
 >
 > Coordination number: 3 from the ONO-tridentate $\ce{HL-}$ (phenolate-O, imine-N, carbonyl-O) plus 1 from $\ce{Cl-}$ gives $\mathrm{CN} = 4$ (square-planar, as expected for $d^9$ Cu(II) with no axial donors in this anhydrous synthesis), 1 : 1 : 1 of Cu : SBH (as $\ce{HL-}$) : Cl. This is the **1 : 1** structure:
 >
@@ -306,9 +292,9 @@ The $\Delta A$ column rises to a clear single maximum between $x_{\ce{Fe}} = 0.2
 
 > **Solution (Q7 — Yield of the Cu complex).**
 >
-> Limiting reagent: $\ce{CuCl2.2H2O}$ at $n_\ce{Cu} = 2.992$ mmol (SBH at 2.997 mmol is in trivial 0.2 % excess). Molar mass of the product $\ce{[CuCl(HL)]}$:
+> Limiting reagent: $\ce{CuCl2.2H2O}$ at $n_{\mathrm{Cu}} = 2.992$ mmol (SBH at 2.997 mmol is in trivial 0.2 % excess). Molar mass of the product $\ce{[CuCl(HL)]}$ — Cu + Cl + (SBH $-$ 1 H from the phenol):
 >
-> $$M\bigl(\ce{CuClC14H11N2O2}\bigr) = 63.55 + 35.45 + (240.26 - 1.008) = 338.25\ \mathrm{g\,mol^{-1}}.$$
+> $$M\bigl(\ce{[CuCl(HL)]}\bigr) = M_{\mathrm{Cu}} + M_{\mathrm{Cl}} + (M_{\mathrm{SBH}} - M_{\mathrm{H}}) = 63.55 + 35.45 + (240.26 - 1.008) = 338.25\ \mathrm{g\,mol^{-1}}.$$
 >
 > Theoretical mass:
 >
@@ -419,6 +405,7 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 ## 注释版操作步骤
 
 ::: {.callout-important appearance="default" title="A 部分务必在通风橱内进行"}
+A 部分**全程在通风橱内**操作：水杨醛与苯甲酰肼均为眼/皮肤/呼吸道刺激物，且为**可疑致突变物**（H341 / H351）。须戴丁腈手套；转移固体时切勿扬尘。
 :::
 
 1. **称取 1.0 g 苯甲酰肼**于 100 mL 烧杯中，置于磁力搅拌器上，放入搅拌子，加 **40 mL 蒸馏水**搅拌使其溶解。
@@ -441,13 +428,11 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 - **干燥要充分**：含溶剂的湿固体会**虚高产率**。
 :::
 
-## A 部分答案
-
 1. **写出**该反应方程式（含结构式）。
 
 > **解答 (Q1 — SBH 缩合反应方程式)。**
 >
-> 苯甲酰肼的末端 $\ce{-NH2}$ 进攻水杨醛的羰基碳，半缩胺脱水得到 $E$-构型酰基腙（邻位酚 O–H 与新生 $\ce{HC=N}$ 氮形成 6 元分子内氢键，固定 $E$）：
+> 苯甲酰肼的末端 $\ce{-NH2}$ 进攻水杨醛的羰基碳，半缩胺脱水得到 $E$-构型酰基腙（邻位酚 O–H 与新生 $\ce{HC=N}$ 氮形成 6 元分子内氢键，固定 $E$ 构型并预组装 ONO 配位口袋）：
 >
 > $$\ce{Ph-C(=O)-NH-NH2 + 2-HO-C6H4-CHO -> Ph-C(=O)-NH-N=CH-C6H4-2-OH + H2O}$$
 >
@@ -459,7 +444,7 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 >
 > 摩尔质量：$M_1(\text{苯甲酰肼}, \ce{C7H8N2O}) = 136.15$，$M_2(\text{水杨醛}, \ce{C7H6O2}) = 122.12$，$M_3(\text{SBH}, \ce{C14H12N2O2}) = 240.26$ g mol⁻¹。
 >
-> $$n(\text{苯甲酰肼}) = \dfrac{1.00}{136.15} = 7.345\ \mathrm{mmol},\ \ n(\text{水杨醛}) = \dfrac{1.5\times 1.17}{122.12} = 14.37\ \mathrm{mmol}.$$
+> $$n(\text{苯甲酰肼}) = \dfrac{1.00}{136.15} = 7.345\ \mathrm{mmol},\quad n(\text{水杨醛}) = \dfrac{1.5\times 1.17}{122.12} = 14.37\ \mathrm{mmol}.$$
 >
 > 水杨醛 1.96 倍过量 → **苯甲酰肼为限量试剂**。1 : 1 化学计量给出
 >
@@ -467,7 +452,7 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 >
 > 由实测质量 $m_\text{exp}$ 即可算得
 >
-> $$\boxed{\ \eta = \dfrac{m_\text{exp}}{1.765\ \mathrm{g}}\times 100\%.\ }$$
+> $$\boxed{\ \eta_{\text{SBH}} = \dfrac{m_\text{exp}}{1.765\ \mathrm{g}}\times 100\%\ }$$
 
 # B 部分 — Cu–SBH 配合物的合成
 
@@ -484,7 +469,9 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 6. 一旦开始析出，**置入冰水浴 10 min**。
 7. 抽滤，用 **10 mL 冰冷水**洗涤 **2 次**（用水而**不是乙醇**：洗去未反应铜盐，又不溶解产物）。
 8. **抽真空干燥 30 min**。
-9–11. **称空瓶 → 转入固体 → 记录产品质量**。
+9. **称空瓶**。
+10. **将干燥固体转入瓶中。**
+11. **再次称重，记录产品质量**（瓶+固体质量减去空瓶质量即为产品质量）。
 
 ::: {.callout-warning title="B 部分注意事项"}
 - **加料顺序**：金属溶液**加入到**配体溶液中，不可反向。反向加料会形成铜局部过浓的不均沉淀。
@@ -493,8 +480,6 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 - **不要在药匙上反复摩擦**：该固体对湿气与摩擦敏感，用药匙平面转移。
 - **本部分给定的 Cu : SBH 摩尔比基本就是 1 : 1**（2.99 : 3.00 mmol）；如果你算出的 Cu : SBH 比远偏离 1 : 1，说明产物不对。
 :::
-
-## B 部分答案（计量比）
 
 3. **指出**根据操作中预期的 Cu : SBH 比。
 
@@ -510,13 +495,13 @@ $$x_M^\text{max} = \frac{x}{x+y}.$$
 
 平行实验中，用 Fe(III) 盐与 SBH 在类似条件下反应给出阳离子配合物 $\ce{[Fe_x(SBH)_y]^{n+}}$，比例用 **Job 法**确定。
 
-恒定总反应液体积 $V_\ce{Fe}+V_\text{SBH}=1.20$ mL（甲醇稀释 1.80 mL），故铁的摩尔分数为
-$$x_\ce{Fe} = \dfrac{V_\ce{Fe}}{1.20\ \mathrm{mL}}.$$
+恒定总反应液体积 $V_{\mathrm{Fe}}+V_{\mathrm{SBH}}=1.20$ mL（甲醇稀释 1.80 mL），故铁的摩尔分数为
+$$x_{\mathrm{Fe}} = \dfrac{V_{\mathrm{Fe}}}{1.20\ \mathrm{mL}}.$$
 
-扣除两端纯组分的线性吸光度基线（$A_L=0.031$ at $x_\ce{Fe}=0$；$A_M=0.017$ at $x_\ce{Fe}=1$）得到**只由配合物贡献**的吸光度
-$$\Delta A = A - \bigl[A_L(1-x_\ce{Fe}) + A_M x_\ce{Fe}\bigr].$$
+扣除两端纯组分的线性吸光度基线（$A_L=0.031$ at $x_{\mathrm{Fe}}=0$；$A_M=0.017$ at $x_{\mathrm{Fe}}=1$）得到**只由配合物贡献**的吸光度
+$$\Delta A = A - \bigl[A_L(1-x_{\mathrm{Fe}}) + A_M\, x_{\mathrm{Fe}}\bigr].$$
 
-| $V_\ce{Fe}$ / mL | $V_\text{SBH}$ / mL | $x_\ce{Fe}$ | $A$ | $\Delta A$ |
+| $V_{\mathrm{Fe}}$ / mL | $V_{\mathrm{SBH}}$ / mL | $x_{\mathrm{Fe}}$ | $A$ | $\Delta A$ |
 |---:|---:|---:|---:|---:|
 | 0.00 | 1.20 | 0.000 | 0.031 | 0.000 |
 | 0.15 | 1.05 | 0.125 | 0.091 | 0.062 |
@@ -530,37 +515,45 @@ $$\Delta A = A - \bigl[A_L(1-x_\ce{Fe}) + A_M x_\ce{Fe}\bigr].$$
 | 1.10 | 0.10 | 0.917 | 0.039 | 0.021 |
 | 1.20 | 0.00 | 1.000 | 0.017 | 0.000 |
 
-$\Delta A$ 单峰出现在 $x_\ce{Fe}=0.25\sim 0.50$ 之间；对 $(0.250, 0.375, 0.500)$ 三点作二次拟合得顶点 $x_\ce{Fe}^\max \approx 0.38$。最近的整数化学计量摩尔分数是 $x_\ce{Fe}=1/3$，即 **Fe : SBH = 1 : 2**；实验峰高出 1/3 是因为数据网格中没有 $0.333$ 这一点，并且 $0.25$ 与 $0.50$ 两侧的 $\Delta A$ 值（0.124 vs 0.126）几乎对称——这正是峰位在 $1/3$ 的 Job 图在该网格上的特征。
+$\Delta A$ 单峰出现在 $x_{\mathrm{Fe}}=0.25 \sim 0.50$ 之间；对 $(0.250,\, 0.375,\, 0.500)$ 三点作二次拟合得顶点 $x_{\mathrm{Fe}}^{\max} \approx 0.38$。最近的整数化学计量摩尔分数是 $x_{\mathrm{Fe}}=1/3$，即 **Fe : SBH = 1 : 2**；实验峰位略高于 1/3，是因为数据网格中没有 $0.333$ 这一点，且 $0.25$ 与 $0.50$ 两侧 $\Delta A$ 值（0.124 vs 0.126）几乎对称——这正是峰位在 $1/3$ 时 Job 图在该网格上的特征。
 
 4. **计算** Fe : SBH。
 
 > **解答 (Q4 — 由 Job 图得 Fe : SBH)。**
 >
-> 由表中 $\Delta A$ 峰位 $\approx 0.33$–$0.38$，最近的整数化学计量摩尔分数为 $x_\ce{Fe}=1/3$。
+> 将扣基线后的 $\Delta A$ 对 $x_{\mathrm{Fe}}$ 作图得到单一非对称峰（见下图）。经典的 Job 法处理是**对两侧直线段分别外推**，求出交点：上升支（$x_{\mathrm{Fe}} \le 0.25$，Fe 限量）与下降支（$x_{\mathrm{Fe}} \ge 0.50$，SBH 限量）。交点对近峰处的曲率不敏感，是最稳健的峰位估计。
 >
-> $$\dfrac{x}{x+y}=\dfrac{1}{3}\;\Rightarrow\;\dfrac{x}{y}=\dfrac{1}{2}.$$
+> ![**Fe(III)/SBH 体系的 Job 图。** 空心圆：原始 $A$；实心圆：扣基线后 $\Delta A = A - A_L(1-x_{\mathrm{Fe}}) - A_M\,x_{\mathrm{Fe}}$。两条虚线分别是上升支（$x_{\mathrm{Fe}} \in \{0.125,\,0.250\}$，过原点最小二乘斜率 $+0.497$）与下降支（$x_{\mathrm{Fe}} \ge 0.500$，斜率 $-0.252$，截距 $+0.252$）的线性外推；其交点在 $x_{\mathrm{Fe}}^{\,*} = 0.336$，与 $1/3$ 偏差仅 $\mathbf{+0.9\,\%}$。](images/q32_jobs_plot.png){width=85%}
 >
-> $$\boxed{\ \ce{Fe : SBH} = 1 : 2\ \Rightarrow\ \ce{[Fe(SBH)2]^{n+}}.\ }$$
+> 令两条直线相等：
+>
+> $$0.497\,x_{\mathrm{Fe}} = 0.252 - 0.252\,x_{\mathrm{Fe}} \;\Longrightarrow\; x_{\mathrm{Fe}}^{\,*} = \dfrac{0.252}{0.749} = 0.336 \approx \dfrac{1}{3}.$$
+>
+> 这就是 1 : 2 配合物的 Job 图标准特征：
+>
+> $$\dfrac{x}{x+y} = \dfrac{1}{3} \;\Longrightarrow\; \dfrac{x}{y} = \dfrac{1}{2}.$$
+>
+> $$\boxed{\ \text{Fe : SBH} = 1 : 2 \;\Longrightarrow\; \ce{[Fe(SBH)2]^{n+}}.\ }$$
 
 5. **画出**该 Fe 配合物的结构式。
 
 > **解答 (Q5 — $\ce{[Fe(HL)2]+}$ 结构)。**
 >
-> Fe(III) 为 $+3$；SBH 以**酮式一价阴离子**形式配位（酚 O–H 脱去，酰胺 N–H 保留），每个 $\ce{HL-}$ 贡献 $-1$ 电荷和 (phenolate-O, imine-N, carbonyl-O) 三个配位原子。两个 $\ce{HL-}$ 给出**八面体高自旋 $d^5$** Fe(III) 中心，CN = 6，总电荷
+> Fe(III) 为 $+3$；SBH 以**酮式一价阴离子**形式配位（酚 O–H 脱去，酰胺 N–H 保留），每个 $\ce{HL-}$ 贡献 $-1$ 电荷与 (phenolate-O, imine-N, carbonyl-O) 三个配位原子。两个 $\ce{HL-}$ 给出**八面体高自旋 $d^5$** Fe(III) 中心，CN = 6，总电荷
 >
-> $$(+3) + 2\times(-1) = +1,$$
+> $$\underbrace{(+3)}_{\text{Fe}} \;+\; 2\times\underbrace{(-1)}_{\text{HL}^-} \;=\; +1,$$
 >
-> 即 $\ce{[Fe(HL)2]+}$；与题目所给 $\ce{[Fe_x(SBH)_y]^{n+}}$ 比对，$x=1$, $y=2$, $n=1$。两个三齿 ONO 配体强制处于**经向**（mer-）配位，且彼此平面近乎垂直，存在一个近似 $C_2$ 轴穿过 Fe。
+> 即 $\ce{[Fe(HL)2]+}$；与题目所给 $\ce{[Fe_x(SBH)_y]^{n+}}$ 比对，$x=1$，$y=2$，$n=1$。两个三齿 ONO 配体强制处于**经向**（*mer-*）配位——每个配体在一个平面内占据三个配位位，两平面相互垂直，过 Fe 存在近似 $C_2$ 轴；水杨醛-亚胺-苯甲酰骨架的刚性使 *mer-mer* 是几何上唯一可达的异构体。
 >
-> $$\boxed{\ \ce{[Fe^{III}(HL)2]+}, \text{八面体，两个 ONO 三齿酮式一价阴离子 SBH 经向配位}.\ }$$
+> $$\boxed{\ \ce{[Fe^{III}(HL)2]+},\ \text{八面体，两个 ONO 三齿酮式一价阴离子 SBH 配位，} mer\text{-}mer.\ }$$
 
 6. **画出**当 Cu 配位数为 4、配合物为中性时 Cu–SBH 的结构式。
 
 > **解答 (Q6 — 中性四配位 $\ce{[CuCl(HL)]}$)。**
 >
-> Cu(II) 提供 $+2$；中性要求配体合计 $-2$。本反应可用阴离子有 $\ce{Cl-}$（从 $\ce{CuCl2}$ 来，另一根 Cl 以 HCl 形式释放）和**仅酚 OH 脱质子**的 SBH 一价阴离子 $\ce{HL-}$（未加碱，酰胺 N–H 的酸性远低于酚）：
+> Cu(II) 提供 $+2$；中性要求配体合计 $-2$。本反应可用阴离子有 $\ce{Cl-}$（从 $\ce{CuCl2}$ 来，另一根 Cl 以 HCl 形式释放）与**仅酚 OH 脱质子**的 SBH 一价阴离子 $\ce{HL-}$（未加碱，酰胺 N–H 的酸性远低于酚）：
 >
-> $$(+2) + (-1) + (-1) = 0.$$
+> $$\underbrace{(+2)}_{\text{Cu}} \;+\; \underbrace{(-1)}_{\text{HL}^-} \;+\; \underbrace{(-1)}_{\text{Cl}^-} \;=\; 0.$$
 >
 > CN = 3（ONO 三齿 $\ce{HL-}$）+ 1（$\ce{Cl-}$）= 4（平面正方形，$d^9$ Cu(II) 的无轴向配位特征），Cu : SBH = 1 : 1。这就是本题 Part B 条件（CuCl₂ + 无外加碱）下的 **1 : 1** 结构：
 >
@@ -578,9 +571,9 @@ $\Delta A$ 单峰出现在 $x_\ce{Fe}=0.25\sim 0.50$ 之间；对 $(0.250, 0.375
 
 > **解答 (Q7 — Cu 配合物产率)。**
 >
-> 限量试剂为 $\ce{CuCl2.2H2O}$（$n_\ce{Cu}=2.992$ mmol；SBH 仅过量 0.2 %）。$\ce{[CuCl(HL)]}$ 的摩尔质量
+> 限量试剂为 $\ce{CuCl2.2H2O}$（$n_{\mathrm{Cu}}=2.992$ mmol；SBH 仅过量 0.2 %）。$\ce{[CuCl(HL)]}$ 的摩尔质量等于 Cu + Cl + (SBH $-$ 酚 H)：
 >
-> $$M = 63.55 + 35.45 + (240.26 - 1.008) = 338.25\ \mathrm{g\,mol^{-1}}.$$
+> $$M\bigl(\ce{[CuCl(HL)]}\bigr) = M_{\mathrm{Cu}} + M_{\mathrm{Cl}} + (M_{\mathrm{SBH}} - M_{\mathrm{H}}) = 63.55 + 35.45 + (240.26 - 1.008) = 338.25\ \mathrm{g\,mol^{-1}}.$$
 >
 > $$m_\text{th} = 2.992\times 338.25 = 1.012\ \mathrm{g}.$$
 >
